@@ -52,6 +52,7 @@ namespace esdat
                 {
                     MessageBox.Show("Verifique las celdas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
+
                 }
                 else
                 {
