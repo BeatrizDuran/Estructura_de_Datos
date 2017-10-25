@@ -67,6 +67,12 @@
     <Compile Include="CuadroMagico.Designer.cs">
       <DependentUpon>CuadroMagico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Explorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explorador.Designer.cs">
+      <DependentUpon>Explorador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CuadroMagico.resx">
       <DependentUpon>CuadroMagico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explorador.resx">
+      <DependentUpon>Explorador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fibonacci.resx">
       <DependentUpon>Fibonacci.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace esdat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Arboles());
+            Application.Run(new Explorador());
         }
     }
 }
