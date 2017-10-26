@@ -89,6 +89,7 @@ namespace esdat
                     item.Remove();
                     Lista.Remove(item.Text);
                     break;
+
                 }
                 else
                 {
