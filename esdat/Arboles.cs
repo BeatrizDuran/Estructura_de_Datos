@@ -45,5 +45,10 @@ namespace esdat
             }
             //((TreeView)sender).SelectedNode.ImageIndex = 1;
         }
+
+        private void Arboles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

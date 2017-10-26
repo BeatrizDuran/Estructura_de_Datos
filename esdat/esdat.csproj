@@ -55,6 +55,12 @@
     <Compile Include="Arboles.Designer.cs">
       <DependentUpon>Arboles.cs</DependentUpon>
     </Compile>
+    <Compile Include="arboles_recorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arboles_recorrido.Designer.cs">
+      <DependentUpon>arboles_recorrido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Busqueda binaria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
     <EmbeddedResource Include="Arboles.resx">
       <DependentUpon>Arboles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arboles_recorrido.resx">
+      <DependentUpon>arboles_recorrido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Busqueda binaria.resx">
       <DependentUpon>Busqueda binaria.cs</DependentUpon>

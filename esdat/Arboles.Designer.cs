@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Punto_venta", 0, -2, new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Consultorio", 0, -2, new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Control_escolar", 0, -2, new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Punto_venta", 0, -2, new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Consultorio", 0, -2, new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14});
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Table1", 2, 3);
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Table2", 2, 3);
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Control_escolar", 0, -2, new System.Windows.Forms.TreeNode[] {
+            treeNode16,
+            treeNode17});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Arboles));
             this.tvBASEDATOS = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -55,46 +55,46 @@
             this.tvBASEDATOS.ImageList = this.imageList1;
             this.tvBASEDATOS.Location = new System.Drawing.Point(3, 4);
             this.tvBASEDATOS.Name = "tvBASEDATOS";
-            treeNode1.ImageIndex = 2;
-            treeNode1.Name = "Node1";
-            treeNode1.SelectedImageIndex = 3;
-            treeNode1.Text = "Table1";
-            treeNode2.ImageIndex = 2;
-            treeNode2.Name = "Node2";
-            treeNode2.SelectedImageIndex = 3;
-            treeNode2.Text = "Table2";
-            treeNode3.ImageIndex = 0;
-            treeNode3.Name = "Node1";
-            treeNode3.SelectedImageIndex = -2;
-            treeNode3.Text = "Punto_venta";
-            treeNode4.ImageIndex = 2;
-            treeNode4.Name = "Node4";
-            treeNode4.SelectedImageIndex = 3;
-            treeNode4.Text = "Table1";
-            treeNode5.ImageIndex = 2;
-            treeNode5.Name = "Node5";
-            treeNode5.SelectedImageIndex = 3;
-            treeNode5.Text = "Table2";
-            treeNode6.ImageIndex = 0;
-            treeNode6.Name = "Node3";
-            treeNode6.SelectedImageIndex = -2;
-            treeNode6.Text = "Consultorio";
-            treeNode7.ImageIndex = 2;
-            treeNode7.Name = "Node7";
-            treeNode7.SelectedImageIndex = 3;
-            treeNode7.Text = "Table1";
-            treeNode8.ImageIndex = 2;
-            treeNode8.Name = "Node8";
-            treeNode8.SelectedImageIndex = 3;
-            treeNode8.Text = "Table2";
-            treeNode9.ImageIndex = 0;
-            treeNode9.Name = "Node6";
-            treeNode9.SelectedImageIndex = -2;
-            treeNode9.Text = "Control_escolar";
+            treeNode10.ImageIndex = 2;
+            treeNode10.Name = "Node1";
+            treeNode10.SelectedImageIndex = 3;
+            treeNode10.Text = "Table1";
+            treeNode11.ImageIndex = 2;
+            treeNode11.Name = "Node2";
+            treeNode11.SelectedImageIndex = 3;
+            treeNode11.Text = "Table2";
+            treeNode12.ImageIndex = 0;
+            treeNode12.Name = "Node1";
+            treeNode12.SelectedImageIndex = -2;
+            treeNode12.Text = "Punto_venta";
+            treeNode13.ImageIndex = 2;
+            treeNode13.Name = "Node4";
+            treeNode13.SelectedImageIndex = 3;
+            treeNode13.Text = "Table1";
+            treeNode14.ImageIndex = 2;
+            treeNode14.Name = "Node5";
+            treeNode14.SelectedImageIndex = 3;
+            treeNode14.Text = "Table2";
+            treeNode15.ImageIndex = 0;
+            treeNode15.Name = "Node3";
+            treeNode15.SelectedImageIndex = -2;
+            treeNode15.Text = "Consultorio";
+            treeNode16.ImageIndex = 2;
+            treeNode16.Name = "Node7";
+            treeNode16.SelectedImageIndex = 3;
+            treeNode16.Text = "Table1";
+            treeNode17.ImageIndex = 2;
+            treeNode17.Name = "Node8";
+            treeNode17.SelectedImageIndex = 3;
+            treeNode17.Text = "Table2";
+            treeNode18.ImageIndex = 0;
+            treeNode18.Name = "Node6";
+            treeNode18.SelectedImageIndex = -2;
+            treeNode18.Text = "Control_escolar";
             this.tvBASEDATOS.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode6,
-            treeNode9});
+            treeNode12,
+            treeNode15,
+            treeNode18});
             this.tvBASEDATOS.SelectedImageIndex = 0;
             this.tvBASEDATOS.Size = new System.Drawing.Size(165, 317);
             this.tvBASEDATOS.TabIndex = 1;
@@ -118,6 +118,7 @@
             this.Controls.Add(this.tvBASEDATOS);
             this.Name = "Arboles";
             this.Text = "   ";
+            this.Load += new System.EventHandler(this.Arboles_Load);
             this.ResumeLayout(false);
 
         }
