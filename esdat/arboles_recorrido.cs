@@ -13,7 +13,9 @@ namespace esdat
     public partial class arboles_recorrido : Form
     {
         public bool valor = false;
-        private List<String>Lista = new List<String>();
+        private List<String> Lista = new List<String>();
+        private string cadena;
+        
         public arboles_recorrido()
         {
             InitializeComponent();
@@ -106,6 +108,21 @@ namespace esdat
                 ImprimirRecursivo3(item);
             }
         }
+        private void recorrido(TreeNodeCollection treeNodeCollection)
+        {
+            foreach (TreeNode item in treeNodeCollection)
+            {
+                if (item.Nodes.Count == 0)
+                {
+                    cadena +="\n Nodo hijo:  " + item.Text;
+                }
+                else
+                {
+                    cadena += "\n Nodo padre: " + item.Text;
+                    recorrido(item.Nodes);
+                }
+            }
+        }
 
         private void btnEXPANDIR_Click(object sender, EventArgs e)
         {
@@ -177,7 +194,10 @@ namespace esdat
 
         private void btnRECORRIDO_Click(object sender, EventArgs e)
         {
-
-        }
+            //..............Realiza el recorrido en los arboles.................
+            cadena = "Imprimir el recorrido";
+            recorrido(tvNODOS.Nodes);
+            MessageBox.Show(cadena);
+ ;      }
     }
 }

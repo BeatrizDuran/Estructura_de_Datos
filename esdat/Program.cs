@@ -16,7 +16,7 @@ namespace esdat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new arboles_recorrido());
+            Application.Run(new Pilas());
         }
     }
 }

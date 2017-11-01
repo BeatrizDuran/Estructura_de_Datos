@@ -170,6 +170,7 @@
             this.transpuestaToolStripMenuItem.Name = "transpuestaToolStripMenuItem";
             this.transpuestaToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.transpuestaToolStripMenuItem.Text = "Transpuesta";
+            this.transpuestaToolStripMenuItem.Click += new System.EventHandler(this.transpuestaToolStripMenuItem_Click);
             // 
             // cuadradoToolStripMenuItem
             // 
@@ -188,8 +189,8 @@
             // unidad3ListasToolStripMenuItem
             // 
             this.unidad3ListasToolStripMenuItem.Name = "unidad3ListasToolStripMenuItem";
-            this.unidad3ListasToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.unidad3ListasToolStripMenuItem.Text = "Unidad 3: Listas";
+            this.unidad3ListasToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.unidad3ListasToolStripMenuItem.Text = "Unidad 6: Arboles";
             // 
             // Menu
             // 

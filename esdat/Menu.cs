@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace esdat
 {
@@ -67,6 +68,10 @@ namespace esdat
         private void sumaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new Suma_de_matrices().ShowDialog();
+        }
+
+        private void transpuestaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
         }
     }
 }
