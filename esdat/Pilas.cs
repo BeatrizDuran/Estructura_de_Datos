@@ -24,18 +24,23 @@ namespace esdat
             {
                 dgvPILA.Rows.Add(item);
             }
-        }
-        private bool validString(string c)
-        {
-            if (char.IsNumber(char.Parse(c.Substring(0, 1))))
+
+            if (stackString.Count == 0)
             {
-                return false;
-            }
-            else
-            {
-                return true;
+                MessageBox.Show("No hay datos");
             }
         }
+        //private bool validString(string c)
+        //{
+        //    //if (char.IsNumber(char.Parse(c.Substring(0, 1))))
+        //    //{
+        //    //    return false;
+        //    //}
+        //    //else
+        //    //{
+        //    //    return true;
+         //   // }
+        //}
         private void Pilas_Load(object sender, EventArgs e)
         {
             txtELEMENTO.Focus();
@@ -54,16 +59,19 @@ namespace esdat
         {
             btnCONTAINS.Text = "Contains(\"" + txtELEMENTO.Text + "\")";
             btnPUSH.Text = "Push(\"" + txtELEMENTO.Text + "\")";
-            string x = txtELEMENTO.Text;
-           validString(x);
+       
+           //validString(x);
         }
-
         private void btnCLEAR_Click(object sender, EventArgs e)
         {
             txtELEMENTO.Clear();
             dgvPILA.Rows.Clear();
             stackString.Clear();
             txtELEMENTO.Focus();
+        }
+        private void btnREVERSA_Click(object sender, EventArgs e)
+        {
+            stackString.Reverse();
         }
     }
 }

@@ -79,6 +79,12 @@
     <Compile Include="Explorador.Designer.cs">
       <DependentUpon>Explorador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Expresiones_Postfijas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expresiones_Postfijas.Designer.cs">
+      <DependentUpon>Expresiones_Postfijas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     <EmbeddedResource Include="Explorador.resx">
       <DependentUpon>Explorador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expresiones_Postfijas.resx">
+      <DependentUpon>Expresiones_Postfijas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fibonacci.resx">
       <DependentUpon>Fibonacci.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +322,7 @@
     <Content Include="css\slick\slick.grid.css" />
     <Content Include="Imagenes\Fibonacci.jpg" />
     <None Include="Resources\cuadrado-magico-walfk.jpg" />
+    <None Include="Resources\postfija.png" />
     <Content Include="Scripts\es5-shim.js" />
     <Content Include="Scripts\es5-shim.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />

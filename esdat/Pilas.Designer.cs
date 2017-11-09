@@ -162,8 +162,9 @@
             this.btnREVERSA.Name = "btnREVERSA";
             this.btnREVERSA.Size = new System.Drawing.Size(248, 35);
             this.btnREVERSA.TabIndex = 9;
-            this.btnREVERSA.Text = "Reversa()";
+            this.btnREVERSA.Text = "Reverse()";
             this.btnREVERSA.UseVisualStyleBackColor = true;
+            this.btnREVERSA.Click += new System.EventHandler(this.btnREVERSA_Click);
             // 
             // lblNUMEROELEMENTO
             // 

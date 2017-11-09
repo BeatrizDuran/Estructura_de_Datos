@@ -43,5 +43,10 @@ namespace esdat
         {
             BUSQUEDA();
         }
+
+        private void Busqueda_binaria_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
