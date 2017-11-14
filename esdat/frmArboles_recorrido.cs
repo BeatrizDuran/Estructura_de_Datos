@@ -72,7 +72,7 @@ namespace esdat
             {
                 if (Lista.Contains(txtHIJO.Text))
                 {
-                    MessageBox.Show("No repetidos!!!","Aviso");
+                    MessageBox.Show("No repetidos!!!","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 }
                 else
                 {
@@ -88,14 +88,18 @@ namespace esdat
             {
                 if (item.Text == cmbPADRE.Text)
                 {
+                    Lista.Remove(cmbPADRE.Text);
+                    foreach (TreeNode hijos in item.Nodes)
+                    {
+                        Lista.Remove(item.Text);
+                    }
                     item.Remove();
-                    Lista.Remove(item.Text);
                     break;
 
                 }
                 else
                 {
-                    MessageBox.Show(item.Text);
+                   // MessageBox.Show(item.Text);
                     ImprimirRecursivo3(item);
                 }
             }
@@ -123,6 +127,31 @@ namespace esdat
                 }
             }
         }
+        private void AgregarHijo()
+        {
+            if (txtHIJO.Text.Trim() == "")
+            {
+                MessageBox.Show("El campo esta vacío", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                CallRecursive2(tvNODOS);
+                cmbPADRE.Items.Clear();
+                CallRecursive(tvNODOS);
+                cmbPADRE.Text = cmbPADRE.Items[0].ToString();
+                txtHIJO.Clear();
+                txtHIJO.Focus();
+            }
+        }
+        private void podarClick()
+        {
+            CallRecursive3(tvNODOS);
+            foreach (var item in Lista)
+            {
+                cmbPADRE.Items.Add(ToString());
+            }
+            //cmbPADRE.Text = cmbPADRE.Items[0].ToString();
+        }
 
         private void btnEXPANDIR_Click(object sender, EventArgs e)
         {
@@ -134,7 +163,7 @@ namespace esdat
             tvNODOS.CollapseAll();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPodarTodo_Click(object sender, EventArgs e)
         {
             txtRAIZ.Clear();
             txtHIJO.Clear();
@@ -156,12 +185,7 @@ namespace esdat
 
         private void btnPODAR_Click(object sender, EventArgs e)
         {
-            CallRecursive3(tvNODOS);
-            foreach (var item in Lista)
-            {
-                cmbPADRE.Items.Add(ToString());
-            }
-            //cmbPADRE.Text = cmbPADRE.Items[0].ToString();
+            podarClick();
         }
 
         private void btnAGREGARRAIZ_Click(object sender, EventArgs e)
@@ -177,19 +201,7 @@ namespace esdat
 
         private void btnAGREGARHIJO_Click(object sender, EventArgs e)
         {
-            if (txtHIJO.Text.Trim()=="")
-            {
-                MessageBox.Show("El campo esta vacío","Error");
-            }
-            else
-            {
-                CallRecursive2(tvNODOS);
-                cmbPADRE.Items.Clear();
-                CallRecursive(tvNODOS);
-                cmbPADRE.Text = cmbPADRE.Items[0].ToString();
-                txtHIJO.Clear();
-                txtHIJO.Focus();
-            }
+            AgregarHijo();
         }
 
         private void btnRECORRIDO_Click(object sender, EventArgs e)
@@ -199,5 +211,10 @@ namespace esdat
             recorrido(tvNODOS.Nodes);
             MessageBox.Show(cadena);
  ;      }
+
+        private void btnSALIR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

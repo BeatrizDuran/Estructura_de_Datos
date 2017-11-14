@@ -41,7 +41,8 @@
             this.cmbPADRE = new System.Windows.Forms.ComboBox();
             this.btnAGREGARRAIZ = new System.Windows.Forms.Button();
             this.btnAGREGARHIJO = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPodarTodo = new System.Windows.Forms.Button();
+            this.btnSALIR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCONTRAER
@@ -98,6 +99,7 @@
             // 
             // txtRAIZ
             // 
+            this.txtRAIZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRAIZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRAIZ.Location = new System.Drawing.Point(333, 13);
             this.txtRAIZ.Name = "txtRAIZ";
@@ -136,6 +138,7 @@
             // 
             // txtHIJO
             // 
+            this.txtHIJO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHIJO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHIJO.Location = new System.Drawing.Point(333, 96);
             this.txtHIJO.Name = "txtHIJO";
@@ -144,6 +147,8 @@
             // 
             // cmbPADRE
             // 
+            this.cmbPADRE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPADRE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbPADRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPADRE.FormattingEnabled = true;
             this.cmbPADRE.Items.AddRange(new object[] {
@@ -175,24 +180,37 @@
             this.btnAGREGARHIJO.UseVisualStyleBackColor = true;
             this.btnAGREGARHIJO.Click += new System.EventHandler(this.btnAGREGARHIJO_Click);
             // 
-            // button1
+            // btnPodarTodo
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(424, 321);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 32);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Podar todo";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPodarTodo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPodarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPodarTodo.Location = new System.Drawing.Point(424, 287);
+            this.btnPodarTodo.Name = "btnPodarTodo";
+            this.btnPodarTodo.Size = new System.Drawing.Size(184, 32);
+            this.btnPodarTodo.TabIndex = 19;
+            this.btnPodarTodo.Text = "Podar todo";
+            this.btnPodarTodo.UseVisualStyleBackColor = false;
+            this.btnPodarTodo.Click += new System.EventHandler(this.btnPodarTodo_Click);
             // 
-            // arboles_recorrido
+            // btnSALIR
+            // 
+            this.btnSALIR.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSALIR.Location = new System.Drawing.Point(423, 325);
+            this.btnSALIR.Name = "btnSALIR";
+            this.btnSALIR.Size = new System.Drawing.Size(184, 33);
+            this.btnSALIR.TabIndex = 20;
+            this.btnSALIR.Text = "Cerrar";
+            this.btnSALIR.UseVisualStyleBackColor = false;
+            this.btnSALIR.Click += new System.EventHandler(this.btnSALIR_Click);
+            // 
+            // frmArboles_recorrido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 357);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(619, 366);
+            this.Controls.Add(this.btnSALIR);
+            this.Controls.Add(this.btnPodarTodo);
             this.Controls.Add(this.btnAGREGARHIJO);
             this.Controls.Add(this.btnAGREGARRAIZ);
             this.Controls.Add(this.cmbPADRE);
@@ -206,7 +224,7 @@
             this.Controls.Add(this.tvNODOS);
             this.Controls.Add(this.btnRECORRIDO);
             this.Controls.Add(this.btnPODAR);
-            this.Name = "arboles_recorrido";
+            this.Name = "frmArboles_recorrido";
             this.Text = "arboles_recorrido";
             this.Load += new System.EventHandler(this.arboles_recorrido_Load);
             this.ResumeLayout(false);
@@ -229,6 +247,7 @@
         private System.Windows.Forms.ComboBox cmbPADRE;
         private System.Windows.Forms.Button btnAGREGARRAIZ;
         private System.Windows.Forms.Button btnAGREGARHIJO;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPodarTodo;
+        private System.Windows.Forms.Button btnSALIR;
     }
 }
