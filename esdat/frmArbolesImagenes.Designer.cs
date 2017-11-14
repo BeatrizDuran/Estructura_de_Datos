@@ -98,7 +98,6 @@
             this.tvBASEDATOS.SelectedImageIndex = 0;
             this.tvBASEDATOS.Size = new System.Drawing.Size(165, 317);
             this.tvBASEDATOS.TabIndex = 1;
-            this.tvBASEDATOS.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvBASEDATOS_AfterSelect);
             this.tvBASEDATOS.Click += new System.EventHandler(this.tvBASEDATOS_Click);
             // 
             // imageList1
@@ -118,7 +117,6 @@
             this.Controls.Add(this.tvBASEDATOS);
             this.Name = "frmArbolesImagenes";
             this.Text = "   ";
-            this.Load += new System.EventHandler(this.Arboles_Load);
             this.ResumeLayout(false);
 
         }

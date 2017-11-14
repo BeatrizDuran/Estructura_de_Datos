@@ -16,16 +16,9 @@ namespace esdat
         {
             InitializeComponent();
         }
-
-        private void tvBASEDATOS_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }
-
+        
         private void tvBASEDATOS_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Estoy seleccionado" + ((TreeView)sender).SelectedNode.ToString());
-            
             foreach (TreeNode item in ((TreeView)sender).Nodes)
             {
                 if (item.Parent==null)
@@ -40,15 +33,9 @@ namespace esdat
                 }
                 else
                 {
-                    item.ImageIndex = 2;
+                    item.ImageIndex = 1;
                 }
             }
-            //((TreeView)sender).SelectedNode.ImageIndex = 1;
-        }
-
-        private void Arboles_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
