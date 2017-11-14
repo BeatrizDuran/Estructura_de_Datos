@@ -49,209 +49,209 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arboles.cs">
+    <Compile Include="frmArbolesImagenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Arboles.Designer.cs">
-      <DependentUpon>Arboles.cs</DependentUpon>
+    <Compile Include="frmArbolesImagenes.Designer.cs">
+      <DependentUpon>frmArbolesImagenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="arboles_recorrido.cs">
+    <Compile Include="frmArboles_recorrido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="arboles_recorrido.Designer.cs">
-      <DependentUpon>arboles_recorrido.cs</DependentUpon>
+    <Compile Include="frmArboles_recorrido.Designer.cs">
+      <DependentUpon>frmArboles_recorrido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Busqueda binaria.cs">
+    <Compile Include="frmBusqueda_binaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Busqueda binaria.Designer.cs">
-      <DependentUpon>Busqueda binaria.cs</DependentUpon>
+    <Compile Include="frmBusqueda_binaria.Designer.cs">
+      <DependentUpon>frmBusqueda_binaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="CuadroMagico.cs">
+    <Compile Include="frmCuadroMagico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuadroMagico.Designer.cs">
-      <DependentUpon>CuadroMagico.cs</DependentUpon>
+    <Compile Include="frmCuadroMagico.Designer.cs">
+      <DependentUpon>frmCuadroMagico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Explorador.cs">
+    <Compile Include="frmArbolesExplorador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Explorador.Designer.cs">
-      <DependentUpon>Explorador.cs</DependentUpon>
+    <Compile Include="frmArbolesExplorador.Designer.cs">
+      <DependentUpon>frmArbolesExplorador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Expresiones_Postfijas.cs">
+    <Compile Include="frmExpresiones_Postfijas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Expresiones_Postfijas.Designer.cs">
-      <DependentUpon>Expresiones_Postfijas.cs</DependentUpon>
+    <Compile Include="frmExpresiones_Postfijas.Designer.cs">
+      <DependentUpon>frmExpresiones_Postfijas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fibonacci.cs">
+    <Compile Include="frmFibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fibonacci.Designer.cs">
-      <DependentUpon>Fibonacci.cs</DependentUpon>
+    <Compile Include="frmFibonacci.Designer.cs">
+      <DependentUpon>frmFibonacci.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generación de la suma.cs">
+    <Compile Include="frmGeneración de la suma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Generación de la suma.Designer.cs">
-      <DependentUpon>Generación de la suma.cs</DependentUpon>
+    <Compile Include="frmGeneración de la suma.Designer.cs">
+      <DependentUpon>frmGeneración de la suma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hilbert.cs">
+    <Compile Include="frmHilbert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hilbert.Designer.cs">
-      <DependentUpon>Hilbert.cs</DependentUpon>
+    <Compile Include="frmHilbert.Designer.cs">
+      <DependentUpon>frmHilbert.cs</DependentUpon>
     </Compile>
-    <Compile Include="InicioMemorama.cs">
+    <Compile Include="frmInicioMemorama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioMemorama.Designer.cs">
-      <DependentUpon>InicioMemorama.cs</DependentUpon>
+    <Compile Include="frmInicioMemorama.Designer.cs">
+      <DependentUpon>frmInicioMemorama.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatrizInversa.cs">
+    <Compile Include="frmMatrizInversa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MatrizInversa.Designer.cs">
-      <DependentUpon>MatrizInversa.cs</DependentUpon>
+    <Compile Include="frmMatrizInversa.Designer.cs">
+      <DependentUpon>frmMatrizInversa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maximo como un divisor.cs">
+    <Compile Include="frmMaximo_como_un_divisor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Maximo como un divisor.Designer.cs">
-      <DependentUpon>Maximo como un divisor.cs</DependentUpon>
+    <Compile Include="frmMaximo_como_un_divisor.Designer.cs">
+      <DependentUpon>frmMaximo_como_un_divisor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memorama_b.cs">
+    <Compile Include="frmMemorama_b.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memorama_b.Designer.cs">
-      <DependentUpon>Memorama_b.cs</DependentUpon>
+    <Compile Include="frmMemorama_b.Designer.cs">
+      <DependentUpon>frmMemorama_b.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memorama_g.cs">
+    <Compile Include="frmMemorama_g.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memorama_g.Designer.cs">
-      <DependentUpon>Memorama_g.cs</DependentUpon>
+    <Compile Include="frmMemorama_g.Designer.cs">
+      <DependentUpon>frmMemorama_g.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MetodoBurbuja.cs">
+    <Compile Include="frmMetodoBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MetodoBurbuja.Designer.cs">
-      <DependentUpon>MetodoBurbuja.cs</DependentUpon>
+    <Compile Include="frmMetodoBurbuja.Designer.cs">
+      <DependentUpon>frmMetodoBurbuja.cs</DependentUpon>
     </Compile>
-    <Compile Include="NumerosComplejos.cs" />
-    <Compile Include="Pilas.cs">
+    <Compile Include="classNumerosComplejos.cs" />
+    <Compile Include="frmPilas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pilas.Designer.cs">
-      <DependentUpon>Pilas.cs</DependentUpon>
+    <Compile Include="frmPilas.Designer.cs">
+      <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal.cs">
+    <Compile Include="frmArboles_BD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <Compile Include="frmArboles_BD.Designer.cs">
+      <DependentUpon>frmArboles_BD.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Practica1_2.cs">
+    <Compile Include="frmPractica1_2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Practica1_2.Designer.cs">
-      <DependentUpon>Practica1_2.cs</DependentUpon>
+    <Compile Include="frmPractica1_2.Designer.cs">
+      <DependentUpon>frmPractica1_2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Prueba de Fibonacci.cs">
+    <Compile Include="frmPrueba de Fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prueba de Fibonacci.Designer.cs">
-      <DependentUpon>Prueba de Fibonacci.cs</DependentUpon>
+    <Compile Include="frmPrueba de Fibonacci.Designer.cs">
+      <DependentUpon>frmPrueba de Fibonacci.cs</DependentUpon>
     </Compile>
-    <Compile Include="Suma de matrices.cs">
+    <Compile Include="frmSuma de matrices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Suma de matrices.Designer.cs">
-      <DependentUpon>Suma de matrices.cs</DependentUpon>
+    <Compile Include="frmSuma de matrices.Designer.cs">
+      <DependentUpon>frmSuma de matrices.cs</DependentUpon>
     </Compile>
-    <Compile Include="TipoDatos.cs">
+    <Compile Include="frmTipoDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TipoDatos.Designer.cs">
-      <DependentUpon>TipoDatos.cs</DependentUpon>
+    <Compile Include="frmTipoDatos.Designer.cs">
+      <DependentUpon>frmTipoDatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuTranspuestas.cs">
+    <Compile Include="frmMenuTranspuestas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuTranspuestas.Designer.cs">
-      <DependentUpon>MenuTranspuestas.cs</DependentUpon>
+    <Compile Include="frmMenuTranspuestas.Designer.cs">
+      <DependentUpon>frmMenuTranspuestas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transpuesta.cs">
+    <Compile Include="frmTranspuesta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transpuesta.Designer.cs">
-      <DependentUpon>Transpuesta.cs</DependentUpon>
+    <Compile Include="frmTranspuesta.Designer.cs">
+      <DependentUpon>frmTranspuesta.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Arboles.resx">
-      <DependentUpon>Arboles.cs</DependentUpon>
+    <EmbeddedResource Include="frmArbolesImagenes.resx">
+      <DependentUpon>frmArbolesImagenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="arboles_recorrido.resx">
-      <DependentUpon>arboles_recorrido.cs</DependentUpon>
+    <EmbeddedResource Include="frmArboles_recorrido.resx">
+      <DependentUpon>frmArboles_recorrido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Busqueda binaria.resx">
-      <DependentUpon>Busqueda binaria.cs</DependentUpon>
+    <EmbeddedResource Include="frmBusqueda_binaria.resx">
+      <DependentUpon>frmBusqueda_binaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CuadroMagico.resx">
-      <DependentUpon>CuadroMagico.cs</DependentUpon>
+    <EmbeddedResource Include="frmCuadroMagico.resx">
+      <DependentUpon>frmCuadroMagico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Explorador.resx">
-      <DependentUpon>Explorador.cs</DependentUpon>
+    <EmbeddedResource Include="frmArbolesExplorador.resx">
+      <DependentUpon>frmArbolesExplorador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Expresiones_Postfijas.resx">
-      <DependentUpon>Expresiones_Postfijas.cs</DependentUpon>
+    <EmbeddedResource Include="frmExpresiones_Postfijas.resx">
+      <DependentUpon>frmExpresiones_Postfijas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fibonacci.resx">
-      <DependentUpon>Fibonacci.cs</DependentUpon>
+    <EmbeddedResource Include="frmFibonacci.resx">
+      <DependentUpon>frmFibonacci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Generación de la suma.resx">
-      <DependentUpon>Generación de la suma.cs</DependentUpon>
+    <EmbeddedResource Include="frmGeneración de la suma.resx">
+      <DependentUpon>frmGeneración de la suma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hilbert.resx">
-      <DependentUpon>Hilbert.cs</DependentUpon>
+    <EmbeddedResource Include="frmHilbert.resx">
+      <DependentUpon>frmHilbert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioMemorama.resx">
-      <DependentUpon>InicioMemorama.cs</DependentUpon>
+    <EmbeddedResource Include="frmInicioMemorama.resx">
+      <DependentUpon>frmInicioMemorama.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MatrizInversa.resx">
-      <DependentUpon>MatrizInversa.cs</DependentUpon>
+    <EmbeddedResource Include="frmMatrizInversa.resx">
+      <DependentUpon>frmMatrizInversa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Maximo como un divisor.resx">
-      <DependentUpon>Maximo como un divisor.cs</DependentUpon>
+    <EmbeddedResource Include="frmMaximo_como_un_divisor.resx">
+      <DependentUpon>frmMaximo_como_un_divisor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Memorama_b.resx">
-      <DependentUpon>Memorama_b.cs</DependentUpon>
+    <EmbeddedResource Include="frmMemorama_b.resx">
+      <DependentUpon>frmMemorama_b.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Memorama_g.resx">
-      <DependentUpon>Memorama_g.cs</DependentUpon>
+    <EmbeddedResource Include="frmMemorama_g.resx">
+      <DependentUpon>frmMemorama_g.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuTranspuestas.resx">
-      <DependentUpon>MenuTranspuestas.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuTranspuestas.resx">
+      <DependentUpon>frmMenuTranspuestas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MetodoBurbuja.resx">
-      <DependentUpon>MetodoBurbuja.cs</DependentUpon>
+    <EmbeddedResource Include="frmMetodoBurbuja.resx">
+      <DependentUpon>frmMetodoBurbuja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pilas.resx">
-      <DependentUpon>Pilas.cs</DependentUpon>
+    <EmbeddedResource Include="frmPilas.resx">
+      <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <EmbeddedResource Include="frmArboles_BD.resx">
+      <DependentUpon>frmArboles_BD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -263,20 +263,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Practica1_2.resx">
-      <DependentUpon>Practica1_2.cs</DependentUpon>
+    <EmbeddedResource Include="frmPractica1_2.resx">
+      <DependentUpon>frmPractica1_2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prueba de Fibonacci.resx">
-      <DependentUpon>Prueba de Fibonacci.cs</DependentUpon>
+    <EmbeddedResource Include="frmPrueba de Fibonacci.resx">
+      <DependentUpon>frmPrueba de Fibonacci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Suma de matrices.resx">
-      <DependentUpon>Suma de matrices.cs</DependentUpon>
+    <EmbeddedResource Include="frmSuma de matrices.resx">
+      <DependentUpon>frmSuma de matrices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TipoDatos.resx">
-      <DependentUpon>TipoDatos.cs</DependentUpon>
+    <EmbeddedResource Include="frmTipoDatos.resx">
+      <DependentUpon>frmTipoDatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transpuesta.resx">
-      <DependentUpon>Transpuesta.cs</DependentUpon>
+    <EmbeddedResource Include="frmTranspuesta.resx">
+      <DependentUpon>frmTranspuesta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
