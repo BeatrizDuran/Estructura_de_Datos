@@ -74,6 +74,7 @@ namespace esdat
 
         private void btnCARGARDOCUMENTOS_Click(object sender, EventArgs e)
         {
+            btnLIMPIAR_Click(sender, e);
             cargarDirectorio();
         }
 
@@ -81,5 +82,6 @@ namespace esdat
         {
             tvNODOS.CollapseAll();
         }
+        
     }
 }
