@@ -52,7 +52,15 @@ namespace esdat
             for (int i = 0; i < valores.Length; i++)
             {
                 dgvBusquedaBinaria.Rows.Add(valores[i].ToString());
-                dgvBusquedaBinaria.Rows[i].HeaderCell.Value = i.ToString();
+                Renglones(dgvBusquedaBinaria);
+              //  dgvBusquedaBinaria.Rows[i].HeaderCell.Value = i.ToString();
+            }
+        }
+        private void Renglones(DataGridView view)
+        {
+            foreach (DataGridViewRow row in dgvBusquedaBinaria.Rows)
+            {
+                row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
             }
         }
         private void Limpiar()

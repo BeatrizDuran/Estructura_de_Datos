@@ -35,18 +35,22 @@
             this.txtLIMITE = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSALIR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFIBONACCI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGENERAR
             // 
+            this.btnGENERAR.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGENERAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGENERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGENERAR.Location = new System.Drawing.Point(250, 23);
             this.btnGENERAR.Name = "btnGENERAR";
             this.btnGENERAR.Size = new System.Drawing.Size(121, 26);
             this.btnGENERAR.TabIndex = 0;
             this.btnGENERAR.Text = "Generar";
-            this.btnGENERAR.UseVisualStyleBackColor = true;
+            this.btnGENERAR.UseVisualStyleBackColor = false;
             this.btnGENERAR.Click += new System.EventHandler(this.btnGENERAR_Click);
             // 
             // dgvFIBONACCI
@@ -81,6 +85,7 @@
             // 
             // txtLIMITE
             // 
+            this.txtLIMITE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLIMITE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLIMITE.Location = new System.Drawing.Point(76, 23);
             this.txtLIMITE.Name = "txtLIMITE";
@@ -90,7 +95,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::esdat.Properties.Resources.dd_2;
-            this.pictureBox1.Location = new System.Drawing.Point(397, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(397, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 180);
             this.pictureBox1.TabIndex = 4;
@@ -100,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(393, 217);
+            this.label2.Location = new System.Drawing.Point(393, 247);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(327, 80);
             this.label2.TabIndex = 5;
@@ -108,11 +113,25 @@
     "s la suma \r\nde los dos anteriores»,  es   la   relación    de\r\nrecurrencia que l" +
     "a define.";
             // 
+            // btnSALIR
+            // 
+            this.btnSALIR.BackColor = System.Drawing.Color.IndianRed;
+            this.btnSALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSALIR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSALIR.Location = new System.Drawing.Point(579, 350);
+            this.btnSALIR.Name = "btnSALIR";
+            this.btnSALIR.Size = new System.Drawing.Size(141, 36);
+            this.btnSALIR.TabIndex = 6;
+            this.btnSALIR.Text = "Cerrar";
+            this.btnSALIR.UseVisualStyleBackColor = false;
+            this.btnSALIR.Click += new System.EventHandler(this.btnSALIR_Click);
+            // 
             // frmFibonacci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 410);
+            this.Controls.Add(this.btnSALIR);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtLIMITE);
@@ -121,7 +140,6 @@
             this.Controls.Add(this.btnGENERAR);
             this.Name = "frmFibonacci";
             this.Text = "Fibonacci";
-            this.Load += new System.EventHandler(this.frmFibonacci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFIBONACCI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -138,5 +156,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSALIR;
     }
 }

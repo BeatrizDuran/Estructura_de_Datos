@@ -22,21 +22,28 @@ namespace esdat
         {
             validar();
         }
-        public void calcular(){
+        private void calcular(){
             dgvFIBONACCI.Rows.Clear();
             double a = 0;
             double b = 1;
             for (double c = 0; c <= int.Parse(txtLIMITE.Text);)
             {
-                dgvFIBONACCI.Rows.Add(c.ToString());
-                if (c == 1) dgvFIBONACCI.Rows.Add("1");
-                c = a + b;
-                a = b;
-                b = c;
+                    dgvFIBONACCI.Rows.Add(c.ToString());
+                    if (c == 1) dgvFIBONACCI.Rows.Add("1");
+                Renglones(dgvFIBONACCI);
+                    c = a + b;
+                    a = b;
+                    b = c;
             }
         }
-
-        public void validar()
+        private void Renglones(DataGridView view)
+        {
+                foreach (DataGridViewRow row in dgvFIBONACCI.Rows)
+                {
+                    row.HeaderCell.Value =String.Format ("{0}" ,  row.Index + 1);
+                }
+        }
+        private void validar()
         {          
                 if (txtLIMITE.Text.Trim() == "") //se verifica si el campo esta vacio
                 {
@@ -56,9 +63,9 @@ namespace esdat
                 }            
         }
 
-        private void frmFibonacci_Load(object sender, EventArgs e)
+        private void btnSALIR_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

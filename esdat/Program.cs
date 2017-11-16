@@ -16,7 +16,7 @@ namespace esdat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmExpresiones_Postfijas());
+            Application.Run(new Busqueda_binaria());
         }
     }
 }
