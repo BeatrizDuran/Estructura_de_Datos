@@ -172,11 +172,11 @@
     <Compile Include="frmPrueba de Fibonacci.Designer.cs">
       <DependentUpon>frmPrueba de Fibonacci.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSuma de matrices.cs">
+    <Compile Include="frmInicioSumaMatrices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSuma de matrices.Designer.cs">
-      <DependentUpon>frmSuma de matrices.cs</DependentUpon>
+    <Compile Include="frmInicioSumaMatrices.Designer.cs">
+      <DependentUpon>frmInicioSumaMatrices.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTipoDatos.cs">
       <SubType>Form</SubType>
@@ -269,8 +269,8 @@
     <EmbeddedResource Include="frmPrueba de Fibonacci.resx">
       <DependentUpon>frmPrueba de Fibonacci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSuma de matrices.resx">
-      <DependentUpon>frmSuma de matrices.cs</DependentUpon>
+    <EmbeddedResource Include="frmInicioSumaMatrices.resx">
+      <DependentUpon>frmInicioSumaMatrices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoDatos.resx">
       <DependentUpon>frmTipoDatos.cs</DependentUpon>

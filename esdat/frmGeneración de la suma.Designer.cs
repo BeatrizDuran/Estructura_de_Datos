@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRANDOM = new System.Windows.Forms.Button();
+            this.btnCERRAR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMATRIZ1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMATRIZ2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRESULTADO)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             // btnRESULTADO
             // 
+            this.btnRESULTADO.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRESULTADO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRESULTADO.Location = new System.Drawing.Point(509, 111);
@@ -71,7 +73,7 @@
             this.btnRESULTADO.Size = new System.Drawing.Size(48, 44);
             this.btnRESULTADO.TabIndex = 2;
             this.btnRESULTADO.Text = "=";
-            this.btnRESULTADO.UseVisualStyleBackColor = true;
+            this.btnRESULTADO.UseVisualStyleBackColor = false;
             this.btnRESULTADO.Click += new System.EventHandler(this.btnRESULTADO_Click);
             // 
             // dgvRESULTADO
@@ -126,21 +128,36 @@
             // 
             // btnRANDOM
             // 
+            this.btnRANDOM.BackColor = System.Drawing.Color.LightYellow;
             this.btnRANDOM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRANDOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRANDOM.Location = new System.Drawing.Point(306, 238);
+            this.btnRANDOM.Location = new System.Drawing.Point(248, 238);
             this.btnRANDOM.Name = "btnRANDOM";
             this.btnRANDOM.Size = new System.Drawing.Size(169, 44);
             this.btnRANDOM.TabIndex = 8;
             this.btnRANDOM.Text = "Random";
-            this.btnRANDOM.UseVisualStyleBackColor = true;
+            this.btnRANDOM.UseVisualStyleBackColor = false;
             this.btnRANDOM.Click += new System.EventHandler(this.btnRANDOM_Click);
+            // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(435, 238);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(169, 44);
+            this.btnCERRAR.TabIndex = 9;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
             // 
             // Generación_de_la_suma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 307);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.btnRANDOM);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -172,5 +189,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRANDOM;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }

@@ -36,12 +36,13 @@ namespace esdat
                     b = c;
             }
         }
+
         private void Renglones(DataGridView view)
         {
-                foreach (DataGridViewRow row in dgvFIBONACCI.Rows)
-                {
-                    row.HeaderCell.Value =String.Format ("{0}" ,  row.Index + 1);
-                }
+            foreach (DataGridViewRow row in dgvFIBONACCI.Rows)
+            {
+                row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
+            }
         }
         private void validar()
         {          
