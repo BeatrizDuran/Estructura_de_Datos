@@ -88,7 +88,32 @@ namespace esdat
             lblRENGLON4.Text = "0";
             lblmostrar.Text = "";
         }
-     
+        private void Ejemplo2()
+        {
+            dgvCUADROMAGICO.Rows.Clear();
+            dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
+            dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
+            dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
+            dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
+        }
+        /// <summary>
+        /// Verifica los numeros enteros 
+        /// </summary>
+        /// <param name="entero">Numero entero</param>
+        /// <returns></returns>
+        private Boolean EsEntero(String entero)
+        {
+            try
+            {
+                int.Parse(entero);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         private void CuadroMagico_Load(object sender, EventArgs e)
         {
             dgvCUADROMAGICO.Columns[0].Width = 50;
@@ -114,19 +139,6 @@ namespace esdat
         {
             validar();
         }
-        private Boolean EsEntero(String entero)
-        {
-            try
-            {
-                int.Parse(entero);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
         private void dgvCUADROMAGICO_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
             //if (!dgvCUADROMAGICO.Rows[e.RowIndex].IsNewRow)
@@ -143,10 +155,13 @@ namespace esdat
             //    }
             //}
         }
-
         private void btnCERRAR_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void btnEJEMPLO2_Click(object sender, EventArgs e)
+        {
+            Ejemplo2();
         }
     }
 }
