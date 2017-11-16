@@ -46,47 +46,31 @@ namespace esdat
                     }
         private void validar()
         {
-            for (int ren = 0, cel = 0; ren < 4; ren++)
+#pragma warning disable CS0162 // Se ha detectado código inaccesible
+            for (int reng = 0, cel = 0; reng < 4; reng++)
+#pragma warning restore CS0162 // Se ha detectado código inaccesible
             {
-                if ((String)dgvCUADROMAGICO.Rows[ren].Cells[cel].Value == null)
-                {
-                    MessageBox.Show("Verifique las celdas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-
-                }
-                else
-                {
-                    calcular();
-                    break;
-
-                }
+                    if ((String)dgvCUADROMAGICO.Rows[reng].Cells[cel].Value == null)
+                    {
+                        MessageBox.Show("Verifique las celdas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    }
+                    else
+                    {
+                        calcular();
+                        break;
+                    }
             }
         }             
-        
-     
-        private void CuadroMagico_Load(object sender, EventArgs e)
-        {
-            dgvCUADROMAGICO.Columns[0].Width = 50;
-            dgvCUADROMAGICO.Columns[1].Width = 50;
-            dgvCUADROMAGICO.Columns[2].Width = 50;
-            dgvCUADROMAGICO.Columns[3].Width = 50;
-            dgvCUADROMAGICO.Width = 200;
-            dgvCUADROMAGICO.Height = 110;
-            dgvCUADROMAGICO.Rows.Add();
-            dgvCUADROMAGICO.Rows.Add();
-            dgvCUADROMAGICO.Rows.Add();
-            dgvCUADROMAGICO.Rows.Add();
-        }
-        private void btnEJEMPLO1_Click(object sender, EventArgs e)
+        private void Ejemplo1()
         {
             dgvCUADROMAGICO.Rows.Clear();
-            dgvCUADROMAGICO.Rows.Add("16", "3" , "2" , "13");
-            dgvCUADROMAGICO.Rows.Add("5" , "10", "11", "8");
-            dgvCUADROMAGICO.Rows.Add("9" , "6" , "7" , "12");
-            dgvCUADROMAGICO.Rows.Add("4" , "15", "14", "1");
+            dgvCUADROMAGICO.Rows.Add("16","3", "2","13");
+            dgvCUADROMAGICO.Rows.Add("5", "10", "11",  "8");
+            dgvCUADROMAGICO.Rows.Add("9","6", "7", "12");
+            dgvCUADROMAGICO.Rows.Add("4", "15", "14", "1");
         }
-        private void btnLIMPIAR_Click(object sender, EventArgs e)
-        {
+        private void Limpiar() {
             dgvCUADROMAGICO.Rows.Clear();
             dgvCUADROMAGICO.Rows.Add();
             dgvCUADROMAGICO.Rows.Add();
@@ -104,17 +88,65 @@ namespace esdat
             lblRENGLON4.Text = "0";
             lblmostrar.Text = "";
         }
+     
+        private void CuadroMagico_Load(object sender, EventArgs e)
+        {
+            dgvCUADROMAGICO.Columns[0].Width = 50;
+            dgvCUADROMAGICO.Columns[1].Width = 50;
+            dgvCUADROMAGICO.Columns[2].Width = 50;
+            dgvCUADROMAGICO.Columns[3].Width = 50;
+            dgvCUADROMAGICO.Width = 200;
+            dgvCUADROMAGICO.Height = 93;
+            dgvCUADROMAGICO.Rows.Add();
+            dgvCUADROMAGICO.Rows.Add();
+            dgvCUADROMAGICO.Rows.Add();
+            dgvCUADROMAGICO.Rows.Add();
+        }
+        private void btnEJEMPLO1_Click(object sender, EventArgs e)
+        {
+            Ejemplo1();
+        }
+        private void btnLIMPIAR_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
         private void btnCALCULAR_Click(object sender, EventArgs e)
         {
             validar();
         }
-
-        private void dgvCUADROMAGICO_KeyPress(object sender, KeyPressEventArgs e)
+        private Boolean EsEntero(String entero)
         {
-            //if (Char.IsNumber(e.KeyChar) || e.KeyChar == (Char)Keys.Back)
-            //    MessageBox.Show("Solo numeros enteros");
-            //else
-            //    MessageBox.Show("...");
+            try
+            {
+                int.Parse(entero);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private void dgvCUADROMAGICO_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            //if (!dgvCUADROMAGICO.Rows[e.RowIndex].IsNewRow)
+            //{
+            //    //Sólo controlamos el dato de la columna 0
+            //    if (e.ColumnIndex == 0 || e.ColumnIndex==1 || e.ColumnIndex== 2 || e.ColumnIndex==3)
+            //    {
+            //        if (!this.EsEntero(e.FormattedValue.ToString()))
+            //        {
+            //            MessageBox.Show("El dato introducido no es un numero entero", "Error",
+            //                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //          e.Cancel = true;
+            //        }
+            //    }
+            //}
+        }
+
+        private void btnCERRAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

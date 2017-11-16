@@ -38,6 +38,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnGENERAR = new System.Windows.Forms.Button();
             this.btnBUSCAR = new System.Windows.Forms.Button();
+            this.btnLIMPIAR = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(-1, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 333);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 359);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -93,6 +95,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(268, 44);
             this.textBox1.Name = "textBox1";
@@ -101,6 +104,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(268, 96);
             this.textBox2.Name = "textBox2";
@@ -109,6 +113,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(268, 148);
             this.textBox3.Name = "textBox3";
@@ -117,8 +122,9 @@
             // 
             // btnGENERAR
             // 
-            this.btnGENERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGENERAR.Location = new System.Drawing.Point(268, 212);
+            this.btnGENERAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGENERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGENERAR.Location = new System.Drawing.Point(268, 189);
             this.btnGENERAR.Name = "btnGENERAR";
             this.btnGENERAR.Size = new System.Drawing.Size(221, 40);
             this.btnGENERAR.TabIndex = 7;
@@ -128,8 +134,9 @@
             // 
             // btnBUSCAR
             // 
-            this.btnBUSCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBUSCAR.Location = new System.Drawing.Point(268, 267);
+            this.btnBUSCAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBUSCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBUSCAR.Location = new System.Drawing.Point(268, 235);
             this.btnBUSCAR.Name = "btnBUSCAR";
             this.btnBUSCAR.Size = new System.Drawing.Size(221, 38);
             this.btnBUSCAR.TabIndex = 8;
@@ -137,11 +144,35 @@
             this.btnBUSCAR.UseVisualStyleBackColor = true;
             this.btnBUSCAR.Click += new System.EventHandler(this.btnBUSCAR_Click);
             // 
+            // btnLIMPIAR
+            // 
+            this.btnLIMPIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLIMPIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLIMPIAR.Location = new System.Drawing.Point(268, 279);
+            this.btnLIMPIAR.Name = "btnLIMPIAR";
+            this.btnLIMPIAR.Size = new System.Drawing.Size(221, 38);
+            this.btnLIMPIAR.TabIndex = 9;
+            this.btnLIMPIAR.Text = "Limpiar";
+            this.btnLIMPIAR.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(268, 323);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(221, 38);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Busqueda_binaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 338);
+            this.ClientSize = new System.Drawing.Size(525, 368);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnLIMPIAR);
             this.Controls.Add(this.btnBUSCAR);
             this.Controls.Add(this.btnGENERAR);
             this.Controls.Add(this.textBox3);
@@ -172,5 +203,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnGENERAR;
         private System.Windows.Forms.Button btnBUSCAR;
+        private System.Windows.Forms.Button btnLIMPIAR;
+        private System.Windows.Forms.Button button2;
     }
 }
