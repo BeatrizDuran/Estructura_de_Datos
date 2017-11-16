@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace esdat
 {
@@ -137,6 +138,7 @@ namespace esdat
             txtEXPRESIONES.Clear();
             dgvOPERANDOS.Rows.Clear();
             txtEXPRESIONES.Focus();
+            lblRESULTADO.Text = "Resultado: ";
         }
         private void Evaluar()
         {
@@ -243,9 +245,33 @@ namespace esdat
                 }
                 }
         }
+        private void ValidacionEvaluar()
+        {
+            if(txtEXPRESIONES.Text.Trim() == "")
+            {
+                MessageBox.Show("El campo para la expresión está vacío.", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                txtEXPRESIONES.Focus();
+            }
+            else
+            {
+                Evaluar();
+            }
+        }
+        private void ValidacionPasoaPaso()
+        {
+            if (txtEXPRESIONES.Text.Trim() == "")
+            {
+                MessageBox.Show("El campo para la expresión está vacío.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEXPRESIONES.Focus();
+            }
+            else
+            {
+                PasoAPaso();
+            }
+        }
         private void btnEVALUAR_Click(object sender, EventArgs e)
         {
-            Evaluar();
+            ValidacionEvaluar();
         }
 
         private void btnEJEMPLO1_Click(object sender, EventArgs e)
@@ -267,7 +293,32 @@ namespace esdat
         }
         private void btnPASOAPASO_Click(object sender, EventArgs e)
         {
-            PasoAPaso();
+            ValidacionPasoaPaso();
+        }
+
+        private void btnREINICIAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void btnCERRAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtEXPRESIONES_TextChanged(object sender, EventArgs e)
+        {
+            Regex Val = new Regex(@"(?:\d*\.)?\d+|\*|\-|\+|\/");
+            if (Val.IsMatch(txtEXPRESIONES.Text))
+            {
+                MessageBox.Show("Excelente");
+            }
+            else
+            {
+                MessageBox.Show("Solo se permiten números");
+                txtEXPRESIONES.Focus();
+            }
         }
     }
 }

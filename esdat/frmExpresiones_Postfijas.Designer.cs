@@ -42,7 +42,8 @@
             this.btnEJEMPLO1 = new System.Windows.Forms.Button();
             this.EJEMPLO2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLIMPIAR = new System.Windows.Forms.Button();
+            this.btnCERRAR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOPERANDOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -76,6 +77,7 @@
             this.txtEXPRESIONES.Name = "txtEXPRESIONES";
             this.txtEXPRESIONES.Size = new System.Drawing.Size(510, 29);
             this.txtEXPRESIONES.TabIndex = 2;
+            this.txtEXPRESIONES.TextChanged += new System.EventHandler(this.txtEXPRESIONES_TextChanged);
             // 
             // dgvOPERANDOS
             // 
@@ -130,14 +132,15 @@
             this.btnREINICIAR.TabIndex = 6;
             this.btnREINICIAR.Text = "Reiniciar";
             this.btnREINICIAR.UseVisualStyleBackColor = true;
+            this.btnREINICIAR.Click += new System.EventHandler(this.btnREINICIAR_Click);
             // 
             // lblRESULTADO
             // 
             this.lblRESULTADO.AutoSize = true;
-            this.lblRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRESULTADO.Location = new System.Drawing.Point(330, 116);
             this.lblRESULTADO.Name = "lblRESULTADO";
-            this.lblRESULTADO.Size = new System.Drawing.Size(86, 20);
+            this.lblRESULTADO.Size = new System.Drawing.Size(109, 24);
             this.lblRESULTADO.TabIndex = 7;
             this.lblRESULTADO.Text = "Resultado:";
             // 
@@ -154,10 +157,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkRed;
             this.label3.Location = new System.Drawing.Point(104, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 20);
+            this.label3.Size = new System.Drawing.Size(408, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "*Es necesario poner un espacio en cada caracter.";
             // 
@@ -197,24 +201,39 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(131, 82);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
-            // button1
+            // btnLIMPIAR
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(479, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 32);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLIMPIAR.BackColor = System.Drawing.Color.White;
+            this.btnLIMPIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLIMPIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLIMPIAR.Location = new System.Drawing.Point(479, 78);
+            this.btnLIMPIAR.Name = "btnLIMPIAR";
+            this.btnLIMPIAR.Size = new System.Drawing.Size(103, 32);
+            this.btnLIMPIAR.TabIndex = 13;
+            this.btnLIMPIAR.Text = "Limpiar";
+            this.btnLIMPIAR.UseVisualStyleBackColor = false;
+            this.btnLIMPIAR.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Expresiones_Postfijas
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(646, 411);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(121, 32);
+            this.btnCERRAR.TabIndex = 14;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
+            // frmExpresiones_Postfijas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 423);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(830, 455);
+            this.Controls.Add(this.btnCERRAR);
+            this.Controls.Add(this.btnLIMPIAR);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -226,7 +245,7 @@
             this.Controls.Add(this.txtEXPRESIONES);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Expresiones_Postfijas";
+            this.Name = "frmExpresiones_Postfijas";
             this.Text = "Expresiones Postfijas (utilización de pilas)";
             ((System.ComponentModel.ISupportInitialize)(this.dgvOPERANDOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -252,6 +271,7 @@
         private System.Windows.Forms.Button btnEJEMPLO1;
         private System.Windows.Forms.Button EJEMPLO2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLIMPIAR;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }
