@@ -35,6 +35,7 @@
             this.ckBREFRESCAR = new System.Windows.Forms.CheckBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnGUARDAR = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcBHILBERT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             // cmbVALOR
             // 
             this.cmbVALOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbVALOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbVALOR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVALOR.FormattingEnabled = true;
             this.cmbVALOR.Items.AddRange(new object[] {
@@ -79,49 +81,67 @@
             // 
             // btnINICIAR
             // 
+            this.btnINICIAR.BackColor = System.Drawing.Color.LightGreen;
+            this.btnINICIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnINICIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnINICIAR.Location = new System.Drawing.Point(16, 75);
             this.btnINICIAR.Name = "btnINICIAR";
             this.btnINICIAR.Size = new System.Drawing.Size(102, 28);
             this.btnINICIAR.TabIndex = 3;
             this.btnINICIAR.Text = "Iniciar";
-            this.btnINICIAR.UseVisualStyleBackColor = true;
+            this.btnINICIAR.UseVisualStyleBackColor = false;
             this.btnINICIAR.Click += new System.EventHandler(this.btnINICIAR_Click);
             // 
             // ckBREFRESCAR
             // 
             this.ckBREFRESCAR.AutoSize = true;
+            this.ckBREFRESCAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ckBREFRESCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckBREFRESCAR.Location = new System.Drawing.Point(16, 143);
+            this.ckBREFRESCAR.Location = new System.Drawing.Point(16, 177);
             this.ckBREFRESCAR.Name = "ckBREFRESCAR";
-            this.ckBREFRESCAR.Size = new System.Drawing.Size(98, 24);
+            this.ckBREFRESCAR.Size = new System.Drawing.Size(95, 24);
             this.ckBREFRESCAR.TabIndex = 4;
             this.ckBREFRESCAR.Text = "Refrescar";
             this.ckBREFRESCAR.UseVisualStyleBackColor = true;
             // 
             // btnGUARDAR
             // 
+            this.btnGUARDAR.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGUARDAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGUARDAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGUARDAR.Location = new System.Drawing.Point(16, 109);
             this.btnGUARDAR.Name = "btnGUARDAR";
             this.btnGUARDAR.Size = new System.Drawing.Size(102, 28);
             this.btnGUARDAR.TabIndex = 5;
             this.btnGUARDAR.Text = "Guardar";
-            this.btnGUARDAR.UseVisualStyleBackColor = true;
+            this.btnGUARDAR.UseVisualStyleBackColor = false;
             this.btnGUARDAR.Click += new System.EventHandler(this.btnGUARDAR_Click);
             // 
-            // Hilbert
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(16, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 28);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // frmHilbert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 474);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGUARDAR);
             this.Controls.Add(this.ckBREFRESCAR);
             this.Controls.Add(this.btnINICIAR);
             this.Controls.Add(this.cmbVALOR);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pcBHILBERT);
-            this.Name = "Hilbert";
+            this.Name = "frmHilbert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hilbert";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -141,5 +161,6 @@
         private System.Windows.Forms.CheckBox ckBREFRESCAR;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnGUARDAR;
+        private System.Windows.Forms.Button button1;
     }
 }
