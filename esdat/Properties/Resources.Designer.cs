@@ -243,6 +243,26 @@ namespace esdat.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_10_2694137 {
+            get {
+                object obj = ResourceManager.GetObject("if_10_2694137", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_9_2694135 {
+            get {
+                object obj = ResourceManager.GetObject("if_9_2694135", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap los_deportes___girl {
             get {
                 object obj = ResourceManager.GetObject("los deportes---girl", resourceCulture);

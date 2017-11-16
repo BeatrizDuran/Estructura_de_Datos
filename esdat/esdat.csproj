@@ -323,6 +323,8 @@
     <Content Include="Imagenes\Fibonacci.jpg" />
     <None Include="Resources\cuadrado-magico-walfk.jpg" />
     <None Include="Resources\postfija.png" />
+    <None Include="Resources\if_9_2694135.png" />
+    <None Include="Resources\if_10_2694137.png" />
     <Content Include="Scripts\es5-shim.js" />
     <Content Include="Scripts\es5-shim.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />

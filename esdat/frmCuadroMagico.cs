@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
 namespace esdat
 {
     public partial class frmCuadroMagico : Form
@@ -101,18 +101,18 @@ namespace esdat
         /// </summary>
         /// <param name="entero">Numero entero</param>
         /// <returns></returns>
-        private Boolean EsEntero(String entero)
-        {
-            try
-            {
-                int.Parse(entero);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+       // private Boolean EsEntero(String entero)
+        //{
+        //    try
+        //    {
+        //        int.Parse(entero);
+        //        return true;
+        //    }
+        //    catch
+        //    {
+        //        return false;
+        //    }
+        //}
 
         private void CuadroMagico_Load(object sender, EventArgs e)
         {
@@ -126,6 +126,7 @@ namespace esdat
             dgvCUADROMAGICO.Rows.Add();
             dgvCUADROMAGICO.Rows.Add();
             dgvCUADROMAGICO.Rows.Add();
+            dgvCUADROMAGICO.MultiSelect = false;
         }
         private void btnEJEMPLO1_Click(object sender, EventArgs e)
         {
@@ -162,6 +163,20 @@ namespace esdat
         private void btnEJEMPLO2_Click(object sender, EventArgs e)
         {
             Ejemplo2();
+        }
+        private void dgvCUADROMAGICO_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            Regex regex = new Regex(@"(?:\d*\.)?\d+");
+            if (regex.IsMatch(dgvCUADROMAGICO.CurrentCell.Value.ToString()))
+            {
+                //
+            }else
+            {
+                MessageBox.Show("Solo numeros enteros","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                int column = dgvCUADROMAGICO.CurrentCell.ColumnIndex;
+                int row = dgvCUADROMAGICO.CurrentCell.RowIndex;
+                dgvCUADROMAGICO.CurrentCell = dgvCUADROMAGICO.Rows[row].Cells[column];
+            }
         }
     }
 }

@@ -273,19 +273,16 @@ namespace esdat
         {
             ValidacionEvaluar();
         }
-
         private void btnEJEMPLO1_Click(object sender, EventArgs e)
         {
             Limpiar();
             txtEXPRESIONES.Text = "1 2 + 4 6 6 7 - + + +";
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
             Limpiar();
         }
-
         private void EJEMPLO2_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -295,24 +292,20 @@ namespace esdat
         {
             ValidacionPasoaPaso();
         }
-
         private void btnREINICIAR_Click(object sender, EventArgs e)
         {
 
         }
-
-
         private void btnCERRAR_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void txtEXPRESIONES_TextChanged(object sender, EventArgs e)
         {
             Regex Val = new Regex(@"(?:\d*\.)?\d+|\*|\-|\+|\/");
             if (Val.IsMatch(txtEXPRESIONES.Text))
             {
-                MessageBox.Show("Excelente");
+               // MessageBox.Show("Excelente");
             }
             else
             {

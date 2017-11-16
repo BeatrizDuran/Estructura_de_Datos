@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
 namespace esdat
 {
     public partial class Generación_de_la_suma : Form
@@ -20,18 +20,7 @@ namespace esdat
             this.columnas = columnas;
             this.renglones = renglones;
         }
-        private Boolean EsEntero(String entero)
-        {
-            try
-            {
-                int.Parse(entero);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+    
         private void resultado()
         {
             if (dgvMATRIZ1.Rows.Count==0 || dgvMATRIZ2.Rows.Count==0)
@@ -113,12 +102,55 @@ namespace esdat
         {
             operacion();
         }
-
         private void btnCERRAR_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        private void dgvMATRIZ1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            Regex regex = new Regex(@"(?:\d*\.)?\d+");
+            if (regex.IsMatch(dgvMATRIZ1.CurrentCell.Value.ToString()))
+            {
+                //
+            }
+            else
+            {
+                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int column = dgvMATRIZ1.CurrentCell.ColumnIndex;
+                int row = dgvMATRIZ1.CurrentCell.RowIndex;
+                dgvMATRIZ1.CurrentCell = dgvMATRIZ1.Rows[row].Cells[column];
+            }
+        }
+        private void dgvMATRIZ2_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            Regex regex = new Regex(@"(?:\d*\.)?\d+");
+            if (regex.IsMatch(dgvMATRIZ2.CurrentCell.Value.ToString()))
+            {
+                //
+            }
+            else
+            {
+                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int column = dgvMATRIZ2.CurrentCell.ColumnIndex;
+                int row = dgvMATRIZ2.CurrentCell.RowIndex;
+                dgvMATRIZ2.CurrentCell = dgvMATRIZ2.Rows[row].Cells[column];
+            }
+        }
+        private void dgvRESULTADO_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            Regex regex = new Regex(@"(?:\d*\.)?\d+");
+            if (regex.IsMatch(dgvRESULTADO.CurrentCell.Value.ToString()))
+            {
+                //
+            }
+            else
+            {
+                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int column = dgvRESULTADO.CurrentCell.ColumnIndex;
+                int row = dgvRESULTADO.CurrentCell.RowIndex;
+                dgvRESULTADO.CurrentCell = dgvRESULTADO.Rows[row].Cells[column];
+            }
+        }
         private void Generación_de_la_suma_Load(object sender, EventArgs e)
         {
             operacion();

@@ -52,6 +52,7 @@
             this.dgvMATRIZ1.Name = "dgvMATRIZ1";
             this.dgvMATRIZ1.Size = new System.Drawing.Size(224, 161);
             this.dgvMATRIZ1.TabIndex = 0;
+            this.dgvMATRIZ1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMATRIZ1_CellEndEdit);
             // 
             // dgvMATRIZ2
             // 
@@ -62,6 +63,7 @@
             this.dgvMATRIZ2.Name = "dgvMATRIZ2";
             this.dgvMATRIZ2.Size = new System.Drawing.Size(223, 161);
             this.dgvMATRIZ2.TabIndex = 1;
+            this.dgvMATRIZ2.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMATRIZ2_CellEndEdit);
             // 
             // btnRESULTADO
             // 
@@ -85,6 +87,7 @@
             this.dgvRESULTADO.Name = "dgvRESULTADO";
             this.dgvRESULTADO.Size = new System.Drawing.Size(223, 161);
             this.dgvRESULTADO.TabIndex = 3;
+            this.dgvRESULTADO.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRESULTADO_CellEndEdit);
             // 
             // label1
             // 
