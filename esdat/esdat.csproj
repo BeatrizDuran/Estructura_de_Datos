@@ -61,11 +61,11 @@
     <Compile Include="frmArboles_recorrido.Designer.cs">
       <DependentUpon>frmArboles_recorrido.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBusqueda_binaria.cs">
+    <Compile Include="frmBusquedaBinaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBusqueda_binaria.Designer.cs">
-      <DependentUpon>frmBusqueda_binaria.cs</DependentUpon>
+    <Compile Include="frmBusquedaBinaria.Designer.cs">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCuadroMagico.cs">
       <SubType>Form</SubType>
@@ -202,8 +202,8 @@
     <EmbeddedResource Include="frmArboles_recorrido.resx">
       <DependentUpon>frmArboles_recorrido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBusqueda_binaria.resx">
-      <DependentUpon>frmBusqueda_binaria.cs</DependentUpon>
+    <EmbeddedResource Include="frmBusquedaBinaria.resx">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCuadroMagico.resx">
       <DependentUpon>frmCuadroMagico.cs</DependentUpon>

@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvBusquedaBinaria = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNUMEROELEMENTOS = new System.Windows.Forms.TextBox();
+            this.txtLIMITE = new System.Windows.Forms.TextBox();
+            this.txtBUSCAR = new System.Windows.Forms.TextBox();
             this.btnGENERAR = new System.Windows.Forms.Button();
             this.btnBUSCAR = new System.Windows.Forms.Button();
             this.btnLIMPIAR = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnCERRAR = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBusquedaBinaria)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvBusquedaBinaria
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvBusquedaBinaria.AllowUserToAddRows = false;
+            this.dgvBusquedaBinaria.AllowUserToDeleteRows = false;
+            this.dgvBusquedaBinaria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBusquedaBinaria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBusquedaBinaria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 359);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvBusquedaBinaria.Location = new System.Drawing.Point(-1, 2);
+            this.dgvBusquedaBinaria.Name = "dgvBusquedaBinaria";
+            this.dgvBusquedaBinaria.ReadOnly = true;
+            this.dgvBusquedaBinaria.Size = new System.Drawing.Size(240, 359);
+            this.dgvBusquedaBinaria.TabIndex = 0;
             // 
             // Column1
             // 
@@ -93,32 +93,32 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Buscar:";
             // 
-            // textBox1
+            // txtNUMEROELEMENTOS
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(268, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtNUMEROELEMENTOS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNUMEROELEMENTOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNUMEROELEMENTOS.Location = new System.Drawing.Point(268, 44);
+            this.txtNUMEROELEMENTOS.Name = "txtNUMEROELEMENTOS";
+            this.txtNUMEROELEMENTOS.Size = new System.Drawing.Size(221, 26);
+            this.txtNUMEROELEMENTOS.TabIndex = 4;
             // 
-            // textBox2
+            // txtLIMITE
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(268, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 26);
-            this.textBox2.TabIndex = 5;
+            this.txtLIMITE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLIMITE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLIMITE.Location = new System.Drawing.Point(268, 96);
+            this.txtLIMITE.Name = "txtLIMITE";
+            this.txtLIMITE.Size = new System.Drawing.Size(221, 26);
+            this.txtLIMITE.TabIndex = 5;
             // 
-            // textBox3
+            // txtBUSCAR
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(268, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 26);
-            this.textBox3.TabIndex = 6;
+            this.txtBUSCAR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBUSCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBUSCAR.Location = new System.Drawing.Point(268, 148);
+            this.txtBUSCAR.Name = "txtBUSCAR";
+            this.txtBUSCAR.Size = new System.Drawing.Size(221, 26);
+            this.txtBUSCAR.TabIndex = 6;
             // 
             // btnGENERAR
             // 
@@ -154,38 +154,39 @@
             this.btnLIMPIAR.TabIndex = 9;
             this.btnLIMPIAR.Text = "Limpiar";
             this.btnLIMPIAR.UseVisualStyleBackColor = true;
+            this.btnLIMPIAR.Click += new System.EventHandler(this.btnLIMPIAR_Click);
             // 
-            // button2
+            // btnCERRAR
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(268, 323);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(221, 38);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Cerrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(268, 323);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(221, 38);
+            this.btnCERRAR.TabIndex = 10;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = true;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnBUSCAR_Click);
             // 
             // Busqueda_binaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 368);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.btnLIMPIAR);
             this.Controls.Add(this.btnBUSCAR);
             this.Controls.Add(this.btnGENERAR);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBUSCAR);
+            this.Controls.Add(this.txtLIMITE);
+            this.Controls.Add(this.txtNUMEROELEMENTOS);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvBusquedaBinaria);
             this.Name = "Busqueda_binaria";
             this.Text = "Busqueda_binaria";
-            this.Load += new System.EventHandler(this.Busqueda_binaria_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBusquedaBinaria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,17 +194,17 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvBusquedaBinaria;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNUMEROELEMENTOS;
+        private System.Windows.Forms.TextBox txtLIMITE;
+        private System.Windows.Forms.TextBox txtBUSCAR;
         private System.Windows.Forms.Button btnGENERAR;
         private System.Windows.Forms.Button btnBUSCAR;
         private System.Windows.Forms.Button btnLIMPIAR;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }
