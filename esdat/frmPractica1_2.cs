@@ -45,7 +45,6 @@ namespace esdat
             lblVALOR.Text = "("+dataType+")";
            
         }
-     
         private void initialize_dgvELEMENTOS()
         {
             dgvELEMENTOS.Rows.Add();
@@ -58,7 +57,6 @@ namespace esdat
             dgvELEMENTOS.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter;
             dgvELEMENTOS.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter;
         }
-
         private void btnCAPTURAR_Click(object sender, EventArgs e)
         {
             Validar();
@@ -95,6 +93,7 @@ namespace esdat
         }
         private void Validar()
         {
+            //VALIDANDO INT
             if (lblVALOR.Text == "(int)") //seleccionado int
             {
                 txtNUMCOMPLEJO.Visible = false;
@@ -116,6 +115,7 @@ namespace esdat
                     }
                 }
             }
+            //VALIDANDO DOUBLE
             if (lblVALOR.Text == "(double)") //seleccionado double
             {
                 txtNUMCOMPLEJO.Visible = false;
@@ -144,6 +144,7 @@ namespace esdat
                     }
                 }
             }
+            //VALIDANDO DECIMAL
             if (lblVALOR.Text == "(decimal)") //seleccionado decimal
             {
                 txtNUMCOMPLEJO.Visible = false;
@@ -165,6 +166,7 @@ namespace esdat
                     }
                 }
             }
+            //VALIDANDO STRING
             if (lblVALOR.Text == "(string)") //seleccionado string
             {
                 txtNUMCOMPLEJO.Visible = false;
@@ -187,6 +189,7 @@ namespace esdat
                     }
                 }
             }         
+            //VALIDANDO CHAR
             if (lblVALOR.Text == "(char)") //seleccionado string
             {
                 txtNUMCOMPLEJO.Visible = false;
@@ -211,6 +214,7 @@ namespace esdat
             //NUMEROS COMPLEJOS......................................................................
             if (lblVALOR.Text == "(Numeros Complejos)") //seleccionado NC1
             {
+
                 lblNumComplejos.Text = "(int)";
                 txtNUMCOMPLEJO.Visible = true;
                 if (txtELEMENTO.Text == "" || txtNUMCOMPLEJO.Text == "")

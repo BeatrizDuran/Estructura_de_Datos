@@ -57,9 +57,11 @@
             // 
             // btnCAPTURAR
             // 
-            this.btnCAPTURAR.Location = new System.Drawing.Point(454, 14);
+            this.btnCAPTURAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCAPTURAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCAPTURAR.Location = new System.Drawing.Point(454, 12);
             this.btnCAPTURAR.Name = "btnCAPTURAR";
-            this.btnCAPTURAR.Size = new System.Drawing.Size(107, 23);
+            this.btnCAPTURAR.Size = new System.Drawing.Size(107, 34);
             this.btnCAPTURAR.TabIndex = 2;
             this.btnCAPTURAR.Text = "Capturar";
             this.btnCAPTURAR.UseVisualStyleBackColor = true;
@@ -67,9 +69,11 @@
             // 
             // btnREINICIAR
             // 
-            this.btnREINICIAR.Location = new System.Drawing.Point(454, 46);
+            this.btnREINICIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnREINICIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnREINICIAR.Location = new System.Drawing.Point(454, 48);
             this.btnREINICIAR.Name = "btnREINICIAR";
-            this.btnREINICIAR.Size = new System.Drawing.Size(107, 23);
+            this.btnREINICIAR.Size = new System.Drawing.Size(107, 34);
             this.btnREINICIAR.TabIndex = 3;
             this.btnREINICIAR.Text = "Limpiar";
             this.btnREINICIAR.UseVisualStyleBackColor = true;
@@ -140,6 +144,7 @@
             // 
             // txtELEMENTO
             // 
+            this.txtELEMENTO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtELEMENTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtELEMENTO.Location = new System.Drawing.Point(102, 11);
             this.txtELEMENTO.Name = "txtELEMENTO";
@@ -148,6 +153,7 @@
             // 
             // btSalir
             // 
+            this.btSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSalir.Location = new System.Drawing.Point(437, 317);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(124, 41);
@@ -158,6 +164,7 @@
             // 
             // txtNUMCOMPLEJO
             // 
+            this.txtNUMCOMPLEJO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNUMCOMPLEJO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNUMCOMPLEJO.Location = new System.Drawing.Point(102, 43);
             this.txtNUMCOMPLEJO.Name = "txtNUMCOMPLEJO";
@@ -173,7 +180,7 @@
             this.lblNumComplejos.TabIndex = 10;
             this.lblNumComplejos.Text = "-";
             // 
-            // Practica1_2
+            // frmPractica1_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +195,7 @@
             this.Controls.Add(this.btnREINICIAR);
             this.Controls.Add(this.btnCAPTURAR);
             this.Controls.Add(this.lblELEMENTO);
-            this.Name = "Practica1_2";
+            this.Name = "frmPractica1_2";
             this.Text = "Practica1_2";
             this.Load += new System.EventHandler(this.Pu_1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvELEMENTOS)).EndInit();

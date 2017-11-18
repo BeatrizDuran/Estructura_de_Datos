@@ -18,6 +18,10 @@ namespace esdat
         } 
         private void btnCOMENZAR_Click(object sender, EventArgs e)
         {
+            if (radioButton1.Checked==false || radioButton2.Checked==false || radioButton3.Checked==false || radioButton4.Checked==false || radioButton5.Checked==false)
+            {
+                MessageBox.Show("Es necesario seleccionar una opción","aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
             new frmPractica1_2(selected_RadioButton()).ShowDialog();            
         }
         private string selected_RadioButton()
@@ -32,6 +36,11 @@ namespace esdat
             resultado = radioButton7.Checked == true ? "..." : resultado;
            
             return resultado;
-        }   
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

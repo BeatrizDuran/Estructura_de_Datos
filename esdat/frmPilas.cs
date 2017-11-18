@@ -19,28 +19,63 @@ namespace esdat
         Stack<string> stackString = new Stack<string>();
         private void ImprimirPila()
         {
-            dgvPILA.Rows.Clear();
-            foreach (string item in stackString)
+            if (txtELEMENTO.Text.Trim() == "")
             {
-                dgvPILA.Rows.Add(item);
+                MessageBox.Show("El campo del elemento está vacío","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-
-            if (stackString.Count == 0)
+            else
             {
-                MessageBox.Show("No hay datos");
+                dgvPILA.Rows.Clear();
+                foreach (string item in stackString)
+                {
+                    dgvPILA.Rows.Add(item);
+                    Renglones(dgvPILA);
+                }
             }
         }
-        //private bool validString(string c)
-        //{
-        //    //if (char.IsNumber(char.Parse(c.Substring(0, 1))))
-        //    //{
-        //    //    return false;
-        //    //}
-        //    //else
-        //    //{
-        //    //    return true;
-         //   // }
-        //}
+        private void Renglones(DataGridView view)
+        {
+            foreach (DataGridViewRow row in dgvPILA.Rows)
+            {
+                row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
+            }
+        }
+        private void Reverse(Stack<string> input)
+        {
+            if (dgvPILA.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay datos para realizar la acción","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                dgvPILA.Rows.Clear();
+                Stack<string> temp = new Stack<string>();
+                while (input.Count != 0)
+                {
+                    temp.Push(input.Pop());
+                }
+                foreach (string item in temp)
+                {
+                    dgvPILA.Rows.Add(item);
+                    Renglones(dgvPILA);
+                }
+                stackString.Clear();
+                stackString = temp;
+            }
+        }
+        private void btnPop()
+        {
+            if (stackString.Count == 0)
+            {
+                MessageBox.Show("No hay elementos en la pila", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                stackString.Pop();
+                ImprimirPila();
+            }
+        }
+        
         private void Pilas_Load(object sender, EventArgs e)
         {
             txtELEMENTO.Focus();
@@ -52,8 +87,7 @@ namespace esdat
         }
         private void btnPOP_Click(object sender, EventArgs e)
         {
-            stackString.Pop();
-            ImprimirPila();
+            btnPop();
         }
         private void txtELEMENTO_TextChanged(object sender, EventArgs e)
         {
@@ -71,7 +105,11 @@ namespace esdat
         }
         private void btnREVERSA_Click(object sender, EventArgs e)
         {
-            stackString.Reverse();
+            Reverse(stackString);
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

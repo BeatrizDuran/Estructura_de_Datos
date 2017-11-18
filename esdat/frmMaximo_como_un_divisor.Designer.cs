@@ -42,23 +42,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(74, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Entero 1:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 73);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Entero 2:";
             // 
             // txtENTERO1
             // 
+            this.txtENTERO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtENTERO1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtENTERO1.Location = new System.Drawing.Point(83, 12);
             this.txtENTERO1.Name = "txtENTERO1";
@@ -67,6 +70,7 @@
             // 
             // txtENTERO2
             // 
+            this.txtENTERO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtENTERO2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtENTERO2.Location = new System.Drawing.Point(83, 60);
             this.txtENTERO2.Name = "txtENTERO2";
@@ -75,9 +79,11 @@
             // 
             // btnCALCULAR
             // 
+            this.btnCALCULAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCALCULAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCALCULAR.Location = new System.Drawing.Point(265, 12);
             this.btnCALCULAR.Name = "btnCALCULAR";
-            this.btnCALCULAR.Size = new System.Drawing.Size(139, 26);
+            this.btnCALCULAR.Size = new System.Drawing.Size(139, 37);
             this.btnCALCULAR.TabIndex = 4;
             this.btnCALCULAR.Text = "Calcular";
             this.btnCALCULAR.UseVisualStyleBackColor = true;
@@ -86,18 +92,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(262, 68);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(261, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(86, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Resultado:";
             // 
             // lblRESULTADO
             // 
             this.lblRESULTADO.AutoSize = true;
-            this.lblRESULTADO.Location = new System.Drawing.Point(326, 68);
+            this.lblRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRESULTADO.Location = new System.Drawing.Point(353, 62);
             this.lblRESULTADO.Name = "lblRESULTADO";
-            this.lblRESULTADO.Size = new System.Drawing.Size(19, 13);
+            this.lblRESULTADO.Size = new System.Drawing.Size(29, 20);
             this.lblRESULTADO.TabIndex = 6;
             this.lblRESULTADO.Text = "----";
             // 
@@ -126,7 +134,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Maximo_como_un_divisor";
             this.Text = "Maximo como un divisor";
-            this.Load += new System.EventHandler(this.Maximo_como_un_divisor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

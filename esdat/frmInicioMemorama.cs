@@ -16,34 +16,61 @@ namespace esdat
         {
             InitializeComponent();
             //this.nivel = nivel;
-           
         }
         public static string nombre;
         private int nivel;
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBoy()
         {
-            nombre = textBox1.Text;
-            new frmMemorama_b(nivel, nombre).ShowDialog();
+            if (txtNOMBRE.Text.Trim() == "")
+            {
+                MessageBox.Show("Favor de ingresar un nombre de usuario", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (radioButton1.Checked==false && radioButton2.Checked== false && radioButton3.Checked==false) {
+                    MessageBox.Show("Favor de seleccionar un nivel","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                } else {
+                    nombre = txtNOMBRE.Text;
+                    new frmMemorama_b(nivel, nombre).ShowDialog();
+                }
+            }
+        }
+        private void btnGirl()
+        {
+            if (txtNOMBRE.Text.Trim() == "")
+            {
+                MessageBox.Show("Favor de ingresar un nombre de usuario", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
+                {
+                    MessageBox.Show("Favor de seleccionar un nivel", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    nombre = txtNOMBRE.Text;
+                    new frmMemorama_g(nivel, nombre).ShowDialog();
+                }
+            }
         }
 
-    
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBOY_Click(object sender, EventArgs e)
         {
-            nombre = textBox1.Text;
-            new frmMemorama_g(nivel, nombre).ShowDialog();
+            btnBoy();
         }
-
+        private void btnGIRL_Click(object sender, EventArgs e)
+        {
+            btnGirl();
+        }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             nivel = 1000;
         }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             nivel = 500;
         }
-
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             nivel = 100;

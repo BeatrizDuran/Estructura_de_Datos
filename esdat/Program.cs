@@ -16,7 +16,7 @@ namespace esdat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Suma_de_matrices());
+            Application.Run(new frmTorresDeHanoi());
         }
     }
 }

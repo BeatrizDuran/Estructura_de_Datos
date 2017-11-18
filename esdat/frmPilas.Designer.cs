@@ -198,8 +198,9 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Pilas
+            // frmPilas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -217,7 +218,7 @@
             this.Controls.Add(this.btnPOP);
             this.Controls.Add(this.btnPUSH);
             this.Controls.Add(this.dgvPILA);
-            this.Name = "Pilas";
+            this.Name = "frmPilas";
             this.Text = "Pilas";
             this.Load += new System.EventHandler(this.Pilas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPILA)).EndInit();

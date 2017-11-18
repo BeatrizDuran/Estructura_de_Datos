@@ -36,7 +36,6 @@ namespace esdat
                     b = c;
             }
         }
-
         private void Renglones(DataGridView view)
         {
             foreach (DataGridViewRow row in dgvFIBONACCI.Rows)
