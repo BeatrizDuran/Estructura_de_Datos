@@ -51,5 +51,10 @@ namespace esdat
         {
             validar();
         }
+
+        private void frmMenuTranspuestas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

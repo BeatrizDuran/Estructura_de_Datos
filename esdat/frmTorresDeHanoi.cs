@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace esdat
 {
@@ -29,13 +30,11 @@ namespace esdat
                 item.DragDrop += panel_DragDrop;
             }
             //Permite mover los picturebox de la forma.
-            #region
-            pcbD1.MouseMove += pcbD1_MouseDown;
-            pcbD2.MouseMove += pcbD2_MouseDown;
-            pcbD3.MouseMove += pcbD3_MouseDown;
-            pcbD4.MouseMove += pcbD4_MouseDown;
-            pcbD5.MouseMove += pcbD5_MouseDown;
-#endregion
+            pcbD1.MouseDown += pcbD1_MouseDown;
+            pcbD2.MouseDown += pcbD2_MouseDown;
+            pcbD3.MouseDown += pcbD3_MouseDown;
+            pcbD4.MouseDown += pcbD4_MouseDown;
+            pcbD5.MouseDown += pcbD5_MouseDown;
         }
         /// <summary>
         /// Metodo que permite contar las veces que movio el pictureBox.
@@ -43,48 +42,56 @@ namespace esdat
         private void CuentaMueve(PictureBox pic)
         {
             origin = pic.Parent.Name;
-           // MessageBox.Show("Estaba en: " + origin);
-            //Permite que se mueva el picturebox.
             pic.DoDragDrop(pic, DragDropEffects.Move);
-            //Que el picture box se observe por encima de la barra.
             if (!SetPosition(pic, origin))
             {
                 switch (origin)
                 {
-                    case "panel1":
-                        pic.Parent = panel1;
+                    case "panel1":  pic.Parent = panel1;
                         break;
-                    case "panel2":
-                        pic.Parent = panel2;
+                    case "panel2":  pic.Parent = panel2;
                         break;
-                    case "panel3":
-                        pic.Parent = panel3;
+                    case "panel3": pic.Parent = panel3;
                         break;
                 }
             }
             pic.BringToFront();
-           // lblMOVIMIENTO.Text = con++.ToString();
         }
         private bool SetPosition(PictureBox pic, string origin)
         {
-            if (origin == pic.Parent.Name)
-            {
-                return false;
-            }
+            if (origin == pic.Parent.Name)  return false;
             //MessageBox.Show("Vienes de " + origin + " y vas a "+pic.Parent.Name);
             switch (pic.Parent.Name)
             {
                 case "panel1":
-                    pic.Top = panel1.Height - pic.Height - pila1.Count * pic.Height;
+                    if (origin == "panel2")  return Validador(pila2, pila1, pic);
+                    if (origin == "panel3")  return Validador(pila3, pila1, pic);
                     break;
                 case "panel2":
-                    pic.Top = panel2.Height - pic.Height - pila2.Count * pic.Height;
+                    if (origin == "panel1") return Validador(pila1, pila2, pic);
+                    if (origin == "panel3") return Validador(pila3, pila2, pic);
                     break;
                 case "panel3":
-                    pic.Top = panel3.Height - pic.Height - pila3.Count * pic.Height;
+                    if (origin == "panel1") return Validador(pila1, pila3, pic);
+                    if (origin == "panel2") return Validador(pila2, pila3, pic);
                     break;
             }
             return true;
+        }
+        private bool Validador(Stack<PictureBox> origen,Stack<PictureBox> destino, PictureBox pictureBox)
+        {
+            if ((destino.Count == 0 && 
+                pictureBox.Tag == origen.Peek().Tag) ||   
+                (destino.Count != 0 &&
+                int.Parse(destino.Peek().Tag.ToString()) > int.Parse(pictureBox.Tag.ToString()) && origen.Peek().Tag.ToString() == pictureBox.Tag.ToString()))
+            {
+                destino.Push(origen.Pop());
+                pictureBox.Top = panel1.Height - pictureBox.Height - destino.Count * pictureBox.Height;
+                lblMOVIMIENTO.Text = (++con).ToString();
+                lblMOVIMIENTO.Update();
+            }
+                else  return false;
+           return true;
         }
 
         private void pcbD1_MouseDown(object sender, MouseEventArgs e) => CuentaMueve(pcbD1);
@@ -97,32 +104,42 @@ namespace esdat
         private void panel_DragEnter(object sender, DragEventArgs e) => e.Effect = DragDropEffects.Move;
         private void frmTorresDeHanoi_Load(object sender, EventArgs e)
         {
-            //Inicializando el contador.
-            con = 0;
-            lblMOVIMIENTO.Text = this.con.ToString();
+
             //Permite que los picturebox se queden en el panel1
-            #region
             pcbD1.Parent = panel1;
             pcbD2.Parent = panel1;
             pcbD3.Parent = panel1;
             pcbD4.Parent = panel1;
             pcbD5.Parent = panel1;
-            #endregion
+
             pcbD1.Top = panel1.Height - pcbD1.Height - 0 * pcbD1.Height - pcbBASE1.Height;
-            pcbD2.Top = panel1.Height - pcbD2.Height - 0 * pcbD2.Height - pcbBASE1.Height;
-            pcbD3.Top = panel1.Height - pcbD3.Height - 0 * pcbD3.Height - pcbBASE1.Height;
-            pcbD4.Top = panel1.Height - pcbD4.Height - 0 * pcbD4.Height - pcbBASE1.Height;
-            pcbD5.Top = panel1.Height - pcbD5.Height - 0 * pcbD5.Height - pcbBASE1.Height;
-            //Permite que esten encima los discos de las barras
-            #region
+            pcbD2.Top = panel1.Height - pcbD2.Height - 1 * pcbD2.Height - pcbBASE1.Height;
+            pcbD3.Top = panel1.Height - pcbD3.Height - 2 * pcbD3.Height - pcbBASE1.Height;
+            pcbD4.Top = panel1.Height - pcbD4.Height - 3 * pcbD4.Height - pcbBASE1.Height;
+            pcbD5.Top = panel1.Height - pcbD5.Height - 4 * pcbD5.Height - pcbBASE1.Height;
+
             pcbD1.BringToFront();
             pcbD2.BringToFront();
             pcbD3.BringToFront();
             pcbD4.BringToFront();
             pcbD5.BringToFront();
-#endregion
+
+            //Permite que esten encima los discos de las barras
+            pila1.Clear();
+
+            pila1.Push(pcbD1);
+            pila1.Push(pcbD2);
+            pila1.Push(pcbD3);
+            pila1.Push(pcbD4);
+            pila1.Push(pcbD5);
+
+            pila2.Clear();
+            pila3.Clear();
+            //Inicializando el contador.
+            con = 0;
+            lblMOVIMIENTO.Text = this.con.ToString();
         }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => System.Diagnostics.Process.Start("");
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=yrNWiFFbcEY");
         private void btnSALIR_Click(object sender, EventArgs e) => this.Close();
         private void btnREINICIO_Click(object sender, EventArgs e) => frmTorresDeHanoi_Load(sender, e);
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Torres_de_Han%C3%B3i");

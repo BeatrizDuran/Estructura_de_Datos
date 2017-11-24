@@ -42,6 +42,7 @@
             // 
             // txtFIBONACCI
             // 
+            this.txtFIBONACCI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFIBONACCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFIBONACCI.Location = new System.Drawing.Point(59, 15);
             this.txtFIBONACCI.Name = "txtFIBONACCI";
@@ -60,6 +61,7 @@
             // 
             // btnGENERAR
             // 
+            this.btnGENERAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGENERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGENERAR.Location = new System.Drawing.Point(206, 13);
             this.btnGENERAR.Name = "btnGENERAR";

@@ -84,38 +84,14 @@ namespace esdat
         {
             // voltear.Enabled = false;
             //voltear.Visible = false;
-            if (set[elemento] == 1)
-            {
-                voltear.Image = Properties.Resources._1;
-            }
-            if (set[elemento] == 2)
-            {
-                voltear.Image = Properties.Resources._2;
-            }
-            if (set[elemento] == 3)
-            {
-                voltear.Image = Properties.Resources._3;
-            }
-            if (set[elemento] == 4)
-            {
-                voltear.Image = Properties.Resources._4;
-            }
-            if (set[elemento] == 5)
-            {
-                voltear.Image = Properties.Resources._5;
-            }
-            if (set[elemento] == 6)
-            {
-                voltear.Image = Properties.Resources._6;
-            }
-            if (set[elemento] == 7)
-            {
-                voltear.Image = Properties.Resources._7;
-            }
-            if (set[elemento] == 8)
-            {
-                voltear.Image = Properties.Resources._8;
-            }
+            if (set[elemento] == 1)  voltear.Image = Properties.Resources._1;
+            if (set[elemento] == 2)  voltear.Image = Properties.Resources._2;
+            if (set[elemento] == 3)  voltear.Image = Properties.Resources._3;
+            if (set[elemento] == 4)  voltear.Image = Properties.Resources._4;
+             if (set[elemento] == 5) voltear.Image = Properties.Resources._5;
+            if (set[elemento] == 6) voltear.Image = Properties.Resources._6;
+            if (set[elemento] == 7)  voltear.Image = Properties.Resources._7;
+           if (set[elemento] == 8) voltear.Image = Properties.Resources._8;
             voltear.Update();
             if (esperando == false)
             {
@@ -123,7 +99,6 @@ namespace esdat
                 imagentemporal = voltear;
                 esperando = true;
             }
-
             else
             {
                 intentos++;
@@ -167,42 +142,15 @@ namespace esdat
                 esperando = false;              
             }    
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox1, 0);
-        }
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            restart();
-        }
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox2, 1);
-        }
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox3, 2);
-        }
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox4, 3);
-        }
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox5, 4);
-        }
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox6, 5);
-        }
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox7, 6);
-        }
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox8, 7);
-        }
+        private void pictureBox1_Click(object sender, EventArgs e) => flip(pictureBox1, 0);
+        private void toolStripButton1_Click(object sender, EventArgs e) => restart();
+        private void pictureBox2_Click(object sender, EventArgs e) => flip(pictureBox2, 1);
+        private void pictureBox3_Click(object sender, EventArgs e) => flip(pictureBox3, 2);
+        private void pictureBox4_Click(object sender, EventArgs e) => flip(pictureBox4, 3);
+        private void pictureBox5_Click(object sender, EventArgs e) => flip(pictureBox5, 4);
+        private void pictureBox6_Click(object sender, EventArgs e) => flip(pictureBox6, 5);
+        private void pictureBox7_Click(object sender, EventArgs e) => flip(pictureBox7, 6);
+        private void pictureBox8_Click(object sender, EventArgs e) => flip(pictureBox8, 7);
         private void Memorama_Load(object sender, EventArgs e)
         {            
             tslblINGRESENOMBRE.Text = "Participante: " + frmInicioMemorama.nombre;
@@ -210,37 +158,13 @@ namespace esdat
             // axWMP.URL=@"C...";
             axWMP.Visible = false;
         }
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox9, 8);
-        }
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox10, 9);
-        }
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox11, 10);
-        }
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox12, 11);
-        }
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox13, 12);
-        }
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox14, 13);
-        }
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox15, 14);
-        }
-        private void pictureBox17_Click(object sender, EventArgs e)
-        {
-            flip(pictureBox17, 15);
-        }
+        private void pictureBox9_Click(object sender, EventArgs e) => flip(pictureBox9, 8);
+        private void pictureBox10_Click(object sender, EventArgs e) => flip(pictureBox10, 9);
+        private void pictureBox11_Click(object sender, EventArgs e) => flip(pictureBox11, 10);
+        private void pictureBox12_Click(object sender, EventArgs e) => flip(pictureBox12, 11);
+        private void pictureBox13_Click(object sender, EventArgs e) => flip(pictureBox13, 12);
+        private void pictureBox14_Click(object sender, EventArgs e) => flip(pictureBox14, 13);
+        private void pictureBox15_Click(object sender, EventArgs e) => flip(pictureBox15, 14);
+        private void pictureBox17_Click(object sender, EventArgs e) => flip(pictureBox17, 15);
     }
 }

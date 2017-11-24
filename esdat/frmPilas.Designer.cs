@@ -53,7 +53,7 @@
             this.dgvPILA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPILA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.dgvPILA.Location = new System.Drawing.Point(67, 0);
+            this.dgvPILA.Location = new System.Drawing.Point(67, 12);
             this.dgvPILA.Name = "dgvPILA";
             this.dgvPILA.ReadOnly = true;
             this.dgvPILA.Size = new System.Drawing.Size(214, 420);
@@ -192,7 +192,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(302, 385);
+            this.button1.Location = new System.Drawing.Point(302, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(248, 35);
             this.button1.TabIndex = 12;
@@ -204,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 421);
+            this.ClientSize = new System.Drawing.Size(566, 446);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblNUMEROELEMENTO);

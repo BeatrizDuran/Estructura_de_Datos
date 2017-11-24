@@ -30,43 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTorresDeHanoi));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pcbBASE1 = new System.Windows.Forms.PictureBox();
-            this.pcbBASE2 = new System.Windows.Forms.PictureBox();
-            this.pcbBASE3 = new System.Windows.Forms.PictureBox();
-            this.pcbBARRA1 = new System.Windows.Forms.PictureBox();
-            this.pcbD1 = new System.Windows.Forms.PictureBox();
-            this.pcbD2 = new System.Windows.Forms.PictureBox();
-            this.pcbD3 = new System.Windows.Forms.PictureBox();
-            this.pcbD4 = new System.Windows.Forms.PictureBox();
             this.pcbD5 = new System.Windows.Forms.PictureBox();
+            this.pcbD4 = new System.Windows.Forms.PictureBox();
+            this.pcbD3 = new System.Windows.Forms.PictureBox();
+            this.pcbD2 = new System.Windows.Forms.PictureBox();
+            this.pcbD1 = new System.Windows.Forms.PictureBox();
+            this.pcbBARRA1 = new System.Windows.Forms.PictureBox();
+            this.pcbBASE1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pcbBARRA22 = new System.Windows.Forms.PictureBox();
+            this.pcbBASE2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pcbBARRA33 = new System.Windows.Forms.PictureBox();
+            this.pcbBASE3 = new System.Windows.Forms.PictureBox();
             this.btnREINICIO = new System.Windows.Forms.Button();
             this.btnSOLUCION = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnSALIR = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMOVIMIENTO = new System.Windows.Forms.Label();
-            this.pcbBARRA22 = new System.Windows.Forms.PictureBox();
-            this.pcbBARRA33 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbD5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,6 +83,74 @@
             this.panel1.Size = new System.Drawing.Size(227, 342);
             this.panel1.TabIndex = 0;
             // 
+            // pcbD5
+            // 
+            this.pcbD5.BackColor = System.Drawing.Color.Red;
+            this.pcbD5.Location = new System.Drawing.Point(36, 234);
+            this.pcbD5.Name = "pcbD5";
+            this.pcbD5.Size = new System.Drawing.Size(155, 18);
+            this.pcbD5.TabIndex = 9;
+            this.pcbD5.TabStop = false;
+            this.pcbD5.Tag = "1";
+            // 
+            // pcbD4
+            // 
+            this.pcbD4.BackColor = System.Drawing.Color.DarkOrange;
+            this.pcbD4.Location = new System.Drawing.Point(28, 252);
+            this.pcbD4.Name = "pcbD4";
+            this.pcbD4.Size = new System.Drawing.Size(170, 18);
+            this.pcbD4.TabIndex = 8;
+            this.pcbD4.TabStop = false;
+            this.pcbD4.Tag = "2";
+            // 
+            // pcbD3
+            // 
+            this.pcbD3.BackColor = System.Drawing.Color.Yellow;
+            this.pcbD3.Location = new System.Drawing.Point(21, 270);
+            this.pcbD3.Name = "pcbD3";
+            this.pcbD3.Size = new System.Drawing.Size(185, 18);
+            this.pcbD3.TabIndex = 7;
+            this.pcbD3.TabStop = false;
+            this.pcbD3.Tag = "3";
+            // 
+            // pcbD2
+            // 
+            this.pcbD2.BackColor = System.Drawing.Color.Lime;
+            this.pcbD2.Location = new System.Drawing.Point(13, 288);
+            this.pcbD2.Name = "pcbD2";
+            this.pcbD2.Size = new System.Drawing.Size(200, 18);
+            this.pcbD2.TabIndex = 6;
+            this.pcbD2.TabStop = false;
+            this.pcbD2.Tag = "4";
+            // 
+            // pcbD1
+            // 
+            this.pcbD1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pcbD1.Location = new System.Drawing.Point(6, 306);
+            this.pcbD1.Name = "pcbD1";
+            this.pcbD1.Size = new System.Drawing.Size(215, 18);
+            this.pcbD1.TabIndex = 5;
+            this.pcbD1.TabStop = false;
+            this.pcbD1.Tag = "5";
+            // 
+            // pcbBARRA1
+            // 
+            this.pcbBARRA1.BackColor = System.Drawing.Color.DarkRed;
+            this.pcbBARRA1.Location = new System.Drawing.Point(103, 189);
+            this.pcbBARRA1.Name = "pcbBARRA1";
+            this.pcbBARRA1.Size = new System.Drawing.Size(18, 135);
+            this.pcbBARRA1.TabIndex = 4;
+            this.pcbBARRA1.TabStop = false;
+            // 
+            // pcbBASE1
+            // 
+            this.pcbBASE1.BackColor = System.Drawing.Color.DarkRed;
+            this.pcbBASE1.Location = new System.Drawing.Point(0, 324);
+            this.pcbBASE1.Name = "pcbBASE1";
+            this.pcbBASE1.Size = new System.Drawing.Size(227, 18);
+            this.pcbBASE1.TabIndex = 3;
+            this.pcbBASE1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pcbBARRA22);
@@ -92,23 +160,14 @@
             this.panel2.Size = new System.Drawing.Size(227, 342);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // pcbBARRA22
             // 
-            this.panel3.Controls.Add(this.pcbBARRA33);
-            this.panel3.Controls.Add(this.pcbBASE3);
-            this.panel3.Location = new System.Drawing.Point(500, 25);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 342);
-            this.panel3.TabIndex = 2;
-            // 
-            // pcbBASE1
-            // 
-            this.pcbBASE1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pcbBASE1.Location = new System.Drawing.Point(0, 324);
-            this.pcbBASE1.Name = "pcbBASE1";
-            this.pcbBASE1.Size = new System.Drawing.Size(227, 18);
-            this.pcbBASE1.TabIndex = 3;
-            this.pcbBASE1.TabStop = false;
+            this.pcbBARRA22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pcbBARRA22.Location = new System.Drawing.Point(104, 187);
+            this.pcbBARRA22.Name = "pcbBARRA22";
+            this.pcbBARRA22.Size = new System.Drawing.Size(20, 138);
+            this.pcbBARRA22.TabIndex = 10;
+            this.pcbBARRA22.TabStop = false;
             // 
             // pcbBASE2
             // 
@@ -119,68 +178,32 @@
             this.pcbBASE2.TabIndex = 4;
             this.pcbBASE2.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pcbBARRA33);
+            this.panel3.Controls.Add(this.pcbBASE3);
+            this.panel3.Location = new System.Drawing.Point(500, 25);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(227, 342);
+            this.panel3.TabIndex = 2;
+            // 
+            // pcbBARRA33
+            // 
+            this.pcbBARRA33.BackColor = System.Drawing.Color.Green;
+            this.pcbBARRA33.Location = new System.Drawing.Point(104, 187);
+            this.pcbBARRA33.Name = "pcbBARRA33";
+            this.pcbBARRA33.Size = new System.Drawing.Size(21, 138);
+            this.pcbBARRA33.TabIndex = 11;
+            this.pcbBARRA33.TabStop = false;
+            // 
             // pcbBASE3
             // 
-            this.pcbBASE3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pcbBASE3.BackColor = System.Drawing.Color.Green;
             this.pcbBASE3.Location = new System.Drawing.Point(0, 324);
             this.pcbBASE3.Name = "pcbBASE3";
             this.pcbBASE3.Size = new System.Drawing.Size(227, 18);
             this.pcbBASE3.TabIndex = 5;
             this.pcbBASE3.TabStop = false;
-            // 
-            // pcbBARRA1
-            // 
-            this.pcbBARRA1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pcbBARRA1.Location = new System.Drawing.Point(103, 189);
-            this.pcbBARRA1.Name = "pcbBARRA1";
-            this.pcbBARRA1.Size = new System.Drawing.Size(18, 135);
-            this.pcbBARRA1.TabIndex = 4;
-            this.pcbBARRA1.TabStop = false;
-            // 
-            // pcbD1
-            // 
-            this.pcbD1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pcbD1.Location = new System.Drawing.Point(6, 306);
-            this.pcbD1.Name = "pcbD1";
-            this.pcbD1.Size = new System.Drawing.Size(215, 18);
-            this.pcbD1.TabIndex = 5;
-            this.pcbD1.TabStop = false;
-            // 
-            // pcbD2
-            // 
-            this.pcbD2.BackColor = System.Drawing.Color.Red;
-            this.pcbD2.Location = new System.Drawing.Point(13, 288);
-            this.pcbD2.Name = "pcbD2";
-            this.pcbD2.Size = new System.Drawing.Size(200, 18);
-            this.pcbD2.TabIndex = 6;
-            this.pcbD2.TabStop = false;
-            // 
-            // pcbD3
-            // 
-            this.pcbD3.BackColor = System.Drawing.Color.Lime;
-            this.pcbD3.Location = new System.Drawing.Point(21, 270);
-            this.pcbD3.Name = "pcbD3";
-            this.pcbD3.Size = new System.Drawing.Size(185, 18);
-            this.pcbD3.TabIndex = 7;
-            this.pcbD3.TabStop = false;
-            // 
-            // pcbD4
-            // 
-            this.pcbD4.BackColor = System.Drawing.Color.Indigo;
-            this.pcbD4.Location = new System.Drawing.Point(28, 252);
-            this.pcbD4.Name = "pcbD4";
-            this.pcbD4.Size = new System.Drawing.Size(170, 18);
-            this.pcbD4.TabIndex = 8;
-            this.pcbD4.TabStop = false;
-            // 
-            // pcbD5
-            // 
-            this.pcbD5.BackColor = System.Drawing.Color.Orange;
-            this.pcbD5.Location = new System.Drawing.Point(36, 234);
-            this.pcbD5.Name = "pcbD5";
-            this.pcbD5.Size = new System.Drawing.Size(155, 18);
-            this.pcbD5.TabIndex = 9;
-            this.pcbD5.TabStop = false;
             // 
             // btnREINICIO
             // 
@@ -251,33 +274,15 @@
             this.lblMOVIMIENTO.TabIndex = 9;
             this.lblMOVIMIENTO.Text = "0";
             // 
-            // pcbBARRA22
-            // 
-            this.pcbBARRA22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pcbBARRA22.Location = new System.Drawing.Point(104, 187);
-            this.pcbBARRA22.Name = "pcbBARRA22";
-            this.pcbBARRA22.Size = new System.Drawing.Size(20, 138);
-            this.pcbBARRA22.TabIndex = 10;
-            this.pcbBARRA22.TabStop = false;
-            // 
-            // pcbBARRA33
-            // 
-            this.pcbBARRA33.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pcbBARRA33.Location = new System.Drawing.Point(104, 187);
-            this.pcbBARRA33.Name = "pcbBARRA33";
-            this.pcbBARRA33.Size = new System.Drawing.Size(21, 138);
-            this.pcbBARRA33.TabIndex = 11;
-            this.pcbBARRA33.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(91, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.Size = new System.Drawing.Size(102, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Torre A";
+            this.label2.Text = "Torre Guinda";
             // 
             // label3
             // 
@@ -285,19 +290,19 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(337, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Torre B";
+            this.label3.Text = "Torre Negra";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(584, 2);
+            this.label4.Location = new System.Drawing.Point(574, 2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(93, 20);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Torre C";
+            this.label4.Text = "Torre Verde";
             // 
             // linkLabel2
             // 
@@ -336,19 +341,19 @@
             this.Text = "Torres De Hanoi";
             this.Load += new System.EventHandler(this.frmTorresDeHanoi_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbD4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbD5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbD1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE1)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE2)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbBARRA33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBASE3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

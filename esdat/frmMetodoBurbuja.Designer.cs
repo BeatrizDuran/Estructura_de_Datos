@@ -72,7 +72,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvORIGINAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBURBUJA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvINSERT)).BeginInit();
@@ -269,6 +268,7 @@
             // 
             // txtLI
             // 
+            this.txtLI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLI.Location = new System.Drawing.Point(51, 478);
             this.txtLI.Name = "txtLI";
@@ -277,6 +277,7 @@
             // 
             // txtLS
             // 
+            this.txtLS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLS.Location = new System.Drawing.Point(218, 478);
             this.txtLS.Name = "txtLS";
@@ -285,6 +286,7 @@
             // 
             // btnGENERAR
             // 
+            this.btnGENERAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGENERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGENERAR.Location = new System.Drawing.Point(356, 473);
             this.btnGENERAR.Name = "btnGENERAR";
@@ -296,6 +298,7 @@
             // 
             // btnCALCULAR
             // 
+            this.btnCALCULAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCALCULAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCALCULAR.Location = new System.Drawing.Point(485, 473);
             this.btnCALCULAR.Name = "btnCALCULAR";
@@ -387,6 +390,7 @@
             // 
             // btnLIMPIAR
             // 
+            this.btnLIMPIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLIMPIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLIMPIAR.Location = new System.Drawing.Point(614, 473);
             this.btnLIMPIAR.Name = "btnLIMPIAR";
@@ -501,23 +505,11 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "F";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Enabled = false;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(80, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(14, 20);
-            this.label20.TabIndex = 37;
-            this.label20.Text = "-";
-            // 
-            // MetodoBurbuja
+            // frmMetodoBurbuja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 538);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -555,7 +547,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvORIGINAL);
             this.Controls.Add(this.label1);
-            this.Name = "MetodoBurbuja";
+            this.Name = "frmMetodoBurbuja";
             this.Text = "Metodo de Ordenamiento y Busqueda";
             this.Load += new System.EventHandler(this.MetodoBurbuja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvORIGINAL)).EndInit();
@@ -613,6 +605,5 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
     }
 }

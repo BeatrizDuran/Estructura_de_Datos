@@ -108,7 +108,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Columnas:";
             // 
-            // MenuTranspuestas
+            // frmMenuTranspuestas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,8 +120,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCOLUMNAS);
             this.Controls.Add(this.label1);
-            this.Name = "MenuTranspuestas";
+            this.Name = "frmMenuTranspuestas";
             this.Text = "Menu transpuesta";
+            this.Load += new System.EventHandler(this.frmMenuTranspuestas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
