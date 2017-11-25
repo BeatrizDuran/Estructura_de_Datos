@@ -228,6 +228,7 @@
             this.btnSOLUCION.TabIndex = 4;
             this.btnSOLUCION.Text = "Solución";
             this.btnSOLUCION.UseVisualStyleBackColor = false;
+            this.btnSOLUCION.Click += new System.EventHandler(this.btnSOLUCION_Click);
             // 
             // linkLabel1
             // 

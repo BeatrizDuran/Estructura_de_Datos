@@ -36,6 +36,17 @@ namespace esdat
             pcbD4.MouseDown += pcbD4_MouseDown;
             pcbD5.MouseDown += pcbD5_MouseDown;
         }
+        private void Solucion(Stack<PictureBox> pila1, Stack<PictureBox> pila2, PictureBox pictureBox, Panel panel)
+        {
+            Validador(pila1, pila2, pictureBox);
+            pictureBox.Parent = panel;
+            panel1.Update();
+            panel2.Update();
+            panel3.Update();
+            pictureBox.BringToFront();
+            pictureBox.Update();
+            Thread.Sleep(700);
+        }
         /// <summary>
         /// Metodo que permite contar las veces que movio el pictureBox.
         /// </summary>
@@ -83,7 +94,9 @@ namespace esdat
             if ((destino.Count == 0 && 
                 pictureBox.Tag == origen.Peek().Tag) ||   
                 (destino.Count != 0 &&
-                int.Parse(destino.Peek().Tag.ToString()) > int.Parse(pictureBox.Tag.ToString()) && origen.Peek().Tag.ToString() == pictureBox.Tag.ToString()))
+                int.Parse(destino.Peek().Tag.ToString()) > int.Parse(pictureBox.Tag.ToString())
+              //  && origen.Peek().Tag.ToString() == pictureBox.Tag.ToString()))
+            && pictureBox.Tag.ToString() == origen.Peek().Tag.ToString()))
             {
                 destino.Push(origen.Pop());
                 pictureBox.Top = panel1.Height - pictureBox.Height - destino.Count * pictureBox.Height;
@@ -143,5 +156,45 @@ namespace esdat
         private void btnSALIR_Click(object sender, EventArgs e) => this.Close();
         private void btnREINICIO_Click(object sender, EventArgs e) => frmTorresDeHanoi_Load(sender, e);
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) => System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Torres_de_Han%C3%B3i");
+
+        private void btnSOLUCION_Click(object sender, EventArgs e)
+        {
+            frmTorresDeHanoi_Load(sender, e);
+            Solucion(pila1, pila3, pcbD5, panel3); // 1..1C
+            Solucion(pila1, pila2, pcbD4, panel2);//2...2B
+            Solucion(pila3, pila2, pcbD5, panel2);//3...1B
+            Solucion(pila1, pila3, pcbD3, panel3);//4...3C
+            Solucion(pila2, pila1, pcbD5, panel1);//5...1A
+            Solucion(pila2, pila3, pcbD4, panel3);//6...2C
+            Solucion(pila1, pila3, pcbD5, panel3);//7...1C
+            Solucion(pila1, pila2, pcbD2, panel2);//8....4B
+            Solucion(pila3, pila2, pcbD5, panel2);//9...1B
+            Solucion(pila3, pila1, pcbD4, panel1);//10....2A
+            Solucion(pila2, pila1, pcbD5, panel1);//11...1A
+            Solucion(pila3, pila2, pcbD3, panel2);//12...3B.
+           Solucion(pila1, pila3, pcbD5, panel3);//13...1C
+            Solucion(pila1, pila2, pcbD4, panel2);//14...2B
+            Solucion(pila3, pila2, pcbD5, panel2);//15...1B........5C
+            Solucion(pila1, pila3, pcbD1, panel3);//16...5C.......1A
+            //Solucion(pila2, pila1, pcbD5, panel1);//17...1C........2C
+            Solucion(pila2, pila3, pcbD5, panel3);//18...1C
+            Solucion(pila2, pila1, pcbD4, panel1);//19...3A
+            Solucion(pila3, pila1, pcbD5, panel1);//20...1B
+            Solucion(pila1, pila2, pcbD5, panel2);//21...2A
+            Solucion(pila1, pila3, pcbD4, panel3);//22...1A
+            Solucion(pila2, pila3, pcbD5, panel3);//23...4C
+            Solucion(pila2, pila1, pcbD3, panel1);//24...1C
+           Solucion(pila3, pila2, pcbD5, panel2);//25...2B
+            Solucion(pila3, pila1, pcbD4, panel1);//26...1B
+            Solucion(pila2, pila1, pcbD5, panel1);//27...3C
+            Solucion(pila2, pila3, pcbD2, panel3);//28...1A
+            Solucion(pila1, pila3, pcbD5, panel3);//29...2C
+            Solucion(pila1, pila2, pcbD4, panel2);//30...1C
+            Solucion(pila3, pila2, pcbD5, panel2);//31...1C
+           Solucion(pila1, pila3, pcbD3, panel3);//32...1C
+           Solucion(pila2, pila1, pcbD5, panel1);//33...1C
+          Solucion(pila2, pila3, pcbD4, panel3);//34...1C
+           Solucion(pila1, pila3, pcbD5, panel3);//35...1C
+        }
     }
 }
