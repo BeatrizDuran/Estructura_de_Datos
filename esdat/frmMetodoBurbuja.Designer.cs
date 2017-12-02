@@ -72,6 +72,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.btnCERRAR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvORIGINAL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBURBUJA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvINSERT)).BeginInit();
@@ -505,11 +506,25 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "F";
             // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.Salmon;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(743, 473);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(123, 31);
+            this.btnCERRAR.TabIndex = 37;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
             // frmMetodoBurbuja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 538);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -548,8 +563,8 @@
             this.Controls.Add(this.dgvORIGINAL);
             this.Controls.Add(this.label1);
             this.Name = "frmMetodoBurbuja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Metodo de Ordenamiento y Busqueda";
-            this.Load += new System.EventHandler(this.MetodoBurbuja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvORIGINAL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBURBUJA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvINSERT)).EndInit();
@@ -605,5 +620,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }

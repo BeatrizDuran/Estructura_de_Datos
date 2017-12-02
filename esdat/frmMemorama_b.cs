@@ -168,5 +168,10 @@ namespace esdat
         private void pictureBox14_Click(object sender, EventArgs e) => flip(pictureBox14, 13);
         private void pictureBox15_Click(object sender, EventArgs e) => flip(pictureBox15, 14);
         private void pictureBox17_Click(object sender, EventArgs e) => flip(pictureBox17, 15);
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

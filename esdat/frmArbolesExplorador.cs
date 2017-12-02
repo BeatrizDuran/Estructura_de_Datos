@@ -62,26 +62,14 @@ namespace esdat
                 }
             }
         }
-        private void btnLIMPIAR_Click(object sender, EventArgs e)
-        {
-            tvNODOS.Nodes.Clear();
-        }
-
-        private void btnEXPANDIR_Click(object sender, EventArgs e)
-        {
-            tvNODOS.ExpandAll();
-        }
-
+        private void btnLIMPIAR_Click(object sender, EventArgs e) => tvNODOS.Nodes.Clear();
+        private void btnEXPANDIR_Click(object sender, EventArgs e) => tvNODOS.ExpandAll();
         private void btnCARGARDOCUMENTOS_Click(object sender, EventArgs e)
         {
             btnLIMPIAR_Click(sender, e);
             cargarDirectorio();
         }
-
-        private void btnCONTRAER_Click(object sender, EventArgs e)
-        {
-            tvNODOS.CollapseAll();
-        }
-        
+        private void btnCONTRAER_Click(object sender, EventArgs e) => tvNODOS.CollapseAll();
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
     }
 }

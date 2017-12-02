@@ -37,9 +37,9 @@
             this.txtLIMITE = new System.Windows.Forms.TextBox();
             this.txtBUSCAR = new System.Windows.Forms.TextBox();
             this.btnGENERAR = new System.Windows.Forms.Button();
-            this.btnBUSCAR = new System.Windows.Forms.Button();
             this.btnLIMPIAR = new System.Windows.Forms.Button();
-            this.btnCERRAR = new System.Windows.Forms.Button();
+            this.btnBUSQUEDA = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusquedaBinaria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,18 +132,6 @@
             this.btnGENERAR.UseVisualStyleBackColor = true;
             this.btnGENERAR.Click += new System.EventHandler(this.btnGENERAR_Click);
             // 
-            // btnBUSCAR
-            // 
-            this.btnBUSCAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBUSCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBUSCAR.Location = new System.Drawing.Point(268, 235);
-            this.btnBUSCAR.Name = "btnBUSCAR";
-            this.btnBUSCAR.Size = new System.Drawing.Size(221, 38);
-            this.btnBUSCAR.TabIndex = 8;
-            this.btnBUSCAR.Text = "Buscar";
-            this.btnBUSCAR.UseVisualStyleBackColor = true;
-            this.btnBUSCAR.Click += new System.EventHandler(this.btnBUSCAR_Click);
-            // 
             // btnLIMPIAR
             // 
             this.btnLIMPIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -156,26 +144,39 @@
             this.btnLIMPIAR.UseVisualStyleBackColor = true;
             this.btnLIMPIAR.Click += new System.EventHandler(this.btnLIMPIAR_Click);
             // 
-            // btnCERRAR
+            // btnBUSQUEDA
             // 
-            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCERRAR.Location = new System.Drawing.Point(268, 323);
-            this.btnCERRAR.Name = "btnCERRAR";
-            this.btnCERRAR.Size = new System.Drawing.Size(221, 38);
-            this.btnCERRAR.TabIndex = 10;
-            this.btnCERRAR.Text = "Cerrar";
-            this.btnCERRAR.UseVisualStyleBackColor = true;
-            this.btnCERRAR.Click += new System.EventHandler(this.btnBUSCAR_Click);
+            this.btnBUSQUEDA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBUSQUEDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBUSQUEDA.Location = new System.Drawing.Point(268, 233);
+            this.btnBUSQUEDA.Name = "btnBUSQUEDA";
+            this.btnBUSQUEDA.Size = new System.Drawing.Size(221, 40);
+            this.btnBUSQUEDA.TabIndex = 10;
+            this.btnBUSQUEDA.Text = "Buscar";
+            this.btnBUSQUEDA.UseVisualStyleBackColor = true;
+            this.btnBUSQUEDA.Click += new System.EventHandler(this.btnBUSQUEDA_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(268, 323);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(221, 38);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Busqueda_binaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 368);
-            this.Controls.Add(this.btnCERRAR);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBUSQUEDA);
             this.Controls.Add(this.btnLIMPIAR);
-            this.Controls.Add(this.btnBUSCAR);
             this.Controls.Add(this.btnGENERAR);
             this.Controls.Add(this.txtBUSCAR);
             this.Controls.Add(this.txtLIMITE);
@@ -185,6 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvBusquedaBinaria);
             this.Name = "Busqueda_binaria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda_binaria";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusquedaBinaria)).EndInit();
             this.ResumeLayout(false);
@@ -203,8 +205,8 @@
         private System.Windows.Forms.TextBox txtLIMITE;
         private System.Windows.Forms.TextBox txtBUSCAR;
         private System.Windows.Forms.Button btnGENERAR;
-        private System.Windows.Forms.Button btnBUSCAR;
         private System.Windows.Forms.Button btnLIMPIAR;
-        private System.Windows.Forms.Button btnCERRAR;
+        private System.Windows.Forms.Button btnBUSQUEDA;
+        private System.Windows.Forms.Button button1;
     }
 }

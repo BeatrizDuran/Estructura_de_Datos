@@ -12,17 +12,19 @@ namespace esdat
 {
     public partial class frmTipoDatos : Form
     {
-        public frmTipoDatos()
-        {
-            InitializeComponent();
-        } 
+        public frmTipoDatos() => InitializeComponent();
         private void btnCOMENZAR_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked==false || radioButton2.Checked==false || radioButton3.Checked==false || radioButton4.Checked==false || radioButton5.Checked==false)
+            if (radioButton1.Checked == false && radioButton2.Checked == false && 
+                radioButton3.Checked == false && radioButton4.Checked == false && 
+                radioButton5.Checked == false && rbNUMEROSCOMPLEJOS.Checked==false)
             {
-                MessageBox.Show("Es necesario seleccionar una opción","aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Es necesario seleccionar una opción", "aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            new frmPractica1_2(selected_RadioButton()).ShowDialog();            
+            else
+            {
+                new frmPractica1_2(selected_RadioButton()).ShowDialog();
+            }
         }
         private string selected_RadioButton()
         {
@@ -32,15 +34,9 @@ namespace esdat
             resultado = radioButton3.Checked == true ? "decimal" : resultado;
             resultado = radioButton4.Checked == true ? "char" : resultado;
             resultado = radioButton5.Checked == true ? "string" : resultado;
-            resultado = rbNUMEROSCOMPLEJOS.Checked == true ? "Numeros Complejos" : resultado;
-            resultado = radioButton7.Checked == true ? "..." : resultado;
-           
+            resultado = rbNUMEROSCOMPLEJOS.Checked == true ? "Numeros Complejos" : resultado;           
             return resultado;
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        private void button1_Click(object sender, EventArgs e) => this.Close();
     }
 }

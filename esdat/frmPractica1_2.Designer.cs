@@ -170,6 +170,7 @@
             this.txtNUMCOMPLEJO.Name = "txtNUMCOMPLEJO";
             this.txtNUMCOMPLEJO.Size = new System.Drawing.Size(167, 26);
             this.txtNUMCOMPLEJO.TabIndex = 9;
+            this.txtNUMCOMPLEJO.Visible = false;
             // 
             // lblNumComplejos
             // 
@@ -179,6 +180,7 @@
             this.lblNumComplejos.Size = new System.Drawing.Size(10, 13);
             this.lblNumComplejos.TabIndex = 10;
             this.lblNumComplejos.Text = "-";
+            this.lblNumComplejos.Visible = false;
             // 
             // frmPractica1_2
             // 
@@ -196,6 +198,7 @@
             this.Controls.Add(this.btnCAPTURAR);
             this.Controls.Add(this.lblELEMENTO);
             this.Name = "frmPractica1_2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Practica1_2";
             this.Load += new System.EventHandler(this.Pu_1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvELEMENTOS)).EndInit();

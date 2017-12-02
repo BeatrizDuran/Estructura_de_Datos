@@ -139,6 +139,7 @@
             this.Controls.Add(this.dgvFIBONACCI);
             this.Controls.Add(this.btnGENERAR);
             this.Name = "frmFibonacci";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fibonacci";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFIBONACCI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

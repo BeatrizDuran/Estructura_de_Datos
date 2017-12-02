@@ -63,6 +63,26 @@ namespace esdat.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _012_restart_16 {
+            get {
+                object obj = ResourceManager.GetObject("012_restart-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _012_restart_161 {
+            get {
+                object obj = ResourceManager.GetObject("012_restart-161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1 {
             get {
                 object obj = ResourceManager.GetObject("1", resourceCulture);
@@ -233,6 +253,16 @@ namespace esdat.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ESDAT {
+            get {
+                object obj = ResourceManager.GetObject("ESDAT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fibonacci {
             get {
                 object obj = ResourceManager.GetObject("Fibonacci", resourceCulture);
@@ -266,6 +296,16 @@ namespace esdat.Properties {
         internal static System.Drawing.Bitmap los_deportes___girl {
             get {
                 object obj = ResourceManager.GetObject("los deportes---girl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Matrix_transpose {
+            get {
+                object obj = ResourceManager.GetObject("Matrix_transpose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +436,16 @@ namespace esdat.Properties {
         internal static System.Drawing.Bitmap reversito75 {
             get {
                 object obj = ResourceManager.GetObject("reversito75", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thin_1570_exit_login_import_16 {
+            get {
+                object obj = ResourceManager.GetObject("thin-1570_exit_login_import-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

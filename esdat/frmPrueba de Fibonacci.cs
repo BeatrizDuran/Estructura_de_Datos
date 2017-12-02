@@ -27,6 +27,9 @@ namespace esdat
                 return Pruebita(n-1)+Pruebita(n-2);
             }        
         }
+        /// <summary>
+        /// Pone en un label que numero pertenece a la serie de fibonacci(el numero del textbox).
+        /// </summary>
         private void calculandooo()
         {
             if (int.Parse(txtFIBONACCI.Text) == 1)
@@ -42,6 +45,9 @@ namespace esdat
                 label3.Text = "El " + txtFIBONACCI.Text + " numero de Fibonacci es : " + Pruebita(int.Parse(txtFIBONACCI.Text)-2);
             }
         }
+        /// <summary>
+        /// Genera toda la serie de fibonacci
+        /// </summary>
         private void calcular()
         {
             dgvFIBONACCI.Rows.Clear();
@@ -75,6 +81,7 @@ namespace esdat
                 if (int.TryParse(txtFIBONACCI.Text, out resl)) //res no se utiliza, es solo para poder hacer el parceo
                 {
                     calcular(); //captura si es valido :)
+                    calculandooo();
                 }
                 else
                 {
@@ -82,15 +89,11 @@ namespace esdat
                 }
             }
         }
-        private void Prueba_de_Fibonacci_Load(object sender, EventArgs e)
-        {
-            calcular();        
-        }
-
+        private void Prueba_de_Fibonacci_Load(object sender, EventArgs e) => calcular();
         private void btnGENERAR_Click(object sender, EventArgs e)
         {
             validar();
-            calculandooo();
         }
+        private void btnSALIR_Click(object sender, EventArgs e) => this.Close();
     }
 }

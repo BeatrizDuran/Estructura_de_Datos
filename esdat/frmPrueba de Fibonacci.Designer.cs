@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnSALIR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFIBONACCI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -123,11 +124,25 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "-";
             // 
+            // btnSALIR
+            // 
+            this.btnSALIR.BackColor = System.Drawing.Color.IndianRed;
+            this.btnSALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSALIR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSALIR.Location = new System.Drawing.Point(511, 388);
+            this.btnSALIR.Name = "btnSALIR";
+            this.btnSALIR.Size = new System.Drawing.Size(141, 36);
+            this.btnSALIR.TabIndex = 8;
+            this.btnSALIR.Text = "Cerrar";
+            this.btnSALIR.UseVisualStyleBackColor = false;
+            this.btnSALIR.Click += new System.EventHandler(this.btnSALIR_Click);
+            // 
             // Prueba_de_Fibonacci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 425);
+            this.ClientSize = new System.Drawing.Size(710, 436);
+            this.Controls.Add(this.btnSALIR);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -136,6 +151,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFIBONACCI);
             this.Name = "Prueba_de_Fibonacci";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prueba_de_Fibonacci";
             this.Load += new System.EventHandler(this.Prueba_de_Fibonacci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFIBONACCI)).EndInit();
@@ -155,5 +171,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSALIR;
     }
 }

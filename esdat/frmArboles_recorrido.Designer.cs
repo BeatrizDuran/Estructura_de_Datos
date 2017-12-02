@@ -225,6 +225,7 @@
             this.Controls.Add(this.btnRECORRIDO);
             this.Controls.Add(this.btnPODAR);
             this.Name = "frmArboles_recorrido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "arboles_recorrido";
             this.Load += new System.EventHandler(this.arboles_recorrido_Load);
             this.ResumeLayout(false);

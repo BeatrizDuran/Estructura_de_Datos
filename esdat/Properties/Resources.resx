@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="if_10_2694137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_10_2694137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minion1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minion6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minion6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thin-1570_exit_login_import-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thin-1570_exit_login_import-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reversito75" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reversito75.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +139,8 @@
   <data name="minion4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minion4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cuadrado-magico-walfk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cuadrado-magico-walfk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_9_2694135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_9_2694135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,14 +151,17 @@
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fibonacci" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fibonacci.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="postfija" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postfija.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dd_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dd_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="miREVERSITOOOOOOO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\miREVERSITOOOOOOO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minion5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minion5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MCD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MCD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +169,14 @@
   <data name="minion88" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minion88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minion7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minion7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ESDAT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESDAT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minion2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minion2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minion7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minion7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +199,9 @@
   <data name="66" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Matrix_transpose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matrix_transpose.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="elMINION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elMINION.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,11 +211,11 @@
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minion5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minion5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cuadrado-magico-walfk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuadrado-magico-walfk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fibonacci" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fibonacci.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="miREVERSITOOOOOOO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miREVERSITOOOOOOO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\777.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +229,10 @@
   <data name="666" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\666.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_9_2694135" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_9_2694135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="012_restart-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\012_restart-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_10_2694137" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_10_2694137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="012_restart-161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\012_restart-161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

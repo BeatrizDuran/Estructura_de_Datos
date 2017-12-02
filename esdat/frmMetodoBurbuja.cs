@@ -29,20 +29,24 @@ namespace esdat
         /// </summary>
         private void validar()
         {
-            if (txtLI.Text.Trim() == "" || txtLS.Text.Trim()=="") //se verifica si el campo esta vacio
+            if (txtLI.Text.Trim() == "" || txtLS.Text.Trim() == "") //se verifica si el campo esta vacio
             {
                 MessageBox.Show("El campo está vacio", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtLI.Focus();
             }
-            if (int.Parse(txtLI.Text) > int.Parse(txtLS.Text))
-            {
-                MessageBox.Show("Verifica tus limites", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
             else
             {
-                if (int.TryParse(txtLI.Text, out resl)|| int.TryParse(txtLS.Text, out resl)) //res no se utiliza, es solo para poder hacer el parceo
+                if (int.TryParse(txtLI.Text, out resl) || int.TryParse(txtLS.Text, out resl))
                 {
-                    generar(); //captura si es valido :)
+                    if (int.Parse(txtLI.Text) < int.Parse(txtLS.Text))
+                    {
+                        generar(); //captura si es valido :)
+                    }
+                    else
+                    {
+                        MessageBox.Show("Verificar los valores ingresados","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        txtLI.Focus();
+                    }
                 }
                 else
                 {
@@ -56,23 +60,31 @@ namespace esdat
         /// </summary>
         private void calcular()
         {
-            if (dgvORIGINAL.Rows.Count==0) //se verifica si el campo esta vacio
+            if (txtLI.Text.Trim() == "" || txtLS.Text.Trim() == "")
             {
-                MessageBox.Show("Es necesario tener datos previos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtLI.Focus();
-            } else
+                MessageBox.Show("Hay campos vacíos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
-                burbuja();
-                insert();
-                shell();
-                label18.Text = "I :" + DateTime.Now.ToLongTimeString();
-                label12.Update();
-                cont = 0;
-                quicksort(0, a_quicksort.Length - 1);
-                imprimirArreglo(dgvQUICKSORT, a_quicksort);
-                label19.Text = "F :" + DateTime.Now.ToLongTimeString();
-                label12.Update();
-                lblIT4.Text = cont.ToString();
+                if (dgvORIGINAL.Rows.Count == 0) //se verifica si el campo esta vacio
+                {
+                    MessageBox.Show("Es necesario tener datos previos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txtLI.Focus();
+                }
+                else
+                {
+                    burbuja();
+                    insert();
+                    shell();
+                    label18.Text = "I :" + DateTime.Now.ToLongTimeString();
+                    label12.Update();
+                    cont = 0;
+                    quicksort(0, a_quicksort.Length - 1);
+                    imprimirArreglo(dgvQUICKSORT, a_quicksort);
+                    label19.Text = "F :" + DateTime.Now.ToLongTimeString();
+                    label12.Update();
+                    lblIT4.Text = cont.ToString();
+                }
             }
         }
         /// <summary>
@@ -271,22 +283,10 @@ namespace esdat
             lblIT3.Text = cont.ToString();
         }
 
-        private void btnGENERAR_Click(object sender, EventArgs e)
-        {
-            validar();
-        }
-        private void btnLIMPIAR_Click(object sender, EventArgs e)
-        {
-            limpiar();
-        }
-        private void btnCALCULAR_Click(object sender, EventArgs e)
-        {
-            calcular();
-        }
+        private void btnGENERAR_Click(object sender, EventArgs e) => validar();
+        private void btnLIMPIAR_Click(object sender, EventArgs e) => limpiar();
+        private void btnCALCULAR_Click(object sender, EventArgs e) => calcular();
 
-        private void MetodoBurbuja_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
     }
 }

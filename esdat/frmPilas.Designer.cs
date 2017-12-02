@@ -99,6 +99,7 @@
             this.btnPEEK.TabIndex = 3;
             this.btnPEEK.Text = "Peek()";
             this.btnPEEK.UseVisualStyleBackColor = true;
+            this.btnPEEK.Click += new System.EventHandler(this.btnPEEK_Click);
             // 
             // label1
             // 
@@ -153,6 +154,7 @@
             this.btnELEMENT_A.TabIndex = 8;
             this.btnELEMENT_A.Text = "ElementA()";
             this.btnELEMENT_A.UseVisualStyleBackColor = true;
+            this.btnELEMENT_A.Click += new System.EventHandler(this.btnELEMENT_A_Click);
             // 
             // btnREVERSA
             // 
@@ -219,6 +221,7 @@
             this.Controls.Add(this.btnPUSH);
             this.Controls.Add(this.dgvPILA);
             this.Name = "frmPilas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pilas";
             this.Load += new System.EventHandler(this.Pilas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPILA)).EndInit();

@@ -15,21 +15,9 @@ namespace esdat
             SetReal(real);
             SetImaginario(imaginario);
         }
-        public void SetReal(double value)
-        {
-            this.real = value;
-        }
-        public double GetReal()
-        {
-            return this.real;
-        }
-        public void SetImaginario(double value)
-        {
-            this.imaginario = value;
-        }
-        public double GetImaginario()
-        {
-            return this.imaginario;
-        }
+        public void SetReal(double value) => this.real = value;
+        public double GetReal() => this.real;
+        public void SetImaginario(double value) => this.imaginario = value;
+        public double GetImaginario() => this.imaginario;
     }
 }

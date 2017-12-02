@@ -33,8 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnTRANSPUESTA = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,32 +94,79 @@
             this.btnTRANSPUESTA.Name = "btnTRANSPUESTA";
             this.btnTRANSPUESTA.Size = new System.Drawing.Size(121, 35);
             this.btnTRANSPUESTA.TabIndex = 4;
-            this.btnTRANSPUESTA.Text = "Transpuestas";
+            this.btnTRANSPUESTA.Text = "Generar ";
             this.btnTRANSPUESTA.UseVisualStyleBackColor = true;
             this.btnTRANSPUESTA.Click += new System.EventHandler(this.btnTRANSPUESTA_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(445, 163);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(283, 188);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(442, 21);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(451, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(216, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.label3.Text = "La transpuesta de una matriz";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::esdat.Properties.Resources.Matrix_transpose;
+            this.pictureBox2.Location = new System.Drawing.Point(497, 136);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 188);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(451, 106);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "A   .";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(469, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(18, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "T";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(673, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(20, 20);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "A";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(451, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(245, 40);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "consiste en intercambiar las  filas \r\npor las columnas y se denota por\r\n";
             // 
             // frmTranspuesta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 365);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnTRANSPUESTA);
@@ -143,5 +194,9 @@
         private System.Windows.Forms.Button btnTRANSPUESTA;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.gbTIPODATO = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.rbNUMEROSCOMPLEJOS = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -43,7 +42,6 @@
             // 
             // gbTIPODATO
             // 
-            this.gbTIPODATO.Controls.Add(this.radioButton7);
             this.gbTIPODATO.Controls.Add(this.rbNUMEROSCOMPLEJOS);
             this.gbTIPODATO.Controls.Add(this.radioButton5);
             this.gbTIPODATO.Controls.Add(this.radioButton4);
@@ -57,18 +55,6 @@
             this.gbTIPODATO.TabStop = false;
             this.gbTIPODATO.Text = "Seleccionar el tipo de dato";
             // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton7.Location = new System.Drawing.Point(34, 157);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(45, 17);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "NC2";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
             // rbNUMEROSCOMPLEJOS
             // 
             this.rbNUMEROSCOMPLEJOS.AutoSize = true;
@@ -77,7 +63,6 @@
             this.rbNUMEROSCOMPLEJOS.Name = "rbNUMEROSCOMPLEJOS";
             this.rbNUMEROSCOMPLEJOS.Size = new System.Drawing.Size(117, 17);
             this.rbNUMEROSCOMPLEJOS.TabIndex = 5;
-            this.rbNUMEROSCOMPLEJOS.TabStop = true;
             this.rbNUMEROSCOMPLEJOS.Text = "Numeros Complejos";
             this.rbNUMEROSCOMPLEJOS.UseVisualStyleBackColor = true;
             // 
@@ -89,7 +74,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(49, 17);
             this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "string";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
@@ -101,7 +85,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(45, 17);
             this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "char";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -113,7 +96,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(60, 17);
             this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "decimal";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -125,7 +107,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(56, 17);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "double";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -137,7 +118,6 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(35, 17);
             this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "int";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
@@ -176,6 +156,7 @@
             this.Controls.Add(this.btnCOMENZAR);
             this.Controls.Add(this.gbTIPODATO);
             this.Name = "frmTipoDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TipoDatos";
             this.gbTIPODATO.ResumeLayout(false);
             this.gbTIPODATO.PerformLayout();
@@ -192,7 +173,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button btnCOMENZAR;
-        private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton rbNUMEROSCOMPLEJOS;
         private System.Windows.Forms.Button button1;
     }

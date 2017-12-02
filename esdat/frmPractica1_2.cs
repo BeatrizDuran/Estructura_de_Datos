@@ -29,21 +29,37 @@ namespace esdat
             txtNUMCOMPLEJO.Visible = true;
             lblNumComplejos.Visible = true;
         }
-        public frmPractica1_2()
-        {
-            InitializeComponent();
-        }
-
+        public frmPractica1_2() => InitializeComponent();
+        //static public void SNF(TextBox text)
+        //{
+        //    frm childForm = new frmTipoDatos(text);
+        //    childForm.MdiParent = Application.OpenForms[0];
+        //    childForm.Height = Application.OpenForms[0].Height -
+        //        Application.OpenForms[0].Controls[0].Height -
+        //        Application.OpenForms[0].Controls[1].Height -
+        //        Application.OpenForms[0].Controls[2].Height - 50;
+        //    childForm.Show();
+        //}
         private void Pu_1_Load(object sender, EventArgs e)
         {
             initialize_dgvELEMENTOS();
+            txtNUMCOM();
+        }
+        private void txtNUMCOM()
+        {
+            if (lblVALOR.Text == "(Numeros Complejos)")
+            {
+                txtNUMCOMPLEJO.Visible = true;
+            }
+            else
+            {
+                txtNUMCOMPLEJO.Visible = false;
+            }
         }
         public frmPractica1_2(string dataType)
         {
             InitializeComponent();
-            //MessageBox.Show(dataType);
             lblVALOR.Text = "("+dataType+")";
-           
         }
         private void initialize_dgvELEMENTOS()
         {
@@ -57,10 +73,7 @@ namespace esdat
             dgvELEMENTOS.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter;
             dgvELEMENTOS.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.BottomCenter;
         }
-        private void btnCAPTURAR_Click(object sender, EventArgs e)
-        {
-            Validar();
-        }
+        private void btnCAPTURAR_Click(object sender, EventArgs e) => Validar();
         private void capturar()
         {
             dgvELEMENTOS[column, row].Value = txtELEMENTO.Text;
@@ -96,8 +109,6 @@ namespace esdat
             //VALIDANDO INT
             if (lblVALOR.Text == "(int)") //seleccionado int
             {
-                txtNUMCOMPLEJO.Visible = false;
-                lblNumComplejos.Visible = false;
                 if (txtELEMENTO.Text.Trim() == "") //se verifica si el campo esta vacio
                 {
                     MessageBox.Show("El campo a capturar esta vacio", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -276,15 +287,7 @@ namespace esdat
             Pu_1_Load(sender, e);          
             botones();
         }
-
-        private void btSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void dgvELEMENTOS_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblELEMENTO_SELECCIONADO.Text=" Elemento + ["+e.ColumnIndex+","+ e.RowIndex+"]. Seleccionado = ";
-        }
+        private void btSalir_Click(object sender, EventArgs e) => this.Close();
+        private void dgvELEMENTOS_CellClick(object sender, DataGridViewCellEventArgs e) => lblELEMENTO_SELECCIONADO.Text = " Elemento + [" + e.ColumnIndex + "," + e.RowIndex + "]. Seleccionado = ";
     }
 }

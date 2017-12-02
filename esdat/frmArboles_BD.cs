@@ -95,11 +95,13 @@ namespace esdat
             tvBASEDATOS.Nodes[2].Nodes.Add("Campo 3 Value Campo 3 Value Campo 3 Value");
             tvBASEDATOS.Nodes[2].Nodes.Add("Campo 3 Value Campo 3 Value Campo 3 Value");
             tvBASEDATOS.Nodes[2].Nodes.Add("Campo 3 Value Campo 3 Value Campo 3 Value");
+        }
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
+        private void btnEJEMPLOS_Click(object sender, EventArgs e)
+        {
             games();
             integradora();
             showtables();
         }
-
-      
     }
 }

@@ -19,6 +19,9 @@ namespace esdat
         }
         public static string nombre;
         private int nivel;
+        /// <summary>
+        /// Abre y valida el memorama niño.
+        /// </summary>
         private void btnBoy()
         {
             if (txtNOMBRE.Text.Trim() == "")
@@ -35,6 +38,9 @@ namespace esdat
                 }
             }
         }
+        /// <summary>
+        /// Abre y valida el memorama niña.
+        /// </summary>
         private void btnGirl()
         {
             if (txtNOMBRE.Text.Trim() == "")
@@ -55,25 +61,12 @@ namespace esdat
             }
         }
 
-        private void btnBOY_Click(object sender, EventArgs e)
-        {
-            btnBoy();
-        }
-        private void btnGIRL_Click(object sender, EventArgs e)
-        {
-            btnGirl();
-        }
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            nivel = 1000;
-        }
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            nivel = 500;
-        }
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            nivel = 100;
-        }
+        private void btnBOY_Click(object sender, EventArgs e) => btnBoy();
+        private void btnGIRL_Click(object sender, EventArgs e) => btnGirl();
+        private void radioButton1_CheckedChanged(object sender, EventArgs e) => nivel = 1000;
+        private void radioButton2_CheckedChanged(object sender, EventArgs e) => nivel = 500;
+        private void radioButton3_CheckedChanged(object sender, EventArgs e) => nivel = 100;
+
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
     }
 }

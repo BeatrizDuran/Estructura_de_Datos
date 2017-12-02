@@ -45,39 +45,51 @@
             this.transpuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memoramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidad3ListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad3ListasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad4PilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.torresDeHanoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidad5ColasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidad3ListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recorridoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.unidad1ConceptosBásicosToolStripMenuItem,
             this.unidad2ArreglosToolStripMenuItem,
             this.unidad3ListasToolStripMenuItem1,
             this.unidad4PilasToolStripMenuItem,
             this.unidad5ColasToolStripMenuItem,
-            this.unidad3ListasToolStripMenuItem});
+            this.unidad3ListasToolStripMenuItem,
+            this.acercaDeToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(812, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(177, 177);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // unidad1ConceptosBásicosToolStripMenuItem
             // 
+            this.unidad1ConceptosBásicosToolStripMenuItem.BackColor = System.Drawing.Color.Teal;
             this.unidad1ConceptosBásicosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tiposDeDatosAbstractosToolStripMenuItem,
             this.recursividadToolStripMenuItem});
             this.unidad1ConceptosBásicosToolStripMenuItem.Name = "unidad1ConceptosBásicosToolStripMenuItem";
-            this.unidad1ConceptosBásicosToolStripMenuItem.Size = new System.Drawing.Size(171, 20);
+            this.unidad1ConceptosBásicosToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.unidad1ConceptosBásicosToolStripMenuItem.Text = "Unidad 1: Conceptos Básicos";
             // 
             // tiposDeDatosAbstractosToolStripMenuItem
@@ -144,6 +156,7 @@
             // 
             // unidad2ArreglosToolStripMenuItem
             // 
+            this.unidad2ArreglosToolStripMenuItem.BackColor = System.Drawing.Color.LightSeaGreen;
             this.unidad2ArreglosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.métodosDeOrdenamientoToolStripMenuItem,
             this.sumaToolStripMenuItem,
@@ -152,7 +165,7 @@
             this.cuadradoToolStripMenuItem,
             this.memoramaToolStripMenuItem});
             this.unidad2ArreglosToolStripMenuItem.Name = "unidad2ArreglosToolStripMenuItem";
-            this.unidad2ArreglosToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.unidad2ArreglosToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.unidad2ArreglosToolStripMenuItem.Text = "Unidad 2: Arreglos";
             // 
             // métodosDeOrdenamientoToolStripMenuItem
@@ -174,6 +187,7 @@
             this.inversaToolStripMenuItem.Name = "inversaToolStripMenuItem";
             this.inversaToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.inversaToolStripMenuItem.Text = "Inversa";
+            this.inversaToolStripMenuItem.Click += new System.EventHandler(this.inversaToolStripMenuItem_Click);
             // 
             // transpuestaToolStripMenuItem
             // 
@@ -196,34 +210,63 @@
             this.memoramaToolStripMenuItem.Text = "Memorama";
             this.memoramaToolStripMenuItem.Click += new System.EventHandler(this.memoramaToolStripMenuItem_Click);
             // 
+            // unidad3ListasToolStripMenuItem1
+            // 
+            this.unidad3ListasToolStripMenuItem1.BackColor = System.Drawing.Color.Turquoise;
+            this.unidad3ListasToolStripMenuItem1.Name = "unidad3ListasToolStripMenuItem1";
+            this.unidad3ListasToolStripMenuItem1.Size = new System.Drawing.Size(170, 19);
+            this.unidad3ListasToolStripMenuItem1.Text = "Unidad 3: Listas";
+            // 
+            // unidad4PilasToolStripMenuItem
+            // 
+            this.unidad4PilasToolStripMenuItem.BackColor = System.Drawing.Color.Aquamarine;
+            this.unidad4PilasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pilasToolStripMenuItem,
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem,
+            this.torresDeHanoiToolStripMenuItem});
+            this.unidad4PilasToolStripMenuItem.Name = "unidad4PilasToolStripMenuItem";
+            this.unidad4PilasToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.unidad4PilasToolStripMenuItem.Text = "Unidad 4: Pilas";
+            // 
+            // pilasToolStripMenuItem
+            // 
+            this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.pilasToolStripMenuItem.Text = "Pilas genéricas";
+            this.pilasToolStripMenuItem.Click += new System.EventHandler(this.pilasToolStripMenuItem_Click);
+            // 
+            // evaluacionesDeExpresionesPostfijasToolStripMenuItem
+            // 
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem.Name = "evaluacionesDeExpresionesPostfijasToolStripMenuItem";
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem.Text = "Evaluaciones de expresiones postfijas";
+            this.evaluacionesDeExpresionesPostfijasToolStripMenuItem.Click += new System.EventHandler(this.evaluacionesDeExpresionesPostfijasToolStripMenuItem_Click);
+            // 
+            // torresDeHanoiToolStripMenuItem
+            // 
+            this.torresDeHanoiToolStripMenuItem.Name = "torresDeHanoiToolStripMenuItem";
+            this.torresDeHanoiToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.torresDeHanoiToolStripMenuItem.Text = "Torres de Hanoi";
+            this.torresDeHanoiToolStripMenuItem.Click += new System.EventHandler(this.torresDeHanoiToolStripMenuItem_Click);
+            // 
+            // unidad5ColasToolStripMenuItem
+            // 
+            this.unidad5ColasToolStripMenuItem.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.unidad5ColasToolStripMenuItem.Name = "unidad5ColasToolStripMenuItem";
+            this.unidad5ColasToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.unidad5ColasToolStripMenuItem.Text = "Unidad 5: Colas";
+            // 
             // unidad3ListasToolStripMenuItem
             // 
+            this.unidad3ListasToolStripMenuItem.BackColor = System.Drawing.Color.LightCyan;
             this.unidad3ListasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.recorridoToolStripMenuItem,
             this.exploradorToolStripMenuItem,
             this.conDatosToolStripMenuItem,
             this.imagenesToolStripMenuItem});
             this.unidad3ListasToolStripMenuItem.Name = "unidad3ListasToolStripMenuItem";
-            this.unidad3ListasToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
-            this.unidad3ListasToolStripMenuItem.Text = "Unidad 6: Arboles";
-            // 
-            // unidad3ListasToolStripMenuItem1
-            // 
-            this.unidad3ListasToolStripMenuItem1.Name = "unidad3ListasToolStripMenuItem1";
-            this.unidad3ListasToolStripMenuItem1.Size = new System.Drawing.Size(101, 20);
-            this.unidad3ListasToolStripMenuItem1.Text = "Unidad 3: Listas";
-            // 
-            // unidad4PilasToolStripMenuItem
-            // 
-            this.unidad4PilasToolStripMenuItem.Name = "unidad4PilasToolStripMenuItem";
-            this.unidad4PilasToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.unidad4PilasToolStripMenuItem.Text = "Unidad 4: Pilas";
-            // 
-            // unidad5ColasToolStripMenuItem
-            // 
-            this.unidad5ColasToolStripMenuItem.Name = "unidad5ColasToolStripMenuItem";
-            this.unidad5ColasToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.unidad5ColasToolStripMenuItem.Text = "Unidad 5: Colas";
+            this.unidad3ListasToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.unidad3ListasToolStripMenuItem.Text = "Unidad 6: Árboles";
             // 
             // recorridoToolStripMenuItem
             // 
@@ -253,17 +296,47 @@
             this.imagenesToolStripMenuItem.Text = "Árboles con Imagenes";
             this.imagenesToolStripMenuItem.Click += new System.EventHandler(this.imagenesToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.BackColor = System.Drawing.Color.IndianRed;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::esdat.Properties.Resources.ESDAT;
+            this.pictureBox1.Location = new System.Drawing.Point(180, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(631, 361);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.BackColor = System.Drawing.Color.Azure;
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 284);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(812, 360);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu de estructura de datos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,6 +369,12 @@
         private System.Windows.Forms.ToolStripMenuItem exploradorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem conDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imagenesToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem evaluacionesDeExpresionesPostfijasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem torresDeHanoiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
     }
 }
 

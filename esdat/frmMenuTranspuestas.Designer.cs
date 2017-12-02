@@ -47,6 +47,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Volver al menu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnGENERAR
             // 
@@ -121,8 +122,8 @@
             this.Controls.Add(this.txtCOLUMNAS);
             this.Controls.Add(this.label1);
             this.Name = "frmMenuTranspuestas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu transpuesta";
-            this.Load += new System.EventHandler(this.frmMenuTranspuestas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

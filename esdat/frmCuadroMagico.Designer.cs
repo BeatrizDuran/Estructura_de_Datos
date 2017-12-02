@@ -333,6 +333,7 @@
             this.Controls.Add(this.lblCOL1);
             this.Controls.Add(this.dgvCUADROMAGICO);
             this.Name = "frmCuadroMagico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CuadroMagico";
             this.Load += new System.EventHandler(this.CuadroMagico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCUADROMAGICO)).EndInit();

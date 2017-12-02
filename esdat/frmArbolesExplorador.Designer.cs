@@ -34,6 +34,7 @@
             this.btnEXPANDIR = new System.Windows.Forms.Button();
             this.btnCONTRAER = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCERRAR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCARGARDOCUMENTOS
@@ -52,7 +53,7 @@
             // 
             this.btnLIMPIAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLIMPIAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLIMPIAR.Location = new System.Drawing.Point(309, 190);
+            this.btnLIMPIAR.Location = new System.Drawing.Point(309, 187);
             this.btnLIMPIAR.Name = "btnLIMPIAR";
             this.btnLIMPIAR.Size = new System.Drawing.Size(184, 44);
             this.btnLIMPIAR.TabIndex = 1;
@@ -101,11 +102,25 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Explorador";
             // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.Salmon;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(309, 237);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(184, 44);
+            this.btnCERRAR.TabIndex = 6;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
             // frmArbolesExplorador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 374);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCONTRAER);
             this.Controls.Add(this.btnEXPANDIR);
@@ -113,6 +128,7 @@
             this.Controls.Add(this.btnLIMPIAR);
             this.Controls.Add(this.btnCARGARDOCUMENTOS);
             this.Name = "frmArbolesExplorador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Explorador";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,5 +143,6 @@
         private System.Windows.Forms.Button btnEXPANDIR;
         private System.Windows.Forms.Button btnCONTRAER;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }

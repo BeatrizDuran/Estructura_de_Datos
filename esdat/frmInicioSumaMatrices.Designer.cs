@@ -124,7 +124,6 @@
             this.Name = "Suma_de_matrices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de la suma de matrices";
-            this.Load += new System.EventHandler(this.Suma_de_matrices_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

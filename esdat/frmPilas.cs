@@ -40,6 +40,10 @@ namespace esdat
                 row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
             }
         }
+        /// <summary>
+        /// Voltea la pila.
+        /// </summary>
+        /// <param name="input">nombre de la pila</param>
         private void Reverse(Stack<string> input)
         {
             if (dgvPILA.Rows.Count == 0)
@@ -75,20 +79,44 @@ namespace esdat
                 ImprimirPila();
             }
         }
-        
-        private void Pilas_Load(object sender, EventArgs e)
+        private void ElementAt()
         {
+            if (int.TryParse(txtELEMENTO.Text, out int elemento) && elemento <= stackString.Count())
+            {
+                MessageBox.Show("El elemento en la posición: " + elemento + " es: " + stackString.ElementAt(elemento), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Solo se permiten números enteros.", "Solo enteros", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            limpiar();
+        }
+        private void limpiar()
+        {
+            txtELEMENTO.Clear();
+            dgvPILA.Rows.Clear();
+            stackString.Clear();
             txtELEMENTO.Focus();
         }
+        private void Peek()
+        {
+            if (stackString.Count == 0)
+            {
+                MessageBox.Show("La pila esta vacia", "Pila vacía", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("El elemento en tope de la pila es: \n" + stackString.Peek(), "Elemento al tope", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            limpiar();
+        }
+        private void Pilas_Load(object sender, EventArgs e) => txtELEMENTO.Focus();
         private void btnPUSH_Click(object sender, EventArgs e)
         {
             stackString.Push(txtELEMENTO.Text);
             ImprimirPila();
         }
-        private void btnPOP_Click(object sender, EventArgs e)
-        {
-            btnPop();
-        }
+        private void btnPOP_Click(object sender, EventArgs e) => btnPop();
         private void txtELEMENTO_TextChanged(object sender, EventArgs e)
         {
             btnCONTAINS.Text = "Contains(\"" + txtELEMENTO.Text + "\")";
@@ -98,18 +126,11 @@ namespace esdat
         }
         private void btnCLEAR_Click(object sender, EventArgs e)
         {
-            txtELEMENTO.Clear();
-            dgvPILA.Rows.Clear();
-            stackString.Clear();
-            txtELEMENTO.Focus();
+            limpiar();
         }
-        private void btnREVERSA_Click(object sender, EventArgs e)
-        {
-            Reverse(stackString);
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        private void btnREVERSA_Click(object sender, EventArgs e) => Reverse(stackString);
+        private void button1_Click(object sender, EventArgs e) => this.Close();
+        private void btnPEEK_Click(object sender, EventArgs e) => Peek();
+        private void btnELEMENT_A_Click(object sender, EventArgs e) => ElementAt();
     }
 }

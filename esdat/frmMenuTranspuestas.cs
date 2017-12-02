@@ -12,10 +12,7 @@ namespace esdat
 {
     public partial class frmMenuTranspuestas : Form
     {
-        public frmMenuTranspuestas()
-        {
-            InitializeComponent();
-        }
+        public frmMenuTranspuestas() => InitializeComponent();
         private int res;
         private void validar()
         {
@@ -47,14 +44,7 @@ namespace esdat
 
 
         }
-        private void btnGENERAR_Click(object sender, EventArgs e)
-        {
-            validar();
-        }
-
-        private void frmMenuTranspuestas_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void btnGENERAR_Click(object sender, EventArgs e) => validar();
+        private void button1_Click(object sender, EventArgs e) => this.Close();
     }
 }

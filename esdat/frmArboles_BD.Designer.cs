@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnCERRAR = new System.Windows.Forms.Button();
+            this.btnEJEMPLOS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tvBASEDATOS
@@ -106,11 +108,39 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "databases Games";
             // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.Salmon;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(614, 393);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(156, 35);
+            this.btnCERRAR.TabIndex = 8;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
+            // btnEJEMPLOS
+            // 
+            this.btnEJEMPLOS.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEJEMPLOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEJEMPLOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEJEMPLOS.Location = new System.Drawing.Point(452, 393);
+            this.btnEJEMPLOS.Name = "btnEJEMPLOS";
+            this.btnEJEMPLOS.Size = new System.Drawing.Size(156, 35);
+            this.btnEJEMPLOS.TabIndex = 9;
+            this.btnEJEMPLOS.Text = "Ejemplos";
+            this.btnEJEMPLOS.UseVisualStyleBackColor = false;
+            this.btnEJEMPLOS.Click += new System.EventHandler(this.btnEJEMPLOS_Click);
+            // 
             // frmArboles_BD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 390);
+            this.ClientSize = new System.Drawing.Size(783, 440);
+            this.Controls.Add(this.btnEJEMPLOS);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -120,6 +150,7 @@
             this.Controls.Add(this.tvPRUEBA);
             this.Controls.Add(this.tvBASEDATOS);
             this.Name = "frmArboles_BD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.ResumeLayout(false);
@@ -137,5 +168,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnCERRAR;
+        private System.Windows.Forms.Button btnEJEMPLOS;
     }
 }

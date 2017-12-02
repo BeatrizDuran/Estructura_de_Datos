@@ -176,7 +176,6 @@ namespace esdat
             Solucion(pila1, pila2, pcbD4, panel2);//14...2B
             Solucion(pila3, pila2, pcbD5, panel2);//15...1B........5C
             Solucion(pila1, pila3, pcbD1, panel3);//16...5C.......1A
-            //Solucion(pila2, pila1, pcbD5, panel1);//17...1C........2C
             Solucion(pila2, pila3, pcbD5, panel3);//18...1C
             Solucion(pila2, pila1, pcbD4, panel1);//19...3A
             Solucion(pila3, pila1, pcbD5, panel1);//20...1B

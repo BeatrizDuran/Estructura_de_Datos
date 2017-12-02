@@ -45,22 +45,8 @@ namespace esdat
                     txtCOLUMNAS.Focus();
                 }
             }
-
-            
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new frmMenu().ShowDialog();
-        }
-
-        private void btnGENERAR_Click(object sender, EventArgs e)
-        {
-            validar();
-        }
-
-        private void Suma_de_matrices_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void button1_Click(object sender, EventArgs e) => this.Close();
+        private void btnGENERAR_Click(object sender, EventArgs e) => validar();
     }
 }

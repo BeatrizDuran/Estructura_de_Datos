@@ -37,5 +37,8 @@ namespace esdat
                 }
             }
         }
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
+        private void btnEXPANDIR_Click(object sender, EventArgs e) => tvBASEDATOS.ExpandAll();
+        private void btnCONTRAER_Click(object sender, EventArgs e) => tvBASEDATOS.CollapseAll();
     }
 }

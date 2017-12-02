@@ -171,6 +171,7 @@
             this.Controls.Add(this.dgvMATRIZ2);
             this.Controls.Add(this.dgvMATRIZ1);
             this.Name = "Generación_de_la_suma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generación_de_la_suma";
             this.Load += new System.EventHandler(this.Generación_de_la_suma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMATRIZ1)).EndInit();

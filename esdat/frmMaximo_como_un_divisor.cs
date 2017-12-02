@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//validaciones
-//boton limpiar
 namespace esdat
 {
     public partial class Maximo_como_un_divisor : Form
@@ -18,6 +16,9 @@ namespace esdat
             InitializeComponent();
         }
         private int res;
+        /// <summary>
+        /// Valida los campos  que son ingresados o ya sea otra acción.
+        /// </summary>
         private void validar() 
         {
             if (txtENTERO1.Text.Trim() == "" || txtENTERO2.Text.Trim() == "")
@@ -38,6 +39,12 @@ namespace esdat
                 }
             }
         }
+        /// <summary>
+        /// Realiza el metodo de el maximo comun divisor.
+        /// </summary>
+        /// <param name="a">numero x</param>
+        /// <param name="b">otro numero x</param>
+        /// <returns></returns>
         private int mcdMETODO(int a, int b)
         {
            
@@ -61,10 +68,8 @@ namespace esdat
                 }
             
         }
-        private void btnCALCULAR_Click(object sender, EventArgs e)
-        {
-            validar();
-        }
-        
+        private void btnCALCULAR_Click(object sender, EventArgs e) => validar();
+
+        private void btnSALIR_Click(object sender, EventArgs e) => this.Close();
     }
 }

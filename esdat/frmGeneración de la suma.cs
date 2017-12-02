@@ -115,6 +115,7 @@ namespace esdat
             }
             else
             {
+
                 MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 int column = dgvMATRIZ1.CurrentCell.ColumnIndex;
                 int row = dgvMATRIZ1.CurrentCell.RowIndex;

@@ -36,6 +36,7 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.btnBOY = new System.Windows.Forms.Button();
             this.btnGIRL = new System.Windows.Forms.Button();
+            this.btnCERRAR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,11 +135,25 @@
             this.btnGIRL.UseVisualStyleBackColor = true;
             this.btnGIRL.Click += new System.EventHandler(this.btnGIRL_Click);
             // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.Salmon;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(99, 285);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(136, 41);
+            this.btnCERRAR.TabIndex = 9;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
             // frmInicioMemorama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 303);
+            this.ClientSize = new System.Drawing.Size(343, 338);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.btnGIRL);
             this.Controls.Add(this.btnBOY);
             this.Controls.Add(this.radioButton3);
@@ -148,6 +163,7 @@
             this.Controls.Add(this.txtNOMBRE);
             this.Controls.Add(this.label1);
             this.Name = "frmInicioMemorama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioMemorama";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,5 +180,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Button btnBOY;
         private System.Windows.Forms.Button btnGIRL;
+        private System.Windows.Forms.Button btnCERRAR;
     }
 }

@@ -47,6 +47,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolesImagenes));
             this.tvBASEDATOS = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnCERRAR = new System.Windows.Forms.Button();
+            this.btnCONTRAER = new System.Windows.Forms.Button();
+            this.btnEXPANDIR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tvBASEDATOS
@@ -109,14 +112,57 @@
             this.imageList1.Images.SetKeyName(2, "if_table_64790.png");
             this.imageList1.Images.SetKeyName(3, "if_table_1608863.png");
             // 
+            // btnCERRAR
+            // 
+            this.btnCERRAR.BackColor = System.Drawing.Color.Salmon;
+            this.btnCERRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCERRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCERRAR.Location = new System.Drawing.Point(268, 281);
+            this.btnCERRAR.Name = "btnCERRAR";
+            this.btnCERRAR.Size = new System.Drawing.Size(143, 40);
+            this.btnCERRAR.TabIndex = 2;
+            this.btnCERRAR.Text = "Cerrar";
+            this.btnCERRAR.UseVisualStyleBackColor = false;
+            this.btnCERRAR.Click += new System.EventHandler(this.btnCERRAR_Click);
+            // 
+            // btnCONTRAER
+            // 
+            this.btnCONTRAER.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCONTRAER.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCONTRAER.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCONTRAER.Location = new System.Drawing.Point(268, 58);
+            this.btnCONTRAER.Name = "btnCONTRAER";
+            this.btnCONTRAER.Size = new System.Drawing.Size(143, 40);
+            this.btnCONTRAER.TabIndex = 3;
+            this.btnCONTRAER.Text = "Contraer";
+            this.btnCONTRAER.UseVisualStyleBackColor = false;
+            this.btnCONTRAER.Click += new System.EventHandler(this.btnCONTRAER_Click);
+            // 
+            // btnEXPANDIR
+            // 
+            this.btnEXPANDIR.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEXPANDIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXPANDIR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEXPANDIR.Location = new System.Drawing.Point(268, 4);
+            this.btnEXPANDIR.Name = "btnEXPANDIR";
+            this.btnEXPANDIR.Size = new System.Drawing.Size(143, 40);
+            this.btnEXPANDIR.TabIndex = 4;
+            this.btnEXPANDIR.Text = "Expandir";
+            this.btnEXPANDIR.UseVisualStyleBackColor = false;
+            this.btnEXPANDIR.Click += new System.EventHandler(this.btnEXPANDIR_Click);
+            // 
             // frmArbolesImagenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 325);
+            this.ClientSize = new System.Drawing.Size(416, 325);
+            this.Controls.Add(this.btnEXPANDIR);
+            this.Controls.Add(this.btnCONTRAER);
+            this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.tvBASEDATOS);
             this.Name = "frmArbolesImagenes";
-            this.Text = "   ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Manejo de imagenes (árboles)";
             this.ResumeLayout(false);
 
         }
@@ -125,5 +171,8 @@
 
         private System.Windows.Forms.TreeView tvBASEDATOS;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button btnCERRAR;
+        private System.Windows.Forms.Button btnCONTRAER;
+        private System.Windows.Forms.Button btnEXPANDIR;
     }
 }

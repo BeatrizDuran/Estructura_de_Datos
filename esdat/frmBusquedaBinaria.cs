@@ -39,6 +39,9 @@ namespace esdat
                 }
             }
         }
+        /// <summary>
+        /// Metodo original de la búsqueda
+        /// </summary>
         private void BUSQUEDA()
         {
             dgvBusquedaBinaria.Rows.Clear();
@@ -56,6 +59,10 @@ namespace esdat
               //  dgvBusquedaBinaria.Rows[i].HeaderCell.Value = i.ToString();
             }
         }
+        /// <summary>
+        /// Realliza el recorrido renglon por rengón del datagridview
+        /// </summary>
+        /// <param name="view"></param>
         private void Renglones(DataGridView view)
         {
             foreach (DataGridViewRow row in dgvBusquedaBinaria.Rows)
@@ -63,6 +70,9 @@ namespace esdat
                 row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
             }
         }
+        /// <summary>
+        /// Realiza la limpieza de los campos
+        /// </summary>
         private void Limpiar()
         {
             txtNUMEROELEMENTOS.Clear();
@@ -71,6 +81,9 @@ namespace esdat
             txtBUSCAR.Clear();
             dgvBusquedaBinaria.Rows.Clear();
         }
+        /// <summary>
+        /// Realiza la busqueda desde el textbox
+        /// </summary>
         private void BuscarTextChanged()
         {
             if (txtBUSCAR.Text.Trim() == "")
@@ -102,23 +115,10 @@ namespace esdat
                 
             }
         }
-            
-        private void btnGENERAR_Click(object sender, EventArgs e)
-        {
-            validacion();
-        }
-        private void btnBUSCAR_Click(object sender, EventArgs e)
-        {
-                BuscarTextChanged();
-        }
-        private void btnLIMPIAR_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-        private void btnCERRAR_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
- 
+
+        private void btnGENERAR_Click(object sender, EventArgs e) => validacion();
+        private void btnLIMPIAR_Click(object sender, EventArgs e) => Limpiar();
+        private void btnBUSQUEDA_Click(object sender, EventArgs e) => BuscarTextChanged();
+        private void button1_Click(object sender, EventArgs e) => this.Close();
     }
 }

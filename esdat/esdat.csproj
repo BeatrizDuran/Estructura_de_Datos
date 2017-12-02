@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArbolesImagenes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     <Compile Include="frmTranspuesta.Designer.cs">
       <DependentUpon>frmTranspuesta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmArbolesImagenes.resx">
       <DependentUpon>frmArbolesImagenes.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +343,11 @@
     <None Include="Resources\postfija.png" />
     <None Include="Resources\if_9_2694135.png" />
     <None Include="Resources\if_10_2694137.png" />
+    <None Include="Resources\ESDAT.png" />
+    <None Include="Resources\Matrix_transpose.gif" />
+    <None Include="Resources\thin-1570_exit_login_import-16.png" />
+    <None Include="Resources\012_restart-16.png" />
+    <None Include="Resources\012_restart-161.png" />
     <Content Include="Scripts\es5-shim.js" />
     <Content Include="Scripts\es5-shim.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
