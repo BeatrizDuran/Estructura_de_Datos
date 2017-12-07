@@ -78,14 +78,22 @@ namespace esdat
             }
             else
             {
-                if (int.TryParse(txtFIBONACCI.Text, out resl)) //res no se utiliza, es solo para poder hacer el parceo
+                int txt = int.Parse(txtFIBONACCI.Text);
+                if (txt <= -1)
                 {
-                    calcular(); //captura si es valido :)
-                    calculandooo();
+                    MessageBox.Show("Solo numeros mayores a cero(0)", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Solo se permiten numeros enteros, no se capturo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // marca el error y no captua :(
+                    if (int.TryParse(txtFIBONACCI.Text, out resl)) //res no se utiliza, es solo para poder hacer el parceo
+                    {
+                        calcular(); //captura si es valido :)
+                        calculandooo();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Solo se permiten numeros enteros, no se capturo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // marca el error y no captua :(
+                    }
                 }
             }
         }

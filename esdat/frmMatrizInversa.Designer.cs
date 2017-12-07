@@ -80,7 +80,7 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dgvApor.Location = new System.Drawing.Point(494, 7);
+            this.dgvApor.Location = new System.Drawing.Point(494, 12);
             this.dgvApor.Name = "dgvApor";
             this.dgvApor.ReadOnly = true;
             this.dgvApor.Size = new System.Drawing.Size(259, 123);
@@ -226,7 +226,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(327, 56);
+            this.label2.Location = new System.Drawing.Point(327, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 25);
             this.label2.TabIndex = 6;
@@ -236,7 +236,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(439, 7);
+            this.label3.Location = new System.Drawing.Point(439, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 25);
             this.label3.TabIndex = 7;
@@ -359,7 +359,7 @@
             // 
             this.btnRANDOM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRANDOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRANDOM.Location = new System.Drawing.Point(249, 296);
+            this.btnRANDOM.Location = new System.Drawing.Point(332, 329);
             this.btnRANDOM.Name = "btnRANDOM";
             this.btnRANDOM.Size = new System.Drawing.Size(177, 51);
             this.btnRANDOM.TabIndex = 17;
@@ -371,18 +371,19 @@
             // 
             this.btnAmenos1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmenos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAmenos1.Location = new System.Drawing.Point(66, 296);
+            this.btnAmenos1.Location = new System.Drawing.Point(144, 329);
             this.btnAmenos1.Name = "btnAmenos1";
             this.btnAmenos1.Size = new System.Drawing.Size(177, 51);
             this.btnAmenos1.TabIndex = 18;
             this.btnAmenos1.Text = "A";
             this.btnAmenos1.UseVisualStyleBackColor = true;
+            this.btnAmenos1.Click += new System.EventHandler(this.btnAmenos1_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(161, 307);
+            this.label12.Location = new System.Drawing.Point(236, 340);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(16, 13);
             this.label12.TabIndex = 19;

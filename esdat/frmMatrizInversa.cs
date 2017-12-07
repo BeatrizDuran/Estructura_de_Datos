@@ -17,6 +17,7 @@ namespace esdat
             InitializeComponent();
         }
         private Random R = new Random();
+        int r;
         private void renglones()
         {
             int celda=0, conteo = 1;
@@ -52,14 +53,20 @@ namespace esdat
                 celda++;
             }
         }
-        private void MatrizInversa_Load(object sender, EventArgs e)
+        private void DeterminantePaso1()
         {
-            renglones();
+            int campo0 = int.Parse(dgvA.CurrentRow.Cells[0].Value.ToString());
+            int campo1 = int.Parse(dgvA.CurrentRow.Cells[1].Value.ToString());
+            int campo2 = int.Parse(dgvA.CurrentRow.Cells[2].Value.ToString());
+            int campo3 = int.Parse(dgvA.CurrentRow.Cells[3].Value.ToString());
+            //int mulTotal = campo1 * campo3;
+            MessageBox.Show(campo0.ToString());
         }
-
-        private void btnRANDOM_Click(object sender, EventArgs e)
+        private void MatrizInversa_Load(object sender, EventArgs e) => renglones();
+        private void btnRANDOM_Click(object sender, EventArgs e) => random();
+        private void btnAmenos1_Click(object sender, EventArgs e)
         {
-            random();
+            DeterminantePaso1();
         }
     }
 }

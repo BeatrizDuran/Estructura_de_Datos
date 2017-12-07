@@ -146,6 +146,7 @@ namespace esdat
                 dgvOPERANDOS.Rows.Clear();
                 pilaInt.Clear();
                 lblRESULTADO.Text = "Resultado: ";
+            val = false;
                 string[] expresion = txtEXPRESIONES.Text.Split(' ');
                 for (int i = 0; i < expresion.Length; i++)
                 {
@@ -153,7 +154,6 @@ namespace esdat
                     {
                         int operando = int.Parse(expresion[i]);
                         pilaInt.Push(operando);
-                       // MessageBox.Show(expresion[i] + " Soy un operando feliz", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception)
                     {
@@ -166,9 +166,7 @@ namespace esdat
                                     op1 = pilaInt.Pop();
                                     op2 = pilaInt.Pop();
                                     int suma = op1 + op2;
-                                   // MessageBox.Show("Push(" + op2 + " + " + op1 + ")");
                                     pilaInt.Push(suma);
-                                  //  MessageBox.Show("El resultado de la suma: " + suma + " se agrega a la pila", "Aviso");
                                 }
                                 else
                                 {
@@ -181,9 +179,7 @@ namespace esdat
                                     op1 = pilaInt.Pop();
                                     op2 = pilaInt.Pop();
                                     int resta = op1 - op2;
-                                   // MessageBox.Show("Push(" + op2 + " - " + op1 + ")");
                                     pilaInt.Push(resta);
-                                   // MessageBox.Show("El resultado de la resta es: " + resta + " se agrega a la pila", "Aviso");
                                 }
                                 else
                                 {
@@ -196,9 +192,7 @@ namespace esdat
                                     op1 = pilaInt.Pop();
                                     op2 = pilaInt.Pop();
                                     int mult = op1 * op2;
-                                //    MessageBox.Show("Push(" + op2 + " * " + op1 + ")");
                                     pilaInt.Push(mult);
-                                   // MessageBox.Show("El resultado de la multiplicación es: " + mult + " se agrega a la pila", "Aviso");
                                 }
                                 else
                                 {
@@ -211,9 +205,7 @@ namespace esdat
                                     op1 = pilaInt.Pop();
                                     op2 = pilaInt.Pop();
                                     int div = op1 / op2;
-                                 //   MessageBox.Show("Push(" + op2 + " / " + op1 + ")");
                                     pilaInt.Push(div);
-                                 //   MessageBox.Show("El resultado de la división es: " + div + " se agrega a la pila", "Aviso");
                                 }
                                 else
                                 {
@@ -269,43 +261,12 @@ namespace esdat
                 PasoAPaso();
             }
         }
-        private void btnEVALUAR_Click(object sender, EventArgs e)
-        {
-            ValidacionEvaluar();
-        }
-        private void btnEJEMPLO1_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-            txtEXPRESIONES.Text = "1 2 + 4 6 6 7 - + + +";
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Limpiar();
-        }
-        private void EJEMPLO2_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-            txtEXPRESIONES.Text = "1 3 - 4 6 + * 2 4 - 5 6 7 - + - + /";
-        }
-        private void btnPASOAPASO_Click(object sender, EventArgs e)
-        {
-            ValidacionPasoaPaso();
-        }
-        private void btnREINICIAR_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void btnCERRAR_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void txtEXPRESIONES_TextChanged(object sender, EventArgs e)
+        private void ExpresionRegular()
         {
             Regex Val = new Regex(@"(?:\d*\.)?\d+|\*|\-|\+|\/");
             if (Val.IsMatch(txtEXPRESIONES.Text))
             {
-               // MessageBox.Show("Excelente");
+                // MessageBox.Show("Excelente");
             }
             else
             {
@@ -313,5 +274,28 @@ namespace esdat
                 txtEXPRESIONES.Focus();
             }
         }
+        private void btnEVALUAR_Click(object sender, EventArgs e)
+        {
+            ExpresionRegular();
+            ValidacionEvaluar();
+        }
+        private void btnEJEMPLO1_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            txtEXPRESIONES.Text = "1 2 + 4 6 6 7 - + + +";
+        }
+        private void button1_Click(object sender, EventArgs e) => Limpiar();
+        private void EJEMPLO2_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            txtEXPRESIONES.Text = "1 3 - 4 6 + * 2 4 - 5 6 7 - + - + /";
+        }
+        private void btnPASOAPASO_Click(object sender, EventArgs e)
+        {
+            ExpresionRegular();
+            ValidacionPasoaPaso();
+        }
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
+     
     }
 }

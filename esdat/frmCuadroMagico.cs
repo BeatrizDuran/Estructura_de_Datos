@@ -96,24 +96,6 @@ namespace esdat
             dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
             dgvCUADROMAGICO.Rows.Add("1", "1", "1", "1");
         }
-        /// <summary>
-        /// Verifica los numeros enteros 
-        /// </summary>
-        /// <param name="entero">Numero entero</param>
-        /// <returns></returns>
-       // private Boolean EsEntero(String entero)
-        //{
-        //    try
-        //    {
-        //        int.Parse(entero);
-        //        return true;
-        //    }
-        //    catch
-        //    {
-        //        return false;
-        //    }
-        //}
-
         private void CuadroMagico_Load(object sender, EventArgs e)
         {
             dgvCUADROMAGICO.Columns[0].Width = 50;
@@ -128,42 +110,11 @@ namespace esdat
             dgvCUADROMAGICO.Rows.Add();
             dgvCUADROMAGICO.MultiSelect = false;
         }
-        private void btnEJEMPLO1_Click(object sender, EventArgs e)
-        {
-            Ejemplo1();
-        }
-        private void btnLIMPIAR_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-        private void btnCALCULAR_Click(object sender, EventArgs e)
-        {
-            validar();
-        }
-        private void dgvCUADROMAGICO_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
-        {
-            //if (!dgvCUADROMAGICO.Rows[e.RowIndex].IsNewRow)
-            //{
-            //    //Sólo controlamos el dato de la columna 0
-            //    if (e.ColumnIndex == 0 || e.ColumnIndex==1 || e.ColumnIndex== 2 || e.ColumnIndex==3)
-            //    {
-            //        if (!this.EsEntero(e.FormattedValue.ToString()))
-            //        {
-            //            MessageBox.Show("El dato introducido no es un numero entero", "Error",
-            //                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //          e.Cancel = true;
-            //        }
-            //    }
-            //}
-        }
-        private void btnCERRAR_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void btnEJEMPLO2_Click(object sender, EventArgs e)
-        {
-            Ejemplo2();
-        }
+        private void btnEJEMPLO1_Click(object sender, EventArgs e) => Ejemplo1();
+        private void btnLIMPIAR_Click(object sender, EventArgs e) => Limpiar();
+        private void btnCALCULAR_Click(object sender, EventArgs e) => validar();
+        private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
+        private void btnEJEMPLO2_Click(object sender, EventArgs e) => Ejemplo2();
         private void dgvCUADROMAGICO_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             Regex regex = new Regex(@"(?:\d*\.)?\d+");

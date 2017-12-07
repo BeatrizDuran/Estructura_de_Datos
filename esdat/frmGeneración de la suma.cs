@@ -14,6 +14,8 @@ namespace esdat
     {
         private int columnas, renglones;
         private Random R = new Random();
+        Regex regex = new Regex(@"(?:\d*\.)?\d+");
+        int r;
         public Generación_de_la_suma(int columnas,int renglones)
         {
             InitializeComponent();
@@ -23,20 +25,34 @@ namespace esdat
     
         private void resultado()
         {
-            if (dgvMATRIZ1.Rows.Count==0 || dgvMATRIZ2.Rows.Count==0)
-            {
-                MessageBox.Show("No hay valores para sumar");
-            }else
-            {
-                    for (int s = 0; s < columnas; s++)
+            try {
+
+                for (int s = 0; s < columnas; s++)
                 {
                     for (int r = 0; r < renglones; r++)
                     {
-                        dgvRESULTADO[s, r].Value = int.Parse(dgvMATRIZ1[s, r].Value.ToString()) + int.Parse(dgvMATRIZ2[s, r].Value.ToString());
-                        RenglonesMatriz3(dgvRESULTADO);
+                        if ((String)dgvMATRIZ1.Rows[r].Cells[s].Value == null)
+                        {
+                            MessageBox.Show("Algún campo está vacío de la Matriz 1","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            if ((String)dgvMATRIZ2.Rows[r].Cells[s].Value == null)
+                            {
+                                MessageBox.Show("Algún campo está vacío de la Matriz 2", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                dgvRESULTADO[s, r].Value = int.Parse(dgvMATRIZ1[s, r].Value.ToString()) + int.Parse(dgvMATRIZ2[s, r].Value.ToString());
+                                RenglonesMatriz3(dgvRESULTADO);
+                            }
+                        }
                     }
                 }
-               
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Los datos que se ingresaron son incorrectos","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             
         }
@@ -94,6 +110,49 @@ namespace esdat
                 row.HeaderCell.Value = String.Format("{0}", row.Index + 1);
             }
         }
+        private void Matriz1Entero()
+        {
+            if ((String)dgvMATRIZ1.CurrentCell.Value == null)
+            {
+                MessageBox.Show("Alguna celda debe estar vacía", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (int.TryParse(dgvMATRIZ1.CurrentCell.Value.ToString(), out r))
+                {
+                    // MessageBox.Show("Correcto");
+                }
+                else
+                {
+                    MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int column = dgvMATRIZ1.CurrentCell.ColumnIndex;
+                    int row = dgvMATRIZ1.CurrentCell.RowIndex;
+                    dgvMATRIZ1.CurrentCell = dgvMATRIZ1.Rows[row].Cells[column];
+                }
+            }
+        }
+        private void Matriz2Entero()
+        {
+            if ((String)dgvMATRIZ2.CurrentCell.Value == null)
+            {
+                MessageBox.Show("Alguna celda esta vacia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (int.TryParse(dgvMATRIZ2.CurrentCell.Value.ToString(), out r))
+                {
+                   // MessageBox.Show("Correcto");
+                }
+                else
+                {
+                    MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int column = dgvMATRIZ2.CurrentCell.ColumnIndex;
+                    int row = dgvMATRIZ2.CurrentCell.RowIndex;
+                    dgvMATRIZ2.CurrentCell = dgvMATRIZ2.Rows[row].Cells[column];
+                }
+            }
+        }
+        
         private void btnRESULTADO_Click(object sender, EventArgs e)
         {
             resultado();
@@ -108,50 +167,13 @@ namespace esdat
         }
         private void dgvMATRIZ1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            Regex regex = new Regex(@"(?:\d*\.)?\d+");
-            if (regex.IsMatch(dgvMATRIZ1.CurrentCell.Value.ToString()))
-            {
-                //
-            }
-            else
-            {
-
-                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                int column = dgvMATRIZ1.CurrentCell.ColumnIndex;
-                int row = dgvMATRIZ1.CurrentCell.RowIndex;
-                dgvMATRIZ1.CurrentCell = dgvMATRIZ1.Rows[row].Cells[column];
-            }
+            Matriz1Entero();
         }
         private void dgvMATRIZ2_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            Regex regex = new Regex(@"(?:\d*\.)?\d+");
-            if (regex.IsMatch(dgvMATRIZ2.CurrentCell.Value.ToString()))
-            {
-                //
-            }
-            else
-            {
-                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                int column = dgvMATRIZ2.CurrentCell.ColumnIndex;
-                int row = dgvMATRIZ2.CurrentCell.RowIndex;
-                dgvMATRIZ2.CurrentCell = dgvMATRIZ2.Rows[row].Cells[column];
-            }
+            Matriz2Entero();
         }
-        private void dgvRESULTADO_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            Regex regex = new Regex(@"(?:\d*\.)?\d+");
-            if (regex.IsMatch(dgvRESULTADO.CurrentCell.Value.ToString()))
-            {
-                //
-            }
-            else
-            {
-                MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                int column = dgvRESULTADO.CurrentCell.ColumnIndex;
-                int row = dgvRESULTADO.CurrentCell.RowIndex;
-                dgvRESULTADO.CurrentCell = dgvRESULTADO.Rows[row].Cells[column];
-            }
-        }
+     
         private void Generación_de_la_suma_Load(object sender, EventArgs e)
         {
             operacion();

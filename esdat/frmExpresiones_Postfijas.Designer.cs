@@ -77,7 +77,6 @@
             this.txtEXPRESIONES.Name = "txtEXPRESIONES";
             this.txtEXPRESIONES.Size = new System.Drawing.Size(510, 29);
             this.txtEXPRESIONES.TabIndex = 2;
-            this.txtEXPRESIONES.TextChanged += new System.EventHandler(this.txtEXPRESIONES_TextChanged);
             // 
             // dgvOPERANDOS
             // 
@@ -132,7 +131,6 @@
             this.btnREINICIAR.TabIndex = 6;
             this.btnREINICIAR.Text = "Reiniciar";
             this.btnREINICIAR.UseVisualStyleBackColor = true;
-            this.btnREINICIAR.Click += new System.EventHandler(this.btnREINICIAR_Click);
             // 
             // lblRESULTADO
             // 

@@ -188,6 +188,7 @@
             this.Name = "Busqueda_binaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda_binaria";
+            this.Load += new System.EventHandler(this.Busqueda_binaria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusquedaBinaria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

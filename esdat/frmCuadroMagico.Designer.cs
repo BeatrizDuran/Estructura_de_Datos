@@ -89,7 +89,6 @@
             this.dgvCUADROMAGICO.Size = new System.Drawing.Size(213, 100);
             this.dgvCUADROMAGICO.TabIndex = 0;
             this.dgvCUADROMAGICO.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCUADROMAGICO_CellEndEdit);
-            this.dgvCUADROMAGICO.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvCUADROMAGICO_CellValidating);
             // 
             // Column1
             // 

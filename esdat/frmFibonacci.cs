@@ -44,14 +44,20 @@ namespace esdat
             }
         }
         private void validar()
-        {          
-                if (txtLIMITE.Text.Trim() == "") //se verifica si el campo esta vacio
+        {
+            if (txtLIMITE.Text.Trim() == "") //se verifica si el campo esta vacio
+            {
+                MessageBox.Show("El campo a capturar esta vacio", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtLIMITE.Focus();
+            }
+            else
+            {
+                int  txt = int.Parse(txtLIMITE.Text);
+                if (txt <= -1)
                 {
-                    MessageBox.Show("El campo a capturar esta vacio", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    txtLIMITE.Focus();
+                    MessageBox.Show("El numero debe ser mayor a cero (0)","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 }
-                else
-                {
+                else {
                     if (int.TryParse(txtLIMITE.Text, out resl)) //res no se utiliza, es solo para poder hacer el parceo
                     {
                         calcular(); //captura si es valido :)
@@ -60,7 +66,8 @@ namespace esdat
                     {
                         MessageBox.Show("Solo se permiten numeros enteros, no se capturo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // marca el error y no captua :(
                     }
-                }            
+                }
+            }
         }
 
         private void btnSALIR_Click(object sender, EventArgs e)

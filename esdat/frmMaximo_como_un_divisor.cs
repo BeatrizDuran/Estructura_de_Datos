@@ -28,7 +28,7 @@ namespace esdat
             }
             else
             {
-                if (int.TryParse(txtENTERO1.Text, out res) || int.TryParse(txtENTERO2.Text, out res) || txtENTERO1.Text=="0"|| txtENTERO2.Text=="0")
+                if (int.TryParse(txtENTERO1.Text, out res) && int.TryParse(txtENTERO2.Text, out res) || txtENTERO1.Text=="0"|| txtENTERO2.Text=="0")
                 {
                     lblRESULTADO.Text = (mcdMETODO(int.Parse(txtENTERO1.Text), int.Parse(txtENTERO2.Text)).ToString());
                 }

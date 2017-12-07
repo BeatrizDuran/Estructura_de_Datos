@@ -29,13 +29,15 @@ namespace esdat
             }
             else
             {
-                if (int.TryParse(txtLIMITE.Text, out resl) && int.TryParse(txtNUMEROELEMENTOS.Text,out resl)) //res no se utiliza, es solo para poder hacer el parceo
+                int txtNum = int.Parse(txtNUMEROELEMENTOS.Text);
+                int txtLimite = int.Parse(txtLIMITE.Text);           
+                    if (int.TryParse(txtLIMITE.Text, out resl) && int.TryParse(txtNUMEROELEMENTOS.Text,out resl) && txtNum >= 0 && txtLimite >= 0) //res no se utiliza, es solo para poder hacer el parceo
                 {
                     BUSQUEDA(); //captura si es valido :)
                 }
                 else
                 {
-                    MessageBox.Show("Solo se permiten numeros enteros, no se capturo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // marca el error y no captua :(
+                    MessageBox.Show("Solo se permiten numeros enteros o positivos, no se capturo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // marca el error y no captua :(
                 }
             }
         }
@@ -44,20 +46,21 @@ namespace esdat
         /// </summary>
         private void BUSQUEDA()
         {
-            dgvBusquedaBinaria.Rows.Clear();
-            valores = new int[20];
-            Random r = new Random();
-            for (int i = 0; i < valores.Length; i++)
-            {
-                valores[i] = r.Next(50);
-            }
-            Array.Sort(valores);
-            for (int i = 0; i < valores.Length; i++)
-            {
-                dgvBusquedaBinaria.Rows.Add(valores[i].ToString());
-                Renglones(dgvBusquedaBinaria);
-              //  dgvBusquedaBinaria.Rows[i].HeaderCell.Value = i.ToString();
-            }
+                dgvBusquedaBinaria.Rows.Clear();
+                valores = new int[20];
+                Random r = new Random();
+                for (int i = 0; i < valores.Length; i++)
+                {
+                    valores[i] = r.Next(50);
+                }
+                Array.Sort(valores);
+                for (int i = 0; i < valores.Length; i++)
+                {
+                    dgvBusquedaBinaria.Rows.Add(valores[i].ToString());
+                    Renglones(dgvBusquedaBinaria);
+                    //  dgvBusquedaBinaria.Rows[i].HeaderCell.Value = i.ToString();
+                }
+            
         }
         /// <summary>
         /// Realliza el recorrido renglon por rengón del datagridview
@@ -86,6 +89,7 @@ namespace esdat
         /// </summary>
         private void BuscarTextChanged()
         {
+            
             if (txtBUSCAR.Text.Trim() == "")
             {
                 MessageBox.Show("El campo de busqueda esta vació.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -93,32 +97,37 @@ namespace esdat
             }
             else
             {
-                if (int.TryParse(txtBUSCAR.Text, out resl))
-                {
-               
-                    foreach (DataGridViewRow Row in dgvBusquedaBinaria.Rows)
+                
+                    if (int.TryParse(txtBUSCAR.Text, out resl))
                     {
-                        String strFila = Row.Index.ToString();
-                        string Valor = Convert.ToString(Row.Cells["Column1"].Value);
-                        dgvBusquedaBinaria.Rows[Convert.ToInt32(strFila)].DefaultCellStyle.BackColor = Color.White;
-                        if (this.txtBUSCAR.Text == Valor)
+
+                        foreach (DataGridViewRow Row in dgvBusquedaBinaria.Rows)
                         {
-                            dgvBusquedaBinaria.Rows[Convert.ToInt32(strFila)].DefaultCellStyle.BackColor = Color.LightGreen;
+                            String strFila = Row.Index.ToString();
+                            string Valor = Convert.ToString(Row.Cells["Column1"].Value);
+                            dgvBusquedaBinaria.Rows[Convert.ToInt32(strFila)].DefaultCellStyle.BackColor = Color.White;
+                            if (this.txtBUSCAR.Text == Valor)
+                            {
+                                dgvBusquedaBinaria.Rows[Convert.ToInt32(strFila)].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
                         }
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Solo se permiten números enteros.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtBUSCAR.Focus();
-                }
-                
-            }
+                    else
+                    {
+                        MessageBox.Show("Solo se permiten números enteros.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtBUSCAR.Focus();
+                    }
+                }   
         }
 
         private void btnGENERAR_Click(object sender, EventArgs e) => validacion();
         private void btnLIMPIAR_Click(object sender, EventArgs e) => Limpiar();
         private void btnBUSQUEDA_Click(object sender, EventArgs e) => BuscarTextChanged();
         private void button1_Click(object sender, EventArgs e) => this.Close();
+
+        private void Busqueda_binaria_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

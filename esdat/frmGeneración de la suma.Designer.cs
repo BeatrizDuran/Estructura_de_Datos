@@ -85,9 +85,9 @@
             this.dgvRESULTADO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRESULTADO.Location = new System.Drawing.Point(563, 55);
             this.dgvRESULTADO.Name = "dgvRESULTADO";
+            this.dgvRESULTADO.ReadOnly = true;
             this.dgvRESULTADO.Size = new System.Drawing.Size(223, 161);
             this.dgvRESULTADO.TabIndex = 3;
-            this.dgvRESULTADO.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRESULTADO_CellEndEdit);
             // 
             // label1
             // 

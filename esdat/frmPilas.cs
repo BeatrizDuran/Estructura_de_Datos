@@ -17,9 +17,10 @@ namespace esdat
             InitializeComponent();
         }
         Stack<string> stackString = new Stack<string>();
+        int elemento;
         private void ImprimirPila()
         {
-            if (txtELEMENTO.Text.Trim() == "")
+            if (txtELEMENTO.Text == "")
             {
                 MessageBox.Show("El campo del elemento está vacío","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
@@ -71,17 +72,18 @@ namespace esdat
         {
             if (stackString.Count == 0)
             {
-                MessageBox.Show("No hay elementos en la pila", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La pila está vacía", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 stackString.Pop();
                 ImprimirPila();
             }
+           
         }
         private void ElementAt()
         {
-            if (int.TryParse(txtELEMENTO.Text, out int elemento) && elemento <= stackString.Count())
+            if (/*int.TryParse(txtELEMENTO.Text, out  elemento) */ elemento <= stackString.Count())
             {
                 MessageBox.Show("El elemento en la posición: " + elemento + " es: " + stackString.ElementAt(elemento), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -110,6 +112,18 @@ namespace esdat
             }
             limpiar();
         }
+        private void Contains()
+        {
+            if (stackString.Contains(txtELEMENTO.Text))
+            {
+                MessageBox.Show("La pila si contiene el elemento " + txtELEMENTO.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Elemento no encontrado, pruebe con otro", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            limpiar();
+        }
         private void Pilas_Load(object sender, EventArgs e) => txtELEMENTO.Focus();
         private void btnPUSH_Click(object sender, EventArgs e)
         {
@@ -124,13 +138,11 @@ namespace esdat
        
            //validString(x);
         }
-        private void btnCLEAR_Click(object sender, EventArgs e)
-        {
-            limpiar();
-        }
+        private void btnCLEAR_Click(object sender, EventArgs e) => limpiar();
         private void btnREVERSA_Click(object sender, EventArgs e) => Reverse(stackString);
         private void button1_Click(object sender, EventArgs e) => this.Close();
         private void btnPEEK_Click(object sender, EventArgs e) => Peek();
         private void btnELEMENT_A_Click(object sender, EventArgs e) => ElementAt();
+        private void btnCONTAINS_Click(object sender, EventArgs e) => Contains();
     }
 }

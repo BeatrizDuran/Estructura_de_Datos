@@ -14,6 +14,7 @@ namespace esdat
     {
         private int columnas, renglones;
         private Random R = new Random();
+        int r;
         public frmTranspuesta(int columnas, int renglones)
         {
             InitializeComponent();
@@ -46,19 +47,45 @@ namespace esdat
         }
         private void transpuesta()
         {
+
             for (int h = 0; h < renglones; h++)
                 for (int d = 0; d < columnas; d++)
-                    dgvMT[h, d].Value = dgvM[d, h].Value.ToString();
-        }
+                    if ((String)dgvM.Rows[h].Cells[d].Value == null)
+                    {
+                        MessageBox.Show("Algún campo está vacío en la primera matriz", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
 
-        private void btnTRANSPUESTA_Click(object sender, EventArgs e)
+                        dgvMT[h, d].Value = dgvM[d, h].Value.ToString();
+                    }
+            }
+        private void CellEndEdit()
         {
-            transpuesta();
+            if ((String)dgvM.CurrentCell.Value == null)
+            {
+                MessageBox.Show("Alguna celda esta vacia", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (int.TryParse(dgvM.CurrentCell.Value.ToString(), out r))
+                {
+                    // MessageBox.Show("Correcto");
+                }
+                else
+                {
+                    MessageBox.Show("Solo numeros enteros", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int column = dgvM.CurrentCell.ColumnIndex;
+                    int row = dgvM.CurrentCell.RowIndex;
+                    dgvM.CurrentCell = dgvM.Rows[row].Cells[column];
+                }
+            }
         }
+        private void btnTRANSPUESTA_Click(object sender, EventArgs e) => transpuesta();
+        private void dgvM_CellEndEdit(object sender, DataGridViewCellEventArgs e) => CellEndEdit();
 
-        private void Transpuesta_Load(object sender, EventArgs e)
-        {
-            generar();
-        }
+        private void button1_Click(object sender, EventArgs e) => this.Close();
+
+        private void Transpuesta_Load(object sender, EventArgs e) => generar();
     }
 }

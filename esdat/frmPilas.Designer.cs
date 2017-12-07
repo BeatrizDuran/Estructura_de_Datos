@@ -143,6 +143,7 @@
             this.btnCONTAINS.TabIndex = 7;
             this.btnCONTAINS.Text = "Contains()";
             this.btnCONTAINS.UseVisualStyleBackColor = true;
+            this.btnCONTAINS.Click += new System.EventHandler(this.btnCONTAINS_Click);
             // 
             // btnELEMENT_A
             // 

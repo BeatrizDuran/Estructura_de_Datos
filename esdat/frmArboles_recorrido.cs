@@ -145,26 +145,25 @@ namespace esdat
         }
         private void podarClick()
         {
-            CallRecursive3(tvNODOS);
-            foreach (var item in Lista)
+            if (cmbPADRE.Text.Trim() == "")
             {
-                cmbPADRE.Items.Add(ToString());
+                MessageBox.Show("El campo de texto del Padre esta vacío","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-            //cmbPADRE.Text = cmbPADRE.Items[0].ToString();
+            else
+            {
+                CallRecursive3(tvNODOS);
+                foreach (var item in Lista)
+                {
+                    cmbPADRE.Items.Add(ToString());
+                }
+            }
         }
 
-        private void btnEXPANDIR_Click(object sender, EventArgs e)
-        {
-            tvNODOS.ExpandAll();
-        }
-
-        private void btnCONTRAER_Click(object sender, EventArgs e)
-        {
-            tvNODOS.CollapseAll();
-        }
-
+        private void btnEXPANDIR_Click(object sender, EventArgs e) => tvNODOS.ExpandAll();
+        private void btnCONTRAER_Click(object sender, EventArgs e) => tvNODOS.CollapseAll();
         private void btnPodarTodo_Click(object sender, EventArgs e)
         {
+
             txtRAIZ.Clear();
             txtHIJO.Clear();
             cmbPADRE.Items.Clear();
@@ -182,12 +181,7 @@ namespace esdat
             tvNODOS.Nodes[0].Nodes[1].Nodes.Add("Nodo3");
             tvNODOS.Nodes[0].Nodes[1].Nodes.Add("Nodo4");
         }
-
-        private void btnPODAR_Click(object sender, EventArgs e)
-        {
-            podarClick();
-        }
-
+        private void btnPODAR_Click(object sender, EventArgs e) => podarClick();
         private void btnAGREGARRAIZ_Click(object sender, EventArgs e)
         {
             Lista.Clear();
@@ -198,12 +192,7 @@ namespace esdat
             valor = false;
             enabled();
         }
-
-        private void btnAGREGARHIJO_Click(object sender, EventArgs e)
-        {
-            AgregarHijo();
-        }
-
+        private void btnAGREGARHIJO_Click(object sender, EventArgs e) => AgregarHijo();
         private void btnRECORRIDO_Click(object sender, EventArgs e)
         {
             //..............Realiza el recorrido en los arboles.................
@@ -211,10 +200,6 @@ namespace esdat
             recorrido(tvNODOS.Nodes);
             MessageBox.Show(cadena);
  ;      }
-
-        private void btnSALIR_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        private void btnSALIR_Click(object sender, EventArgs e) => this.Close();
     }
 }
