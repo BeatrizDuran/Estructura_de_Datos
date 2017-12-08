@@ -63,6 +63,9 @@
             this.btnRANDOM = new System.Windows.Forms.Button();
             this.btnAmenos1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.txtRESULTADO = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRESULTADO1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAport)).BeginInit();
@@ -80,7 +83,7 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dgvApor.Location = new System.Drawing.Point(494, 12);
+            this.dgvApor.Location = new System.Drawing.Point(494, 32);
             this.dgvApor.Name = "dgvApor";
             this.dgvApor.ReadOnly = true;
             this.dgvApor.Size = new System.Drawing.Size(259, 123);
@@ -114,7 +117,7 @@
             this.Column10,
             this.Column11,
             this.Column12});
-            this.dgvRESULTADO1.Location = new System.Drawing.Point(494, 146);
+            this.dgvRESULTADO1.Location = new System.Drawing.Point(494, 192);
             this.dgvRESULTADO1.Name = "dgvRESULTADO1";
             this.dgvRESULTADO1.ReadOnly = true;
             this.dgvRESULTADO1.Size = new System.Drawing.Size(259, 118);
@@ -148,7 +151,7 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvAport.Location = new System.Drawing.Point(66, 146);
+            this.dgvAport.Location = new System.Drawing.Point(66, 192);
             this.dgvAport.Name = "dgvAport";
             this.dgvAport.ReadOnly = true;
             this.dgvAport.Size = new System.Drawing.Size(255, 118);
@@ -182,7 +185,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvA.Location = new System.Drawing.Point(66, 7);
+            this.dgvA.Location = new System.Drawing.Point(66, 32);
             this.dgvA.Name = "dgvA";
             this.dgvA.Size = new System.Drawing.Size(255, 123);
             this.dgvA.TabIndex = 3;
@@ -206,7 +209,7 @@
             // 
             this.lblMATRIZA.AutoSize = true;
             this.lblMATRIZA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMATRIZA.Location = new System.Drawing.Point(20, 7);
+            this.lblMATRIZA.Location = new System.Drawing.Point(20, 32);
             this.lblMATRIZA.Name = "lblMATRIZA";
             this.lblMATRIZA.Size = new System.Drawing.Size(40, 25);
             this.lblMATRIZA.TabIndex = 4;
@@ -216,7 +219,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-5, 159);
+            this.label1.Location = new System.Drawing.Point(-5, 192);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 5;
@@ -311,7 +314,7 @@
             this.Column13,
             this.Column14,
             this.Column15});
-            this.dgvRESULTADOFINAL.Location = new System.Drawing.Point(867, 79);
+            this.dgvRESULTADOFINAL.Location = new System.Drawing.Point(867, 105);
             this.dgvRESULTADOFINAL.Name = "dgvRESULTADOFINAL";
             this.dgvRESULTADOFINAL.ReadOnly = true;
             this.dgvRESULTADOFINAL.Size = new System.Drawing.Size(245, 118);
@@ -389,11 +392,46 @@
             this.label12.TabIndex = 19;
             this.label12.Text = "-1";
             // 
+            // txtRESULTADO
+            // 
+            this.txtRESULTADO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRESULTADO.Location = new System.Drawing.Point(376, 105);
+            this.txtRESULTADO.Name = "txtRESULTADO";
+            this.txtRESULTADO.Size = new System.Drawing.Size(100, 26);
+            this.txtRESULTADO.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(515, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 51);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(139, 4);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(99, 25);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Matriz A";
+            // 
             // frmMatrizInversa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1121, 389);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtRESULTADO);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAmenos1);
             this.Controls.Add(this.btnRANDOM);
@@ -465,5 +503,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.TextBox txtRESULTADO;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label13;
     }
 }
