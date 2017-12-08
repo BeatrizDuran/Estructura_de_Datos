@@ -158,7 +158,22 @@ namespace esdat
                 }
             }
         }
-
+        private void AgregarRaiz()
+        {
+            if (txtRAIZ.Text.Trim() == "")
+            {
+                MessageBox.Show("Verifique el campo de texto de Raiz está vacío", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Lista.Clear();
+                tvNODOS.Nodes.Add(txtRAIZ.Text);
+                CallRecursive(tvNODOS);
+                cmbPADRE.Text = cmbPADRE.Items[0].ToString();
+                valor = false;
+                enabled();
+            }
+        }
         private void btnEXPANDIR_Click(object sender, EventArgs e) => tvNODOS.ExpandAll();
         private void btnCONTRAER_Click(object sender, EventArgs e) => tvNODOS.CollapseAll();
         private void btnPodarTodo_Click(object sender, EventArgs e)
@@ -169,7 +184,6 @@ namespace esdat
             cmbPADRE.Items.Clear();
             limpiar();
         }
-
         private void arboles_recorrido_Load(object sender, EventArgs e)
         {
             enabled();
@@ -182,16 +196,7 @@ namespace esdat
             tvNODOS.Nodes[0].Nodes[1].Nodes.Add("Nodo4");
         }
         private void btnPODAR_Click(object sender, EventArgs e) => podarClick();
-        private void btnAGREGARRAIZ_Click(object sender, EventArgs e)
-        {
-            Lista.Clear();
-            
-            tvNODOS.Nodes.Add(txtRAIZ.Text);
-            CallRecursive(tvNODOS);
-            cmbPADRE.Text = cmbPADRE.Items[0].ToString();
-            valor = false;
-            enabled();
-        }
+        private void btnAGREGARRAIZ_Click(object sender, EventArgs e) => AgregarRaiz();
         private void btnAGREGARHIJO_Click(object sender, EventArgs e) => AgregarHijo();
         private void btnRECORRIDO_Click(object sender, EventArgs e)
         {

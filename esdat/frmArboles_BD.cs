@@ -23,6 +23,7 @@ namespace esdat
         MySqlDataReader dr;
         private void games()
         {
+            tvPRUEBA.Nodes.Clear();
             con = new MySqlConnection("Server=127.0.0.1;username=root;password=siqueirosuth19;database=games");
             tvPRUEBA.Nodes.Add("Juegos");
             con.Open();
@@ -55,6 +56,7 @@ namespace esdat
         }
         private void integradora()
         {
+            tvpruebita.Nodes.Clear();
             con = new MySqlConnection("Server=127.0.0.1;username=root;password=siqueirosuth19;database=integradora");
             tvpruebita.Nodes.Add("Integradora");
             con.Open();
@@ -70,8 +72,8 @@ namespace esdat
         }
         private void showtables()
         {
+            tvSHOWTABLES.Nodes.Clear();
             con = new MySqlConnection("Server=127.0.0.1;username=root;password=siqueirosuth19");
-            
             con.Open();
             string q = "SHOW DATABASES";
             comd = new MySqlCommand(q, con);
@@ -99,9 +101,24 @@ namespace esdat
         private void btnCERRAR_Click(object sender, EventArgs e) => this.Close();
         private void btnEJEMPLOS_Click(object sender, EventArgs e)
         {
+            
             games();
             integradora();
             showtables();
+        }
+        private void btnExpandir_Click(object sender, EventArgs e)
+        {
+            tvBASEDATOS.ExpandAll();
+            tvPRUEBA.ExpandAll();
+            tvpruebita.ExpandAll();
+            tvSHOWTABLES.ExpandAll();
+        }
+        private void btnContraer_Click(object sender, EventArgs e)
+        {
+            tvSHOWTABLES.CollapseAll();
+            tvpruebita.CollapseAll();
+            tvPRUEBA.CollapseAll();
+            tvBASEDATOS.CollapseAll();
         }
     }
 }

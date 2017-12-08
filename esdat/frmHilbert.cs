@@ -72,12 +72,7 @@ namespace esdat
                 this.Cursor = Cursors.Default;
             }
         }
-       
-        private void btnINICIAR_Click(object sender, EventArgs e)
-        {
-            GENERAR();
-
-        }
+        private void btnINICIAR_Click(object sender, EventArgs e) => GENERAR();
         private void Hilbertt(Graphics gr, int depth, float dx, float dy)
         {
             if (depth > 1) Hilbertt(gr, depth - 1, dy, dx);
@@ -87,17 +82,11 @@ namespace esdat
             if (depth > 1) Hilbertt(gr, depth - 1, dx, dy);
             DrawRelative(gr, -dx, -dy);
             if (depth > 1) Hilbertt(gr, depth - 1, -dy, -dx);
-
             if (DoRefresh) pcBHILBERT.Refresh();
         }
-
-        private void btnGUARDAR_Click(object sender, EventArgs e)
-        {
-            GuardarImagen();
-        }
+        private void btnGUARDAR_Click(object sender, EventArgs e) => GuardarImagen();
         private void GuardarImagen()
         {
-            //bool isNullEmpty = pcBHILBERT == null || pcBHILBERT.Image == null;      
             if (pcBHILBERT.Image==null)
             {
               MessageBox.Show("La imagen aun no ha sido generada","Error",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -111,12 +100,8 @@ namespace esdat
                 MessageBox.Show("Imagen guardada con exito!");
             }
         }
-
-        private void Hilbert_Load(object sender, EventArgs e)
-        {
-            cmbVALOR.Text = cmbVALOR.Items[4].ToString();//Empezando en el 4
-        }
-
+        private void Hilbert_Load(object sender, EventArgs e) => cmbVALOR.Text = cmbVALOR.Items[4].ToString();//Empezando en el 4
+        private void button1_Click(object sender, EventArgs e) => this.Close();
         private void DrawRelative(Graphics gr, float dx, float dy)
         {
             gr.DrawLine(Pens.Black, LastX, LastY, LastX + dx, LastY + dy);
@@ -125,4 +110,3 @@ namespace esdat
         }
     }
     }
-

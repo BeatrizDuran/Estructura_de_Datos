@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnCERRAR = new System.Windows.Forms.Button();
             this.btnEJEMPLOS = new System.Windows.Forms.Button();
+            this.btnExpandir = new System.Windows.Forms.Button();
+            this.btnContraer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tvBASEDATOS
@@ -134,11 +136,39 @@
             this.btnEJEMPLOS.UseVisualStyleBackColor = false;
             this.btnEJEMPLOS.Click += new System.EventHandler(this.btnEJEMPLOS_Click);
             // 
+            // btnExpandir
+            // 
+            this.btnExpandir.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExpandir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpandir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpandir.Location = new System.Drawing.Point(294, 393);
+            this.btnExpandir.Name = "btnExpandir";
+            this.btnExpandir.Size = new System.Drawing.Size(156, 35);
+            this.btnExpandir.TabIndex = 10;
+            this.btnExpandir.Text = "Expandir";
+            this.btnExpandir.UseVisualStyleBackColor = false;
+            this.btnExpandir.Click += new System.EventHandler(this.btnExpandir_Click);
+            // 
+            // btnContraer
+            // 
+            this.btnContraer.BackColor = System.Drawing.SystemColors.Control;
+            this.btnContraer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContraer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContraer.Location = new System.Drawing.Point(132, 393);
+            this.btnContraer.Name = "btnContraer";
+            this.btnContraer.Size = new System.Drawing.Size(156, 35);
+            this.btnContraer.TabIndex = 11;
+            this.btnContraer.Text = "Contraer";
+            this.btnContraer.UseVisualStyleBackColor = false;
+            this.btnContraer.Click += new System.EventHandler(this.btnContraer_Click);
+            // 
             // frmArboles_BD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 440);
+            this.Controls.Add(this.btnContraer);
+            this.Controls.Add(this.btnExpandir);
             this.Controls.Add(this.btnEJEMPLOS);
             this.Controls.Add(this.btnCERRAR);
             this.Controls.Add(this.label4);
@@ -170,5 +200,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCERRAR;
         private System.Windows.Forms.Button btnEJEMPLOS;
+        private System.Windows.Forms.Button btnExpandir;
+        private System.Windows.Forms.Button btnContraer;
     }
 }
